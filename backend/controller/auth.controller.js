@@ -5,7 +5,7 @@ module.exports.login = (req, res) => {
 }
 
 module.exports.signup = (req, res) => {
-    res.send("signup")
+    res.send("signup"
 }
 
 module.exports.logout = (req, res) => {

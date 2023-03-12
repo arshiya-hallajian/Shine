@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/elliotWoas/Shine#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "git": "^0.1.5"
   }
 }

@@ -8,7 +8,7 @@ const mongoose = require('mongoose')
 //middleware 
 app.use(cors());
 app.use(express.json());
-app.use(express.urlencoded({ extended: true}))
+app.use(express.urlencoded({ extended: true}));
 
 //database connect 
 mongoose.connect('mongodb+srv://arshiyah53:46646659@cluster0.p7fvwrc.mongodb.net/user?retryWrites=true&w=majority').then(()=>{

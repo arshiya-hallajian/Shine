@@ -1,17 +1,17 @@
 
 
-module.exports.login_post = (req, res) = {
-    
+module.exports.login = (req, res) => {
+    res.send("login")
 }
 
-module.exports.signup_post = (req, res) = {
-    
+module.exports.signup = (req, res) => {
+    res.send("signup")
 }
 
-module.exports.logout_get = (req, res) = {
-    
+module.exports.logout = (req, res) => {
+    res.send("logout")
 }
 
-module.exports.userlist_get = (req, res) = {
-    
+module.exports.userlist = (req, res) => {
+    res.send("userlist")
 }

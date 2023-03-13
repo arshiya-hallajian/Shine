@@ -12,6 +12,11 @@ module.exports.login = async(req, res) => {
       return res.status(404).json({ success: false, message: "User not found" });
     }
 
+    const checkPassword = await bcrypt.compare(req.body.password, user.password);
+    if (!checkPassword) {
+      return res.status(404).json({ success: false, message: "Password wrong" });
+    }
+
 
   } catch (err) {
     

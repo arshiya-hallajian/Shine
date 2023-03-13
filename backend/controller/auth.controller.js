@@ -1,11 +1,53 @@
+
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 const User = require("../models/user")
 
 
-module.exports.login = (req, res) => {
-    res.send("login")
-}
+// user login
+module.exports.login = async (req, res) => {
+  const email = req.body.email;
+
+
+  try {
+    const user = await User.findOne({ email: email });
+    if (!user) {
+      return res
+        .status(404)
+        .json({ success: false, message: "User not found" });
+    }
+
+    const checkPassword = await bcrypt.compare(
+      req.body.password,
+      user.password
+    );
+    if (!checkPassword) {
+      return res
+        .status(404)
+        .json({ success: false, message: "Password wrong" });
+    }
+
+    const token = jwt.sign(
+      {
+        id: user.id,
+        firstname: user.firstname,
+        lastname: user.lastname,
+        email: user.email,
+      },
+      "jhsahjahas"
+    );
+
+    res.status(200).json({
+      status: true,
+      jwt: token,
+      message: "kir to programming",
+    });
+    
+  } catch (err) {
+    res.status(404).send("5", err);
+  }
+};
+
 
 module.exports.signup = async(req, res) => {
     // res.send(req.body)
@@ -40,9 +82,9 @@ module.exports.signup = async(req, res) => {
 
 
 module.exports.logout = (req, res) => {
-    res.send("logout")
-}
+  res.send("logout");
+};
 
 module.exports.userlist = (req, res) => {
-    res.send("userlist")
-}
+  res.send("userlist");
+};

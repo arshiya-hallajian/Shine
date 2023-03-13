@@ -18,6 +18,12 @@ module.exports.signup = async(req, res) => {
         password: hashPassword
     })
 
+    const userCheck = await User.findOne({email : req.body.email}).exec();
+    if(!userCheck) res.status(400).json({
+        status: false,
+        error: "user exist"
+    })
+
     try{
         const saveUser = await user.save();
         res.status(200).json({

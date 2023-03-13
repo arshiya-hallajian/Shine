@@ -17,6 +17,15 @@ module.exports.login = async(req, res) => {
       return res.status(404).json({ success: false, message: "Password wrong" });
     }
 
+    
+    const token = jwt.sign({
+        id: user.id,
+        firstname: user.firstname,
+        lastname: user.lastname,
+        email: user.email,
+      },"jhsahjahas");
+  
+
 
   } catch (err) {
     

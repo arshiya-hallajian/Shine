@@ -1,18 +1,31 @@
 let mongoose = require('mongoose');
 
 //create login and signup schema
-let UserRigester = new mongoose.Schema({
-    userName: String,
-    email: String,
-    password: String,
-    verifyPassword: String,
+let User = new mongoose.Schema({
+    firstname: {
+        type: String,
+        maxLength: 30,
+        required: true
+    },
+    lastname: {
+        type: String,
+        maxLength: 30,
+        required: true
+    },
+    email: {
+        type: String,
+        unique:true,
+        required:true,
+    },
+    password: {
+        type: String,
+        minLength: 6,
+        required: true
+    },
 }, {timestamps: true});
 
-let UserLogin = new mongoose.Schema({
-    email: String,
-    password: String,
-}, {timestamps: true});
 
-mongoose.model('User',  UserRigester, UserLogin);
+const user_model = mongoose.model('user',  User);
 
-module.exports = UserRigester, UserLogin;
+module.exports = user_model;
+

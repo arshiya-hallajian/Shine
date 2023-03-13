@@ -4,20 +4,23 @@ let mongoose = require('mongoose');
 let User = new mongoose.Schema({
     firstname: {
         type: String,
-        maxLength: 30
+        maxLength: 30,
+        required: true
     },
     lastname: {
         type: String,
-        maxLength: 30
+        maxLength: 30,
+        required: true
     },
     email: {
         type: String,
         unique:true,
-        require:true,
+        required:true,
     },
     password: {
         type: String,
-        minLength: 6
+        minLength: 6,
+        required: true
     },
 }, {timestamps: true});
 

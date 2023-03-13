@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true}));
 
 //database connect 
-mongoose.connect('mongodb+srv://arshiyah53:46646659@cluster0.p7fvwrc.mongodb.net/user?retryWrites=true&w=majority').then(()=>{
+mongoose.connect('mongodb+srv://arshiyah53:46646659@cluster0.p7fvwrc.mongodb.net/shine?retryWrites=true&w=majority').then(()=>{
     console.log("connected to db")
 })
 

@@ -1,9 +1,13 @@
-const bcrypt = require("bcrypt");
+
 const jwt = require("jsonwebtoken");
-const User = require("../models/user");
+const bcrypt = require("bcrypt");
+const User = require("../models/user")
+
+
 // user login
 module.exports.login = async (req, res) => {
   const email = req.body.email;
+
 
   try {
     const user = await User.findOne({ email: email });
@@ -44,9 +48,38 @@ module.exports.login = async (req, res) => {
   }
 };
 
-module.exports.signup = (req, res) => {
-  res.send("signup");
-};
+
+module.exports.signup = async(req, res) => {
+    // res.send(req.body)
+
+    const hashPassword = await bcrypt.hash(req.body.password, 10)
+
+    const user = new User({
+        firstname : req.body.firstname,
+        lastname : req.body.lastname,
+        email : req.body.email,
+        password: hashPassword,
+    })
+
+    const userCheck = await User.findOne({email : req.body.email}).exec();
+    if(userCheck) res.status(400).json({
+        status: false,
+        error: "user exists"
+    })
+
+    try{
+        const saveUser = await user.save();
+        res.status(200).json({
+            status: true
+        });
+    }catch(e){
+        res.status(403).json({
+            status: false,
+            error: e
+        })
+    }
+}
+
 
 module.exports.logout = (req, res) => {
   res.send("logout");

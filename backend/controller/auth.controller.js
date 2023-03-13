@@ -9,11 +9,13 @@ module.exports.login = (req, res) => {
 
 module.exports.signup = async(req, res) => {
     // res.send(req.body)
+
+    const hashPassword = await bcrypt.hash(req.body.password, 10)
     const user = new User({
         firstname : req.body.firstname,
         lastname : req.body.lastname,
         email : req.body.email,
-        password: req.body.password
+        password: hashPassword
     })
 
     try{

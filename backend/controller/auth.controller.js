@@ -11,17 +11,18 @@ module.exports.signup = async(req, res) => {
     // res.send(req.body)
 
     const hashPassword = await bcrypt.hash(req.body.password, 10)
+
     const user = new User({
         firstname : req.body.firstname,
         lastname : req.body.lastname,
         email : req.body.email,
-        password: hashPassword
+        password: hashPassword,
     })
 
     const userCheck = await User.findOne({email : req.body.email}).exec();
     if(!userCheck) res.status(400).json({
         status: false,
-        error: "user exist"
+        error: "user exists"
     })
 
     try{

@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true}));
 
 //database connect 
-mongoose.connect('mongodb+srv://cluster0.lf726fk.mongodb.net/Shine?authSource=%24external&authMechanism=MONGODB-X509&retryWrites=true&w=majority').then(()=>{
+mongoose.connect('mongodb+srv://shine:102030102030@cluster0.08shdy7.mongodb.net/Shine').then(()=>{
     console.log("connected to db")
 })
 

@@ -20,7 +20,7 @@ module.exports.signup = async(req, res) => {
     })
 
     const userCheck = await User.findOne({email : req.body.email}).exec();
-    if(!userCheck) res.status(400).json({
+    if(userCheck) res.status(400).json({
         status: false,
         error: "user exists"
     })

@@ -3,19 +3,19 @@ const bcrypt = require("bcrypt");
 const User = require("../models/user")
 
 // user login
-
 module.exports.login = async (req, res) => {
     const email = req.body.email;
 
-
-
     try {
+        //find user in database
         const user = await User.findOne({email: email});
+        //if user is not found
         if (!user) {
             return res
                 .status(404)
                 .json({success: false, message: "User not found"});
         }
+
         // check the password and compare the password
         const checkPassword = await bcrypt.compare(
             req.body.password,
@@ -37,6 +37,7 @@ module.exports.login = async (req, res) => {
             "MySecretKey"
         );
 
+        // send response
         res.status(200).json({
             status: true,
             jwt: token,
@@ -48,12 +49,13 @@ module.exports.login = async (req, res) => {
     }
 };
 
-
+//signup router function
 module.exports.signup = async (req, res) => {
-    // res.send(req.body)
 
+    //hashing password
     const hashPassword = await bcrypt.hash(req.body.password, 10)
 
+    //create a new user model
     const user = new User({
         firstname: req.body.firstname,
         lastname: req.body.lastname,
@@ -61,6 +63,7 @@ module.exports.signup = async (req, res) => {
         password: hashPassword,
     })
 
+    //check user in database existence
     const userCheck = await User.findOne({email: req.body.email}).exec();
     if (userCheck) res.status(400).json({
         status: false,
@@ -68,6 +71,7 @@ module.exports.signup = async (req, res) => {
     })
 
     try {
+        //save the user model into database
         const saveUser = await user.save();
         res.status(200).json({
             status: true

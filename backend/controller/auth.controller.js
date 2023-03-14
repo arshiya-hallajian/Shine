@@ -41,7 +41,10 @@ module.exports.login = async (req, res) => {
         // send response
         res.status(200).json({
             status: true,
-            jwt: token,
+            data: {
+                token,
+                user
+            },
             message: "kir to programming",
         });
 
@@ -68,6 +71,7 @@ module.exports.signup = async (req, res) => {
     const userCheck = await User.findOne({email: req.body.email}).exec();
     if (userCheck) res.status(400).json({
         status: false,
+        data: undefined,
         error: "user exists"
     })
 
@@ -76,15 +80,14 @@ module.exports.signup = async (req, res) => {
         const saveUser = await user.save();
         res.status(200).json({
             status: true,
-            data: {
-                saveUser,
-            },
+            data: saveUser,
             error: undefined
         });
     } catch (e) {
         res.status(403).json({
             status: false,
-            error: e
+            data: undefined,
+            error: e,
         })
     }
 }

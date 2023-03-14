@@ -6,7 +6,7 @@ let tokenSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    _customerId: {
+    _userId: {
         type: mongoose.Schema.Types.ObjectId,
         ref: "user"
     },

@@ -1,6 +1,7 @@
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 const User = require("../models/user")
+const Token = require("../models/token")
 
 // user login
 module.exports.login = async (req, res) => {
@@ -74,7 +75,11 @@ module.exports.signup = async (req, res) => {
         //save the user model into database
         const saveUser = await user.save();
         res.status(200).json({
-            status: true
+            status: true,
+            data: {
+                saveUser,
+            },
+            error: undefined
         });
     } catch (e) {
         res.status(403).json({

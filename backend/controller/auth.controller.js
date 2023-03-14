@@ -37,14 +37,14 @@ module.exports.login = async (req, res) => {
             },
             "MySecretKey",
             {
-                expiresIn: "20m"
+                expiresIn: "2h"
             }
         );
 
         //add token to the collection
         await Token.findOneAndUpdate(
             {
-                _customerId: user._id,
+                _userId: user._id,
                 tokenType: "login"
             },
             {
@@ -121,7 +121,7 @@ module.exports.signup = async (req, res) => {
 module.exports.logout = async (req, res) => {
     const removeToken = await Token.findOneAndDelete(
         {
-            _customerId: req.customerId,
+            _userId: req.userId,
             tokenType: "login"
         })
     if(!removeToken){

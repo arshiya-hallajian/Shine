@@ -1,0 +1,37 @@
+*{
+    direction: rtl;
+}
+
+
+.header {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+
+
+}
+
+.header_backgruond {
+    width: 100%;
+    height: 60px;
+    background-color: #47443E;
+}
+
+.navbar {
+    width: 66%;
+    height: 110px;
+    background-color: #393630;
+    margin: auto;
+    -webkit-border-radius: 32px 32px 70px 70px;
+    border-radius: 32px 32px 70px 70px;
+    margin-top: -50px;
+    border: ridge 3.6px #BFA772;
+
+}
+
+.logo{
+    width: 110px;
+    margin: auto;
+    margin-top: -15px;
+}
+

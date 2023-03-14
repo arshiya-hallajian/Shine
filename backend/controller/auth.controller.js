@@ -3,12 +3,13 @@ const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 const User = require("../models/user")
 
-
 // user login
+//get user email
 module.exports.login = async (req, res) => {
   const email = req.body.email;
 
-
+  
+  //if user does't exist
   try {
     const user = await User.findOne({ email: email });
     if (!user) {
@@ -16,7 +17,7 @@ module.exports.login = async (req, res) => {
         .status(404)
         .json({ success: false, message: "User not found" });
     }
-
+    // check the password and compare the password
     const checkPassword = await bcrypt.compare(
       req.body.password,
       user.password
@@ -26,7 +27,7 @@ module.exports.login = async (req, res) => {
         .status(404)
         .json({ success: false, message: "Password wrong" });
     }
-
+    //add jsonwebtoken
     const token = jwt.sign(
       {
         id: user.id,
@@ -42,7 +43,7 @@ module.exports.login = async (req, res) => {
       jwt: token,
       message: "kir to programming",
     });
-    
+
   } catch (err) {
     res.status(404).send("5", err);
   }

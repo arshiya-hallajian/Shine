@@ -22,7 +22,11 @@ let User = new mongoose.Schema({
         minLength: 6,
         required: true
     },
-}, {timestamps: true});
+    date: {
+        type: String,
+        default: Date.now(),
+    }
+}, );
 
 
 const user_model = mongoose.model('user',  User);

@@ -2,17 +2,17 @@ let mongoose = require('mongoose');
 
 //create login and signup schema
 let tokenSchema = new mongoose.Schema({
-    toekn: {
+    token: {
         type: String,
         required: true
     },
     _customerId: {
-        type: Schema.Types.ObjectId,
+        type: mongoose.Schema.Types.ObjectId,
         ref: "user"
     },
     tokenType: {
         type: String,
-        eval: ['login', 'resetpassword']
+        eval: ['login', 'resetPassword']
     },
 }, {timestamps: true});
 

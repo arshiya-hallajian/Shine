@@ -30,13 +30,31 @@ module.exports.login = async (req, res) => {
         //add jsonwebtoken
         const token = jwt.sign(
             {
-                id: user.id,
+                id: user._id,
                 firstname: user.firstname,
                 lastname: user.lastname,
                 email: user.email,
             },
-            "MySecretKey"
+            "MySecretKey",
+            {
+                expiresIn: "20m"
+            }
         );
+
+        //add token to the collection
+        await Token.findOneAndUpdate(
+            {
+                _customerId: user._id,
+                tokenType: "login"
+            },
+            {
+                token
+            },
+            {
+                new: true,
+                upsert: true
+            }
+        )
 
         // send response
         res.status(200).json({
@@ -46,10 +64,16 @@ module.exports.login = async (req, res) => {
                 user
             },
             message: "kir to programming",
+            error: undefined
         });
 
     } catch (err) {
-        res.status(404).send("5", err);
+        res.status(404).json({
+            status: false,
+            data: undefined,
+            message: "error in database connecting",
+            error: err
+        });
     }
 };
 

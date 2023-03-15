@@ -1,4 +1,3 @@
 # Shine
-idk : )
 
-khorshid poshttish bimast
+shine bright like a diamond .. :)

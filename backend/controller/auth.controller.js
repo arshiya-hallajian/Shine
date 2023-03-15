@@ -141,6 +141,6 @@ module.exports.userList = (req, res) => {
     res.send("userList");
 };
 
-module.exports.restPassword = (req, res) => {
+module.exports.resetPassword = (req, res) => {
     res.send("reset password");
 };

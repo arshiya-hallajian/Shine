@@ -2,15 +2,15 @@ const jwt = require('jsonwebtoken');
 const Token = require('../models/token');
 
 module.exports = auth = async (req, res, next) => {
+    //check auth-token header existence
     const token = req.header('auth-token');
     if (!token) return res.status(400).send('access denied');
 
     try {
+        //verify token with secretKey
         const verified = jwt.verify(token, "MySecretKey");
-        if (!verified) {
-            res.status(400).send("invalid token");
-        }
 
+        //find token in database
         const userAuth = await Token.findOne(
             {
                 _userId: verified.id,

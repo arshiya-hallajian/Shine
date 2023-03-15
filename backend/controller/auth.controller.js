@@ -142,5 +142,5 @@ module.exports.userList = (req, res) => {
 };
 
 module.exports.resetPassword = (req, res) => {
-    res.send("reset password");
+    
 };

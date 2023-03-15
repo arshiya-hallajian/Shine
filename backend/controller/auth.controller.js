@@ -140,3 +140,7 @@ module.exports.logout = async (req, res) => {
 module.exports.userlist = (req, res) => {
     res.send("userlist");
 };
+
+module.exports.restPassword = (req, res) => {
+    res.send("reset password");
+};

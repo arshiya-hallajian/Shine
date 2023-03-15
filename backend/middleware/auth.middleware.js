@@ -20,6 +20,10 @@ module.exports = auth = async (req, res, next) => {
         ).exec();
         if (!userAuth) {
             res.status(400).send("database token not found");
+        } else {
+            req.userId = verified.id;
+            req.token = token
+            next();
         }
     }catch(e){
         res.status(400).send("invalid token");

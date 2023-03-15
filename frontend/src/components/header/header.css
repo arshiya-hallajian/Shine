@@ -1,6 +1,14 @@
-*{
-    direction: rtl;
+@font-face {
+    font-family: vazir;
+    src: url("../../../public/Vazir/vazir.ttf");
 }
+
+
+* {
+    direction: rtl;
+    font-family: vazir;
+}
+
 
 
 .header {
@@ -26,12 +34,71 @@
     border-radius: 32px 32px 70px 70px;
     margin-top: -50px;
     border: ridge 3.6px #BFA772;
+    position: relative;
 
 }
 
-.logo{
-    width: 110px;
-    margin: auto;
-    margin-top: -15px;
+.logo {
+    display: block;
+    width: 80px;
+    margin-right: 450px;
+    margin-left: auto;
+    margin-top: -16px;
+
 }
 
+
+.list-right {
+    display: flex;
+    position: absolute;
+
+}
+
+.list-right li {
+    padding: 5px 10px;
+    list-style: none;
+    right: 40px;
+
+}
+
+.list-right li a {
+    text-decoration: none;
+    transition: 500ms;
+    color: #fff;
+    font-size: 15px;
+
+}
+
+.list-right li a:hover {
+    color: #d2cec6;
+}
+
+ul.list-left {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 30px;
+  
+}
+
+.list-left li{
+    padding: 5px 10px;
+    list-style: none;
+    right: 40px;
+    left: 40px;
+}
+
+
+.list-left li a {
+    text-decoration: none;
+    transition: 500ms;
+    color: #fff;
+    font-size: 22px;
+    opacity: 0.7;
+
+}
+
+.list-left li a:hover{
+    color: #c4c1bc;
+    
+
+}

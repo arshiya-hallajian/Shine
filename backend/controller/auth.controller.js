@@ -137,8 +137,8 @@ module.exports.logout = async (req, res) => {
     }
 };
 
-module.exports.userlist = (req, res) => {
-    res.send("userlist");
+module.exports.userList = (req, res) => {
+    res.send("userList");
 };
 
 module.exports.restPassword = (req, res) => {

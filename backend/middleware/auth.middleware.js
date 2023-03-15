@@ -18,14 +18,18 @@ module.exports = auth = async (req, res, next) => {
                 tokenType: 'login'
             }
         ).exec();
+
+        //check if user not exist in token collection
         if (!userAuth) {
             res.status(400).send("database token not found");
         } else {
+            //defining userid and token in request
             req.userId = verified.id;
             req.token = token
             next();
         }
     }catch(e){
+        //catch error for verified
         res.status(400).send("invalid token");
     }
 }

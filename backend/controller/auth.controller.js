@@ -136,8 +136,20 @@ module.exports.logout = async (req, res) => {
   }
 };
 
-module.exports.userList = (req, res) => {
-  res.send("userList");
+module.exports.userList = async (req, res) => {
+    try{
+        const users = await User.findOne({}).exec();
+        res.status(200).json({
+            status: true,
+            data : users
+        })
+    }catch(e) {
+        res.status(400).json({
+            status: false,
+            data : e
+        })
+    }
+    
 };
 
 //forget password controller

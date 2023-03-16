@@ -149,6 +149,12 @@ module.exports.forgetpassword = async(req, res) => {
     const user = await User.findOne({email: req.body.email}).exec();
     if(!user) return res.status(400).send("email not found")
 
+    //find token and create hash
+    const token = await Token.findOneAndDelete({_userId: user._id });
+    const cryptedToken = crypto.randomBytes(32).toString('hex');
+    const hash = await bcrypt.hash(cryptedToken, 10);
+
+
 
 };
 

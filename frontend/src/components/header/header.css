@@ -33,9 +33,63 @@
     transform: translateX(-25%);
 }
 
-.logo{
-    width: 110px;
-    margin: auto;
-    margin-top: -15px;
+
+.logo {
+    display: block;
+    width: 80px;
+    margin-right: 450px;
+    margin-left: auto;
+    margin-top: -16px;
+
+}
+
+
+.list-right {
+    display: flex;
+    position: absolute;
+
+}
+
+.list-right li {
+    padding: 5px 10px;
+    list-style: none;
+    right: 40px;
+
+}
+
+.list-right li a {
+    text-decoration: none;
+    transition: 500ms;
+    color: #fff;
+    font-size: 16px;
+
+}
+
+.list-right li a:hover {
+    color: #d2cec6;
+}
+
+ul.list-left {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 30px;
+  
+}
+
+.list-left li{
+    padding: 5px 10px;
+    list-style: none;
+    right: 40px;
+    left: 40px;
+}
+
+
+.list-left li a {
+    text-decoration: none;
+    transition: 500ms;
+    color: #fff;
+    font-size: 22px;
+    opacity: 0.7;
+
 }
 

@@ -153,6 +153,13 @@ module.exports.forgetpassword = async(req, res) => {
     const token = await Token.findOneAndDelete({_userId: user._id });
     const cryptedToken = crypto.randomBytes(32).toString('hex');
     const hash = await bcrypt.hash(cryptedToken, 10);
+    
+    //create new token model
+    const tokenModel = new Token({
+        token: hash,
+        _userId: user._id,
+        tokenType: 'forgetPassword'
+    })
 
 
 

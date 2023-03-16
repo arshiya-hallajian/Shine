@@ -195,6 +195,14 @@ module.exports.resetPassword = async (req, res) => {
     });
   }
 
+  // compare token with collection Token
+  const validToken = await bcrypt.compare(token, resetPasswordToken.token);
+  if(!validToken){
+    res.status(400).json({
+      status: false,
+      message: "Invalid or Expired Token",
+    });
+  }
 
 
 

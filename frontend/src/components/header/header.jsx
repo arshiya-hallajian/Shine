@@ -1,9 +1,6 @@
 import React from 'react';
 import "./header.css";
-import { BiSearchAlt } from "react-icons/bi";
-import { AiOutlineHeart } from "react-icons/ai";
-import { AiOutlineShoppingCart } from "react-icons/ai";
-import { BiUser } from "react-icons/bi"
+
 
 const Header = () => {
   return (
@@ -15,26 +12,14 @@ const Header = () => {
         </div>
 
         <section className='navbar'>
-          <img className='logo' src="images/header-image3.png" alt="Site Logo" />
+          <img className='logo' src="../images/header-image.png" alt="Site_Logo" />
 
-          
-            <ul className='list-right'>
-              <li><a href="#">صفحه اصلی</a></li>
-              <li><a href="#">محصولات</a></li>
-              <li><a href="#">درباره ما</a></li>
-              <li><a href="#">تماس با ما</a></li>
-            </ul>
-          
-
-
-          <ul className='list-left'>
-            <li><a href="#"><BiUser /></a></li>
-            <li><a href="#"><AiOutlineShoppingCart /></a></li>
-            <li><a href="#"><AiOutlineHeart /></a></li>
-            <li><a href="#"><BiSearchAlt /></a></li>
+          <ul className='list'>
+          <li><a href="#">صفحه اصلی</a></li>
+          <li><a href="#">محصولات</a></li>
+          <li><a href="#">درباره ما</a></li>
 
           </ul>
-
 
         </section>
 

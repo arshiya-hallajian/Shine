@@ -1,13 +1,21 @@
-import React from 'react';
-import Header from './components/Header/header';
 
+import './App.css';
+import {useEffect,useState,}from 'react'
+import { useRoutes } from 'react-router-dom'
+import Header from "./components/header/header"
+import routes from './routes'
 
-const App = () => {
+function App() {
+
+let router =useRoutes(routes)
+
   return (
+   
     <div>
-      <Header />
-    </div>
+      <Header/>
+    {router}
+   </div>
   );
-};
+}
 
 export default App;

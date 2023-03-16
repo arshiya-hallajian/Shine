@@ -2,6 +2,8 @@ const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 const User = require("../models/user")
 const Token = require("../models/token")
+const crypto = require('crypto');
+const sendMail = require('../services/sendemail')
 
 // user login
 module.exports.login = async (req, res) => {
@@ -141,6 +143,13 @@ module.exports.userList = (req, res) => {
     res.send("userList");
 };
 
-module.exports.resetPassword = (req, res) => {
+//forget password controller
+module.exports.forgetpassword = async(req, res) => {
     
+
+};
+
+
+module.exports.changepassword = async(req, res) => {
+
 };

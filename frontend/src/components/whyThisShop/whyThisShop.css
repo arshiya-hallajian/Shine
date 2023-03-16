@@ -1,0 +1,38 @@
+.whyThisShopComponent{
+    padding: 1.5rem 3rem 2rem 3rem;
+    position: relative;
+    text-align: right;
+    background-color: #47443E;
+    color: white;
+    font-family: vazirlight;
+    
+    border-radius: 10px;
+}
+.whyThisShopComponent p:nth-child(1){
+    font-family: vazir;
+margin-right: 1rem;
+}
+.whyThisShopComponent p:nth-child(2){
+font-size: .9rem;
+}
+.whyThisShopComponent a{
+    color: rgba(255, 255, 255, 0.9);;
+    text-align: left;
+    font-size: .9rem;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    position:absolute;
+    left: 20px;
+    bottom: 10px;
+}
+.whyThisShopComponent a:hover{
+    color: white;
+}
+.whyThisShopComponent img{
+    width: 53px;
+    height: 36px;
+    position: absolute;
+    top: 15px;
+    right: 1px;
+}

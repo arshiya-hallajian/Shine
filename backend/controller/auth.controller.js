@@ -162,6 +162,15 @@ module.exports.forgetpassword = async(req, res) => {
     })
     //send token in database
     await tokenModel.save();
+    //send link with email
+    const link = `/forgetpassword?id=${user._id}&token=${hash}`;
+    
+    sendMail(user.email , "password reset", link);
+    res.status(200).json({
+        status: true,
+        message: "email sended"
+    });
+
 
 
 

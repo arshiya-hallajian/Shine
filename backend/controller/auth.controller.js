@@ -159,7 +159,7 @@ module.exports.forgetpassword = async (req, res) => {
   if (!user) return res.status(400).send("email not found");
 
   //find token and create hash
-  const token = await Token.findOneAndDelete({ _userId: user._id });
+  await Token.findOneAndDelete({ _userId: user._id });
   const cryptedToken = crypto.randomBytes(32).toString("hex");
   const hash = await bcrypt.hash(cryptedToken, 10);
 
@@ -181,4 +181,6 @@ module.exports.forgetpassword = async (req, res) => {
   });
 };
 
-module.exports.changepassword = async (req, res) => {};
+module.exports.resetpassword = async (req, res) => {
+
+};

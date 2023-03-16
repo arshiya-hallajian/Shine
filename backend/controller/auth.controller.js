@@ -153,7 +153,7 @@ module.exports.userList = async (req, res) => {
 };
 
 //forget password controller
-module.exports.forgetpassword = async (req, res) => {
+module.exports.forgetPassword = async (req, res) => {
   //find user in database
   const user = await User.findOne({ email: req.body.email }).exec();
   if (!user) return res.status(400).send("email not found");
@@ -172,7 +172,7 @@ module.exports.forgetpassword = async (req, res) => {
   //send token in database
   await tokenModel.save();
   //send link with email
-  const link = `/forgetpassword?id=${user._id}&token=${hash}`;
+  const link = `/forgetPassword?id=${user._id}&token=${hash}`;
 
   sendMail(user.email, "password reset", link);
   res.status(200).json({
@@ -181,6 +181,22 @@ module.exports.forgetpassword = async (req, res) => {
   });
 };
 
-module.exports.resetpassword = async (req, res) => {
+module.exports.resetPassword = async (req, res) => {
+  const token = req.body.token;
+  const userId = req.body.userId;
+  const password = req.body.password;
+
+  //check token in TokenCollection
+  const resetPasswordToken = await Token.findOne({_userId: userId})
+  if(!resetPasswordToken){
+    res.status(400).json({
+      status: false,
+      message: "Invalid or Expired Token",
+    });
+  }
+
+
+
+
 
 };

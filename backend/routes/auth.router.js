@@ -19,7 +19,7 @@ router.get("/", authMiddleware, userList);
 router.post("/forgetPassword", forgetPassword);
 
 //reset password router
-router.post("/resetPassword/:token", resetPassword);
+router.post("/resetPassword/:token/:userId", resetPassword);
 
 
 module.exports = router;

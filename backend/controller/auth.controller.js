@@ -160,6 +160,8 @@ module.exports.forgetpassword = async(req, res) => {
         _userId: user._id,
         tokenType: 'forgetPassword'
     })
+    //send token in database
+    await tokenModel.save();
 
 
 

@@ -145,7 +145,10 @@ module.exports.userList = (req, res) => {
 
 //forget password controller
 module.exports.forgetpassword = async(req, res) => {
-    
+    //find user in database
+    const user = await User.findOne({email: req.body.email}).exec();
+    if(!user) return res.status(400).send("email not found")
+
 
 };
 

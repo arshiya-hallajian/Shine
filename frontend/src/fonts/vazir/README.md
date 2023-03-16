@@ -22,7 +22,7 @@ A Persian (Farsi) Font
 <p dir="rtl"> با تشکر از برنامه  <a href="https://fontforge.github.io">FontForge</a></p>
 <p dir="rtl"> بر مبنای فونت <a href="http://dejavu-fonts.org">DejaVu Sans 2.35</a></p>
 
-
+</p>
 <p lang="fa" dir="rtl" align="right">
 نسخه های بدون حروف لاتین یا تمام ارقام فارسی درون بسته فشرده موجود می‌باشد.
 </p>

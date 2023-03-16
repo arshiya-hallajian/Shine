@@ -12,7 +12,7 @@ let tokenSchema = new mongoose.Schema({
     },
     tokenType: {
         type: String,
-        eval: ['login', 'resetPassword']
+        eval: ['login', 'forgetpassword']
     },
 }, {timestamps: true});
 

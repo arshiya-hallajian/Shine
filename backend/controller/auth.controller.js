@@ -121,6 +121,26 @@ module.exports.signup = async (req, res) => {
 module.exports.logout = async (req, res) => {
     const removeToken = await Token.findOneAndDelete({
         _userId: req.userId,
+        token: req.token,
+        tokenType: "login",
+    });
+    if (!removeToken) {
+        res.status(400).json({
+            status: false,
+            message: "user not found",
+        });
+    } else {
+        res.status(200).json({
+            status: true,
+            message: "user removed successfully",
+        });
+    }
+};
+
+
+module.exports.logoutAll = async (req, res) => {
+    const removeToken = await Token.findOneAndDelete({
+        _userId: req.userId,
         tokenType: "login",
     });
     if (!removeToken) {

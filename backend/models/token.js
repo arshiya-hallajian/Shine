@@ -14,6 +14,10 @@ let tokenSchema = new mongoose.Schema({
         type: String,
         eval: ['login', 'forgetpassword']
     },
+    expireAt: {
+        type : Date,
+        expires: 3600
+    }
 }, {timestamps: true});
 
 

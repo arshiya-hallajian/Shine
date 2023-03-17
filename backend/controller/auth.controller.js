@@ -39,7 +39,7 @@ module.exports.login = async (req, res) => {
             },
             "MySecretKey",
             {
-                expiresIn: "2h",
+                expiresIn: "1h",
             }
         );
 

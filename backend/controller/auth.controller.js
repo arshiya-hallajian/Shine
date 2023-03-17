@@ -230,6 +230,14 @@ module.exports.resetPassword = async (req, res) => {
             message: "database error",
         });
     }
+    //take user data from database
+    const removeToken = await Token.findByIdAndRemove(user._id);
+    if (!removeToken) {
+        return res.status(400).json({
+            status: false,
+            message: "database error",
+        });
+    }
 
     //send email that password changed
     await sendMail(user.email, "notice", "your password has been reset")

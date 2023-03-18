@@ -2,8 +2,11 @@ const express = require('express')
 const app = express()
 const cors = require('cors')
 const port = 4001
-const auth_router = require('./routes/auth.router')
 const mongoose = require('mongoose')
+
+//routes
+const auth_router = require('./routes/auth.router');
+const product_router = require('./routes/product.router');
 
 //middleware 
 app.use(cors());
@@ -15,8 +18,9 @@ mongoose.connect('mongodb+srv://shine:102030102030@cluster0.08shdy7.mongodb.net/
     console.log("connected to db")
 })
 
-//auth router                 
+//use routers
 app.use("/api/auth", auth_router);
+app.use("/api/product", product_router);
 
 
 app.listen(port, () => console.log(`listening on port ${port}!`))

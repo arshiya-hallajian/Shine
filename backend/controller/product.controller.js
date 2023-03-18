@@ -25,7 +25,31 @@ module.exports.getAllProducts = (req, res) => {
 }
 
 module.exports.getOneProduct = (req, res) => {
+    const productId = req.params.id;
+    try{
+        const findProduct = product.findOne({
+            _id: productId
+        }).exec();
+        if(!findProduct){
+            res.status(404).json({
+                status: false,
+                data: undefined,
+                message: "Product not found"
+            })
+        }
+        res.status(200).json({
+            status: true,
+            data: findProduct,
+            message: "Product found"
+        })
 
+    }catch (e) {
+        res.status(400).json({
+            status: false,
+            data: e,
+            message: "error get a product"
+        })
+    }
 }
 
 module.exports.createOneProduct = (req, res) => {

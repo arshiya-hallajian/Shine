@@ -1,5 +1,7 @@
 .Home{
     background-color: #3A3730;
+    position: absolute;
+    top: 50px;
 }
 .home-section-top{
  

@@ -101,5 +101,26 @@ module.exports.updateOneProduct = async (req, res) => {
 }
 
 module.exports.deleteOneProduct = async (req, res) => {
-
+    const productId = req.params.id;
+    try{
+        const deleteProductRequest = await product.findByIdAndDelete(productId);
+        if(!deleteProductRequest){
+            res.status(400).json({
+                status: false,
+                data: undefined,
+                message: "could not delete product"
+            })
+        }
+        res.status(200).json({
+            status: true,
+            data: undefined,
+            message: "product deleted successfully"
+        })
+    }catch (e) {
+        res.status(400).json({
+            status: false,
+            data: e,
+            message: "error deleting product"
+        })
+    }
 }

@@ -1,14 +1,21 @@
-*{
-    direction: rtl;
+@font-face { 
+   font-family: vazir; 
+ src: url("../../fonts/vazir/Vazir-Bold.ttf");  
 }
+
+
+ *{
+    direction: rtl;
+    font-family: vazir;  
+} 
+
 
 
 .header {
     margin: 0;
     box-sizing: border-box;
     padding: 0;
-  z-index: 100;
-  position: relative;
+
 
 }
 
@@ -16,23 +23,25 @@
     width: 100%;
     height: 60px;
     background-color: #47443E;
+    position: relative;
     z-index: 100;
 }
 
 .navbar {
     width: 66%;
     height: 110px;
-    z-index: 100;
     background-color: #393630;
     margin: auto;
+    top: 70px;
     -webkit-border-radius: 32px 32px 70px 70px;
     border-radius: 32px 32px 70px 70px;
     margin-top: -50px;
     border: ridge 3.6px #BFA772;
+  
     position: absolute !important;
+    z-index: 100;
     transform: translateX(-25%);
 }
-
 
 .logo {
     display: block;
@@ -93,3 +102,8 @@ ul.list-left {
 
 }
 
+.list-left li a:hover{
+    color: #c4c1bc;
+    
+
+}

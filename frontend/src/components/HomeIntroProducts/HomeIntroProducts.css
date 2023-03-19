@@ -1,0 +1,40 @@
+.HomeIntroProducts{
+    background-image: url(https://dev-wp.ir/goldpluss/wp-content/uploads/2022/03/Union-2-min.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 30px 44px 50px 44px;
+    text-align: center;
+    color: white;
+    font-family: vazirlight !important;
+}
+.HomeIntroProducts img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+}
+.HomeIntroProducts .vazir {
+    font-size: 1.6rem;
+    margin-bottom: 1px;
+}
+.HomeIntroProducts p:nth-child(3){
+    color: gray;
+    font-size: 1.1rem;
+}
+@media (max-width:1024px) {
+    .HomeIntroProducts{
+        padding: 30px 77px 50px 77px;
+    }
+}
+@media (max-width:400px) {
+   .HomeIntroProducts{
+    padding: 30px 30px 50px 30px;
+   } 
+}
+
+@media (max-width:350px) {
+    .HomeIntroProducts {
+        padding: 2px 26px 91px 32px !important;
+    }
+}

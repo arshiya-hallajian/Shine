@@ -2,6 +2,7 @@
 import React from 'react'
 import './Home.css'
 import WhyThisShop from '../../components/whyThisShop/WhyThisShop'
+import HomeIntroProducts from '../../components/HomeIntroProducts/HomeIntroProducts'
 export default function Home() {
   return (
     <div className='Home'>
@@ -35,6 +36,16 @@ export default function Home() {
           <WhyThisShop/>
         </section>
       </div>
+
+    <main>
+   
+
+        <HomeIntroProducts PersianName={'گوشواره'} EnglishName={'Earrings'} Img={'https://dev-wp.ir/goldpluss/wp-content/uploads/2022/03/Group-158.png'} Intro={'برای تغییر این متن بر روی دکمه ویرایش کلیک کنید. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.'} />
+        <HomeIntroProducts PersianName={'ساعت'}    EnglishName={'Watch'} Img={'https://dev-wp.ir/goldpluss/wp-content/uploads/2022/03/Group-157.png'} Intro={'برای تغییر این متن بر روی دکمه ویرایش کلیک کنید. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.'}/>
+        <HomeIntroProducts PersianName={'گردنبند'} EnglishName={'Necklaces'} Img={'https://dev-wp.ir/goldpluss/wp-content/uploads/2022/03/1.png'} Intro={'برای تغییر این متن بر روی دکمه ویرایش کلیک کنید. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.'}/>
+        <HomeIntroProducts PersianName={'گوشواره'} EnglishName={'Ring'} Img={'https://dev-wp.ir/goldpluss/wp-content/uploads/2022/03/Group-159.png'} Intro={'برای تغییر این متن بر روی دکمه ویرایش کلیک کنید. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.'}/>
+  
+    </main>
     </div>
   )
 }

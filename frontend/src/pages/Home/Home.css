@@ -172,3 +172,32 @@
         padding:0rem 1rem;
     } 
 }
+
+/* Intro products */
+.Home main {
+    display: flex;
+    justify-content: space-around;  
+      background-color: #3A3730;
+    background-image: url(https://dev-wp.ir/goldpluss/wp-content/uploads/2022/03/Mask-Group-9-4-1-min.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    direction: rtl;
+    padding: 6rem 6em 0rem 6rem;
+}
+@media (max-width:1024px) {
+    .Home main {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+@media (max-width:768px) {
+    .Home main{
+        padding: 5rem 2rem ;
+    }
+}
+@media (max-width:500px) {
+    .Home main {
+        grid-template-columns: auto;
+        padding: 2rem 1rem !important;
+    }
+}

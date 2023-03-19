@@ -2,6 +2,7 @@ const product = require('../models/product');
 
 module.exports.getAllProducts = (req, res) => {
     try {
+        //get all product data
         const allProducts = product.findOne({});
         if (!allProducts){
             res.status(400).json({
@@ -10,6 +11,7 @@ module.exports.getAllProducts = (req, res) => {
                 message : 'Product not found'
             })
         }
+        //ok response
         res.status(200).json({
             status: true,
             data: allProducts,
@@ -27,6 +29,7 @@ module.exports.getAllProducts = (req, res) => {
 module.exports.getOneProduct = (req, res) => {
     const productId = req.params.id;
     try{
+        // find product with id
         const findProduct = product.findOne({
             _id: productId
         }).exec();
@@ -37,6 +40,7 @@ module.exports.getOneProduct = (req, res) => {
                 message: "Product not found"
             })
         }
+        //ok response
         res.status(200).json({
             status: true,
             data: findProduct,
@@ -57,8 +61,10 @@ module.exports.createOneProduct = (req, res) => {
 }
 module.exports.updateOneProduct = async (req, res) => {
     const productId = req.params.id;
+    //separate keys
     const updates = Object.key(req.body);
     const allowedUpdate = ['name', 'description', 'category', 'weight', 'picture', 'price']
+    //check if keys exists in allowed update
     const validation = updates.every((query)=>{
         allowedUpdate.includes(query)
     })
@@ -71,7 +77,8 @@ module.exports.updateOneProduct = async (req, res) => {
     }
 
     try {
-        const products = await product.findOne({
+
+        const products = await product.findOne({      //find product by id
             _id: productId
         });
         if (!products){
@@ -82,10 +89,10 @@ module.exports.updateOneProduct = async (req, res) => {
             })
         }
 
-        updates.forEach((key)=>{
+        updates.forEach((key)=>{             //update every key in mongoose
             products[key] = updates[key];
         })
-        await updates.save();
+        await updates.save();           // save in mongoose
         res.status(400).json({
             status:true,
             data: updates,
@@ -103,7 +110,7 @@ module.exports.updateOneProduct = async (req, res) => {
 module.exports.deleteOneProduct = async (req, res) => {
     const productId = req.params.id;
     try{
-        const deleteProductRequest = await product.findByIdAndDelete(productId);
+        const deleteProductRequest = await product.findByIdAndDelete(productId); // find and delete product by id
         if(!deleteProductRequest){
             res.status(400).json({
                 status: false,
@@ -111,7 +118,7 @@ module.exports.deleteOneProduct = async (req, res) => {
                 message: "could not delete product"
             })
         }
-        res.status(200).json({
+        res.status(200).json({   //ok status
             status: true,
             data: undefined,
             message: "product deleted successfully"

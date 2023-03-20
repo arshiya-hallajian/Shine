@@ -44,10 +44,10 @@
 }
 
 .logo {
-    display: block;
+    display: inline-block;
     width: 80px;
-    margin-right: 450px;
-    margin-left: auto;
+    margin-right: 45%;
+    /* margin-left: auto; */
     margin-top: -16px;
 
 }
@@ -78,6 +78,15 @@
     color: #d2cec6;
 }
 
+.hamber-menu{
+    font-size: 28px;
+    /* color: #fff; */
+    border: none;
+    background-color: transparent;
+    list-style: none;
+}
+
+
 ul.list-left {
     display: flex;
     margin-top: 10px;
@@ -106,4 +115,47 @@ ul.list-left {
     color: #c4c1bc;
     
 
+}
+
+.list-left span{
+    color: #fff;
+    font-size: 16px;
+    margin-top: 9px;
+    opacity: 0.3;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1300px) {
+    .list-right{
+        margin-top: 6px;
+    }
+    .list-right li {
+        padding: 10px 6.5px;
+        right: 35px;
+    
+    }
+
+
+    .list-right li a {
+        font-weight: bold;
+        font-size: 15.7px;
+    }
+    
+
+    .list-right {
+margin-right: -10px;
+    }
+
+}
+
+
+@media screen and (max-width: 1150px){
+    .list-right li a {
+        font-weight: bold;
+        font-size: 14.8px;
+    }
 }

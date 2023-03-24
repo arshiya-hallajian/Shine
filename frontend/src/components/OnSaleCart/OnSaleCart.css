@@ -1,0 +1,47 @@
+.On-Sale-Cart{
+    background-color: #47443E;
+    padding: 1.2rem 1.5rem 1rem 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 0 4px rgba(0,0,0,.12);
+    font-size: .8rem;
+    position: relative;
+    width: 250px;
+    color: white;
+}
+.On-Sale-Cart hr{
+border-color: white;
+}
+.On-Sale-Cart img{
+    width: 204px;
+    height: 233px;
+    border-radius: 10px;
+}
+.timer{
+    display: flex;
+    justify-content: space-around;
+    direction: ltr;
+}
+.timer span{
+    font-size: .8rem !important;
+}
+.timer p{
+    display: flex;
+    flex-direction: column;
+    font-size: .5rem;
+    justify-content: center;
+    text-align: center;
+}
+.On-Sale-Cart-title{
+    margin-top: 2rem;
+    font-size: .9rem;
+}
+.On-Sale-Cart-badge{
+    background-color: rgb(58,55,48);
+    color: white;
+    position: absolute;
+    padding:.1rem .8rem;
+    border-radius: 10px;
+    top: 10px;
+    right:10px;
+}
+

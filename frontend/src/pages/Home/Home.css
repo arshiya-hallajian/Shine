@@ -201,3 +201,53 @@
         padding: 2rem 1rem !important;
     }
 }
+/* on-sale */
+.on-sale{
+    background-image: url(https://dev-wp.ir/goldpluss/wp-content/uploads/2022/03/Group-165-min.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    direction: rtl;
+    margin: 5rem;
+    display: flex;
+    padding: 50px 46px 80px 78px;
+    align-items: center;
+}
+
+.on-sale-title{
+    font-family: vazir;
+    font-size: 1.4rem;
+}
+.on-sale section{
+    padding: 1rem;
+    color: white;
+    width: 40%;
+}
+
+
+
+.swiper {
+    width: 930px;
+    height: 100%;
+   position: relative;
+   right: 30px;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  

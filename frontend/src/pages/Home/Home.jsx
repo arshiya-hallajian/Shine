@@ -5,6 +5,7 @@ import HomeIntroProducts from '../../components/HomeIntroProducts/HomeIntroProdu
 import OnSaleCart from '../../components/OnSaleCart/OnSaleCart'
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
 import "swiper/css/navigation";
@@ -63,6 +64,9 @@ export default function Home() {
     <Swiper 
        slidesPerView={1}
        spaceBetween={10}
+       pagination={{
+        clickable: true,
+      }}
          breakpoints={{
           320: {
             slidesPerView: 2,
@@ -71,10 +75,10 @@ export default function Home() {
          
           1024: {
             slidesPerView: 3,
-            spaceBetween: 10,
+            spaceBetween: 20,
           },
         }}
-    navigation={true} modules={[Navigation]} className="mySwiper">
+      modules={[Pagination]} className="mySwiper">
         <SwiperSlide>
            <OnSaleCart/>
      </SwiperSlide>
@@ -96,7 +100,7 @@ export default function Home() {
  
     </div>
 
-
+    
     </div>
   )
 }

@@ -1,5 +1,9 @@
 import React from 'react'
 import './OnSaleCart.css'
+import {AiOutlineHeart} from'react-icons/ai'
+import {TfiShoppingCart} from'react-icons/tfi'
+import {GoSearch}from 'react-icons/go'
+import {MdCompareArrows}from 'react-icons/md'
 export default function OnSaleCart() {
   return (
     <div className='On-Sale-Cart'>
@@ -16,6 +20,23 @@ export default function OnSaleCart() {
             <p> <span>01</span> ساعت</p>
             <p> <span>42</span> دقیقه</p>
             <p> <span>31</span> ثانیه</p>
+        </div>
+        <div className="On-Sale-Cart-icons">
+          <div class="On-Sale-Cart-icon"  target="_blank" draggable="false" data-tooltip='افزودن به سبد خرید'> 
+                    <TfiShoppingCart />
+          </div>
+
+            <div class="On-Sale-Cart-icon"  target="_blank" draggable="false" data-tooltip='مشاهده سریع'>
+     <GoSearch/>
+            </div>
+     
+          <div class="On-Sale-Cart-icon"  target="_blank" draggable="false" data-tooltip="مقایسه">
+          <MdCompareArrows/>
+          </div>
+<div class="On-Sale-Cart-icon"  target="_blank" draggable="false" data-tooltip="افزودن به علاقه مندی ها">
+    <AiOutlineHeart />
+</div>
+        
         </div>
         <span className='On-Sale-Cart-badge'>حراج</span>
     </div>

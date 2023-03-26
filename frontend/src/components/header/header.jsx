@@ -4,7 +4,7 @@ import { BiSearchAlt } from "react-icons/bi";
 import { AiOutlineHeart } from "react-icons/ai";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { BiUser } from "react-icons/bi";
-import {GiHamburgerMenu} from "react-icons/gi"
+
 
 const Header = () => {
   return (

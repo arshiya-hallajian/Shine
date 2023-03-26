@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import './Home.css'
 import WhyThisShop from '../../components/whyThisShop/WhyThisShop'
 import HomeIntroProducts from '../../components/HomeIntroProducts/HomeIntroProducts'
+
 import OnSaleCart from '../../components/OnSaleCart/OnSaleCart'
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -10,6 +11,7 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper";
 import "swiper/css/navigation";
 import { Navigation } from "swiper";
+
 export default function Home() {
   return (
     <div className='Home'>
@@ -96,11 +98,7 @@ export default function Home() {
      </SwiperSlide>
       
       </Swiper>
-     
- 
     </div>
-
-    
     </div>
   )
 }

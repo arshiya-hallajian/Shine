@@ -196,21 +196,21 @@
 }
 
 @media (max-width:500px) {
-    .why-this-shop section {
-        display: grid !important;
-        grid-template-columns: auto !important;
-    }
 
-    .why-this-shop {
-        padding: 0rem 1rem;
-    }
+    .why-this-shop section{
+     display: grid !important;
+     grid-template-columns: auto !important;
+    } .why-this-shop{
+        padding:0rem 1rem;
+    } 
+
 }
 
 /* Intro products */
 .Home main {
     display: flex;
-    justify-content: space-around;
-    background-color: #3A3730;
+    justify-content: space-around;  
+      background-color: #3A3730;
     background-image: url(https://dev-wp.ir/goldpluss/wp-content/uploads/2022/03/Mask-Group-9-4-1-min.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -226,8 +226,8 @@
 }
 
 @media (max-width:768px) {
-    .Home main {
-        padding: 5rem 2rem;
+    .Home main{
+        padding: 5rem 2rem ;
     }
 }
 
@@ -237,6 +237,7 @@
         padding: 2rem 1rem !important;
     }
 }
+
 
 /* on-sale */
 .on-sale {
@@ -314,8 +315,4 @@
 .swiper-pagination-bullet{
     cursor: pointer;
 }
-
-
-
-
 

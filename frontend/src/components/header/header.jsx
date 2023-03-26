@@ -4,7 +4,7 @@ import { BiSearchAlt } from "react-icons/bi";
 import { AiOutlineHeart } from "react-icons/ai";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { BiUser } from "react-icons/bi";
-// import {GiHamburgerMenu} from "react-icons/gi" 
+import {GiHamburgerMenu} from "react-icons/gi"
 
 const Header = () => {
   return (
@@ -18,7 +18,9 @@ const Header = () => {
         <section className='navbar'>
 
 
-          
+        <button className='hambur-menu'>
+        <img src="images/hambur-menu.png" alt="" />
+        </button>
 
           <ul className='list-right'>
             <li><a href="#">صفحه اصلی</a></li>
@@ -33,6 +35,7 @@ const Header = () => {
 
 
           <ul className='list-left'>
+
             <li><a href="#"><BiUser /></a></li><span>|</span>
             <li><a href="#"><AiOutlineShoppingCart /></a></li><span>|</span>
             <li><a href="#"><AiOutlineHeart /></a></li><span>|</span>
@@ -50,3 +53,9 @@ const Header = () => {
 }
 
 export default Header;
+
+
+
+
+
+

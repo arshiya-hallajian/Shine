@@ -1,23 +1,25 @@
-.Home{
+.Home {
     background-color: #3A3730;
-    position: absolute;
-    top: 50px;
+
 }
-.home-section-top{
- 
+
+.home-section-top {
+    bottom: 50px;
     position: relative;
     height: 800px;
 }
-.home-section-top video{
+
+.home-section-top video {
     width: 100%;
     object-fit: cover;
-   z-index: 0;
+    z-index: 0;
     position: relative;
     height: 868px;
-    
+
     bottom: 108px;
 }
-.home-title h4{
+
+.home-title h4 {
     color: #FFFFFF36;
     font-family: cursive;
 
@@ -25,14 +27,16 @@
     line-height: 100px;
     margin: 1rem 14rem 1rem 15rem;
 }
-.home-title p{
+
+.home-title p {
     color: #F0CC80;
-  
+
     font-size: 34px;
     font-weight: 700;
     text-transform: capitalize;
     line-height: 78px;
 }
+
 .home-title {
     position: absolute;
     top: 110px;
@@ -40,14 +44,17 @@
     text-align: center;
     padding: 0rem 1rem;
 }
-.ring{
+
+.ring {
     position: absolute;
     width: 100%;
     bottom: 15px;
 }
-.ring img{
+
+.ring img {
     width: 100%;
 }
+
 .loader {
     width: 35px;
     height: 55px;
@@ -55,74 +62,92 @@
     border: 2px solid #fff;
     position: relative;
     border-radius: 50% 50% 50% 50% / 25% 25% 25% 25%;
-  }
-  
-  .loader::before {
+}
+
+.loader::before {
     content: '';
     position: absolute;
     left: 50%;
     top: 0;
-    transform: translate(-50% , 50%);
+    transform: translate(-50%, 50%);
     width: 10px;
     height: 10px;
     background: #FFF;
     border-radius: 50%;
     animation: fadeDown 2s ease-out infinite;
-  }
-  
-  @keyframes fadeDown {
+}
+
+@keyframes fadeDown {
     0% {
-      top: 0%;
-      opacity: 1;
+        top: 0%;
+        opacity: 1;
     }
+
     100% {
-      top: 60%;
-      opacity: 0;
+        top: 60%;
+        opacity: 0;
     }
-  }
-.scrollButton{
+}
+
+.scrollButton {
     position: absolute;
     width: 100%;
-    bottom:64px;
+    bottom: 64px;
     justify-content: center;
     display: flex;
 }
+
 @media (max-width:1024px) {
     .home-title h4 {
-      
+
         font-size: 76px !important;
-        
-        margin: 1rem 0rem 1rem 1rem ;
-    }.scrollButton{
+
+        margin: 1rem 0rem 1rem 1rem;
+    }
+
+    .scrollButton {
         bottom: 73px;
     }
 }
+
 @media (max-width:500px) {
-    .home-title h4{
+    .home-title h4 {
         font-size: 1.5rem !important;
-      
-        margin: 1rem 0rem 0px 0rem!important;
+
+        margin: 1rem 0rem 0px 0rem !important;
         line-height: normal !important;
-    }.home-title p {
+    }
+
+    .home-title p {
         font-size: 1.3rem !important;
         margin-bottom: 0px !important;
         margin-top: .3rem;
         line-height: normal !important;
-    }.home-section-top video{
+    }
+
+    .home-section-top video {
         height: 320px;
-    }.home-title {
+    }
+
+    .home-title {
         position: absolute;
         top: 32px;
         width: 100%;
         text-align: center;
-       
-    }.home-section-top{
+
+    }
+
+    .home-section-top {
         height: 100%;
-    }.ring {
+    }
+
+    .ring {
         position: absolute;
         width: 100%;
         bottom: 105px;
-    }.home-title{
+    }
+
+    .home-title {
         padding: 0rem !important;
     }
 }
@@ -131,46 +156,54 @@
 
 
 /* why-this-shop  */
-.why-this-shop img{
+.why-this-shop img {
     width: 210px;
     height: 36px;
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
-.why-this-shop-title{
+
+.why-this-shop-title {
     color: white;
     font-size: 1.6rem;
     font-family: vazir;
     text-align: center;
 }
-.why-this-shop section{
+
+.why-this-shop section {
     display: flex;
     justify-content: space-evenly;
     gap: 50px;
     margin-top: 2rem;
 }
-.why-this-shop{
-    padding:0rem 9rem;
+
+.why-this-shop {
+    padding: 0rem 9rem;
 }
+
 @media (max-width:1024px) {
-    .why-this-shop{
-        padding:0rem 2.5rem;
-    } 
+    .why-this-shop {
+        padding: 0rem 2.5rem;
+    }
 }
+
 @media (max-width:768px) {
-    .why-this-shop section{
-     display: grid !important;
-     grid-template-columns: auto auto;
-    } 
+    .why-this-shop section {
+        display: grid !important;
+        grid-template-columns: auto auto;
+    }
 }
+
 @media (max-width:500px) {
+
     .why-this-shop section{
      display: grid !important;
      grid-template-columns: auto !important;
     } .why-this-shop{
         padding:0rem 1rem;
     } 
+
 }
 
 /* Intro products */
@@ -184,20 +217,102 @@
     direction: rtl;
     padding: 6rem 6em 0rem 6rem;
 }
+
 @media (max-width:1024px) {
     .Home main {
         display: grid;
         grid-template-columns: auto auto;
     }
 }
+
 @media (max-width:768px) {
     .Home main{
         padding: 5rem 2rem ;
     }
 }
+
 @media (max-width:500px) {
     .Home main {
         grid-template-columns: auto;
         padding: 2rem 1rem !important;
     }
 }
+
+
+/* on-sale */
+.on-sale {
+    background-image: url(https://dev-wp.ir/goldpluss/wp-content/uploads/2022/03/Group-165-min.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    direction: rtl;
+    margin: 5rem;
+    display: flex;
+    padding: 50px 46px 80px 78px;
+    align-items: center;
+}
+
+.on-sale-title {
+    font-family: vazir;
+    font-size: 1.4rem;
+}
+
+.on-sale section {
+    padding: 1rem;
+    color: white;
+    width: 60%;
+}
+
+
+
+.swiper {
+    position: relative;
+    height: 100%;
+    right: 20px;
+    padding-bottom: 42px !important;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+    color: white;
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+    font-size: 39px;
+}
+
+.swiper-button-prev {
+    right: -40px !important;
+}
+
+.swiper-button-next {
+    right: 40px !important;
+}
+.swiper-pagination-bullet-active {
+    background: white !important;
+    width: 20px !important;
+    border-radius: 5px !important;
+}
+.swiper-pagination-bullet{
+    cursor: pointer;
+}
+

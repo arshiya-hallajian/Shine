@@ -1,0 +1,111 @@
+.On-Sale-Cart{
+    background-color: #47443E;
+    padding: 1.2rem 1.5rem 1rem 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 0 4px rgba(0,0,0,.12);
+    font-size: .8rem;
+    position: relative;
+    width: 250px;
+    color: white;
+    cursor: pointer;
+    text-align: right;
+}
+.On-Sale-Cart hr{
+border-color: white;
+}
+.On-Sale-Cart img{
+    width: 204px;
+    height: 233px;
+    border-radius: 10px;
+}
+.timer{
+    display: flex;
+    justify-content: space-around;
+    direction: ltr;
+}
+.timer span{
+    font-size: .8rem !important;
+}
+.timer p{
+    display: flex;
+    flex-direction: column;
+    font-size: .5rem;
+    justify-content: center;
+    text-align: center;
+}
+.On-Sale-Cart-title{
+    margin-top: 2rem;
+    font-size: .9rem;
+}
+.On-Sale-Cart-badge{
+    background-color: rgb(58,55,48);
+    color: white;
+    position: absolute;
+    padding:.1rem .8rem;
+    border-radius: 10px;
+    top: 10px;
+    right:10px;
+}
+
+
+.On-Sale-Cart-icons{
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: black;
+    position: absolute;
+    left: 10px;
+    top:5px;
+    z-index: 2;
+  padding: .5rem;
+    background: rgba(255,255,255,0.65);
+    box-shadow: 1px 1px 1px rgb(0 0 0 / 10%);
+    transition: all .3s ease;
+    border-radius: 15px;
+font-size: 1.4rem;
+transform: translateX(-20px) translateZ(0);
+
+}
+.On-Sale-Cart:hover .On-Sale-Cart-icons{
+    opacity: 1;
+    transform: translateX(0px) translateZ(0);
+}
+
+
+.On-Sale-Cart-icon {
+    cursor:pointer;
+     position: relative;
+      color:black;
+  font-size: 1.5rem;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+    .On-Sale-Cart-icon:hover{
+      color:black !important;
+    }
+    .On-Sale-Cart-icon:after {
+      text-transform: none;
+      content: attr(data-tooltip);
+      font-size: 14px;
+      right: -149px;
+      top: 2px;
+      position: absolute;
+     width: 130px !important;
+      color: #FFF;
+      text-align: center;
+      background-color: #555;
+      padding: 8px 12px;
+      width: max-content;
+      max-width: 200px;
+      opacity: 0;
+      pointer-events: none;
+  font-family:vazirlight;
+      border-radius: 20px;
+   font-size: .8rem !important;
+  }
+  
+    .On-Sale-Cart-icon:hover:before, .On-Sale-Cart-icon:hover:after {
+      opacity: 1;
+    }

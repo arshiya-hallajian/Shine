@@ -1,13 +1,15 @@
 
 #container{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #111010;
-    background-image: url('../../public/images/p404.png');
+    background: #413b03;
+    background-image: url('../../../public/images/p404.png');
+
 }
+
 
 
 #container .content{
@@ -18,24 +20,26 @@
 
 #container .content h2{
     font-size: 370px;
-    color: #f0e9e9;
-    text-shadow: 3px 4px 6px #5c5c5c;
+    color: #eae0e0;
+    text-shadow: 14px 7px 7px #101000;
     cursor: default;
+    padding-bottom: 20px;
 }
 
 #container .content h4{
     font-size: 50px;
     color: #fff;
-    margin-top: -130px;
+    margin-top: -100px;
     position: relative;
-    padding: 25px 0;
     cursor: default;
+    padding-bottom: 10px;
+    border-bottom: #171616 2px solid;
 }
 
 #container .content p{
     font-size: 20px;
-    color: #fff;
-    margin: 25px 0;
+    color: #afafaf;
+    margin: 20px 0;
     cursor: default;
 }
 

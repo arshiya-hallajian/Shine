@@ -18,7 +18,8 @@ const PageNotFound = () => {
             <div id="container">
                 <div className="content">
                     <h2>404</h2>
-                    <h4>Oops .! Page not found</h4>
+            
+                    <h4>! Oops .. Page not found</h4>
                     <p>صفحه مورد نظر شما پیدا نشد لطفا بعدا دوباره تلاش کنید ..!</p>
                     <a href="#">برگشت به خانه</a>
                 </div>

@@ -3,10 +3,10 @@ import "./404.css";
 
 const PageNotFound = () => {
 
+    window.onmousemove = function(ev){
     let Container = document.getElementById("container");
-    window.onmousemove = (e) => {
-        let x = e.clientX / 5;
-        let y = e.clientY / 5;
+        let x = ev.clientX / 4;
+        let y = ev.clientY / 4;
         Container.style.backgroundPositionX = x + "px";
         Container.style.backgroundPositionY = y + "px";
 

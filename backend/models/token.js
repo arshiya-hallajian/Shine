@@ -16,9 +16,9 @@ let tokenSchema = new mongoose.Schema({
     },
     expireAt: {
         type : Date,
-        expires: 3600
+        expires: 60
     }
-}, {timestamps: true});
+});
 
 
 const token_model = mongoose.model('tokens',  tokenSchema);

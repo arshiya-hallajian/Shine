@@ -1,6 +1,6 @@
 
 import './App.css';
-import {useEffect,useState,}from 'react';
+import { useEffect, useState, } from 'react';
 import { useRoutes } from 'react-router-dom';
 import Header from "./components/header/header";
 import routes from './routes';
@@ -8,19 +8,21 @@ import routes from './routes';
 
 function App() {
 
-let router =useRoutes(routes)
+  let router = useRoutes(routes)
 
   return (
-   
+
     <div>
+      <Header /><br /><br /><br />
       {router}
 
-   </div>
+    </div>
   );
 }
 
 export default App;
 
 
-{/* <Header/><br /><br /><br />
-{router} */}
+
+
+

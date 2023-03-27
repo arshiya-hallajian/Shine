@@ -1,12 +1,13 @@
 import React from 'react';
 import "./404.css";
 import { Link } from 'react-router-dom';
+
 const PageNotFound = () => {
 
     window.onmousemove = function(ev){
     let Container = document.getElementById("container");
-        let x = ev.clientX / 4;
-        let y = ev.clientY / 4;
+        let x = ev.clientX / 5;
+        let y = ev.clientY / 5;
         Container.style.backgroundPositionX = x + "px";
         Container.style.backgroundPositionY = y + "px";
 

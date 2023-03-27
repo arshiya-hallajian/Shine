@@ -5,9 +5,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #161418;
+    background: #111010;
     background-image: url('../../public/images/p404.png');
-   
 }
 
 
@@ -20,7 +19,8 @@
 #container .content h2{
     font-size: 370px;
     color: #f0e9e9;
-    text-shadow: 3px 4px 6px rgb(35, 32, 32);
+    text-shadow: 3px 4px 6px #5c5c5c;
+    cursor: default;
 }
 
 #container .content h4{
@@ -29,28 +29,34 @@
     margin-top: -130px;
     position: relative;
     padding: 25px 0;
+    cursor: default;
 }
 
 #container .content p{
     font-size: 20px;
     color: #fff;
     margin: 25px 0;
+    cursor: default;
 }
 
 #container .content a{
     text-decoration: none;
     color: #fff;
-    background-color: #8500ff;
-    transition: 0.5s;
-    padding: 10px 20px;
-    border-radius: 25px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    -ms-border-radius: 25px;
-    -o-border-radius: 25px;
+    transition: 0.4s;
+    background: rgba( 247, 237, 237, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    padding: 10px 15px;
 }
-
 
 #container .content a:hover{
-    background-color: #6300bf;
+    background: rgba( 247, 237, 237, 0.4 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8.5px );
+    -webkit-backdrop-filter: blur( 8.5px );
+    border-radius: 10px;
 }
+
+

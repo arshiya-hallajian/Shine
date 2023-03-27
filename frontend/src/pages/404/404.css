@@ -10,8 +10,6 @@
 
 }
 
-
-
 #container .content{
     width: 600px;
     margin: 0 auto;
@@ -48,7 +46,7 @@
     color: #fff;
     transition: 0.4s;
     background: rgba( 247, 237, 237, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    box-shadow: 0 0px 6px 0 #000;
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;

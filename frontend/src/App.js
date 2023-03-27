@@ -6,7 +6,6 @@ import Header from "./components/header/header";
 import routes from './routes';
 
 
-
 function App() {
 
   let router = useRoutes(routes)

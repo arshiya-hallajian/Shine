@@ -1,5 +1,6 @@
 import React from 'react';
 import "./404.css";
+import { Link } from 'react-router-dom';
 
 const PageNotFound = () => {
 
@@ -18,10 +19,9 @@ const PageNotFound = () => {
             <div id="container">
                 <div className="content">
                     <h2>404</h2>
-            
-                    <h4>! Oops .. Page not found</h4>
+                    <h4>Oops .! Page not found</h4>
                     <p>صفحه مورد نظر شما پیدا نشد لطفا بعدا دوباره تلاش کنید ..!</p>
-                    <a href="#">برگشت به خانه</a>
+                    <Link to="/">برگشت به خانه</Link>
                 </div>
             </div>
 

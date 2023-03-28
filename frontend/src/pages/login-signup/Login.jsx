@@ -20,7 +20,7 @@ const Login = () => {
 					<input id="pass" type="password" class="input" data-type="password"/>
 				</div>
 				<div class="group">
-					<input id="check" type="checkbox" class="check" checked/>
+					<input id="check" type="checkbox" class="check" />
 					<label for="check"><span class="icon"></span> Keep me Signed in</label>
 				</div>
 				<div class="group">
@@ -28,7 +28,7 @@ const Login = () => {
 				</div>
 				<div class="hr"></div>
 				<div class="foot-lnk">
-					<a href="#forgot">Forgot Password?</a>
+					<a href="#forgot">? Forgot Password</a>
 				</div>
 			</div>
 			<div class="sign-up-htm">

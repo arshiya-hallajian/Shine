@@ -1,8 +1,9 @@
 
 .body{
 	margin:0;
-	color:#000000;
-	background:#191919;
+	color:#b3b3b3;
+    background: rgb(19,18,18);
+    background: linear-gradient(180deg, rgba(19,18,18,1) 10%, rgba(113,101,24,1) 59%, rgba(162,118,31,1) 100%);
     width: 100vw;
     height: 100vh;
 	font:600 16px/18px 'Open Sans',sans-serif;
@@ -22,9 +23,9 @@ input{
 	max-width:525px;
 	min-height:670px;
 	position:relative;
-	background:url("../../../public/images/login3.jpg")  center;
+	background:url("../../../public/images/login3.jpg")  center ;
 	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
-    /* margin-top: 40px; */
+ 
     border-radius: 15px;
 
 }
@@ -33,7 +34,7 @@ input{
 	height:100%;
 	position:absolute;
 	padding:90px 70px 50px 70px;
-	background:#5d510be6;
+	background:#423300e6;
 
 }
 .login-html .sign-in-htm,
@@ -166,4 +167,10 @@ input{
 
 .foot-lnk a{
     text-decoration: none;
+    transition: 0.3s;
+    color: #fff;
+}
+
+.foot-lnk a:hover{
+    color: #d6cccc;
 }

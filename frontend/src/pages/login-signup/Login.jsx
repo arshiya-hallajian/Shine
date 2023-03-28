@@ -5,55 +5,55 @@ const Login = () => {
 
   return (
 <div className="body">
-<div class="login-wrap">
-	<div class="login-html">
-		<input id="tab-1" type="radio" name="tab" class="sign-in" checked/><label for="tab-1" class="tab">Sign In</label>
-		<input id="tab-2" type="radio" name="tab" class="sign-up"/><label for="tab-2" class="tab">Sign Up</label>
-		<div class="login-form">
-			<div class="sign-in-htm">
-				<div class="group">
-					<label for="user" class="label">Username</label>
-					<input autoComplete='off' id="user" type="text" class="input"/>
+<div className="login-wrap">
+	<div className="login-html">
+		<input id="tab-1" type="radio" name="tab" className="sign-in" checked/><label htmlFor="tab-1" className="tab">Sign In</label>
+		<input id="tab-2" type="radio" name="tab" className="sign-up"/><label htmlFor="tab-2" className="tab">Sign Up</label>
+		<div className="login-form">
+			<div className="sign-in-htm">
+				<div className="group">
+					<label htmlFor="user" className="label">Username</label>
+					<input autoComplete='off' id="user" type="text" className="input"/>
 				</div>
-				<div class="group">
-					<label for="pass" class="label">Password</label>
-					<input id="pass" type="password" class="input" data-type="password"/>
+				<div className="group">
+					<label htmlFor="pass" className="label">Password</label>
+					<input id="pass1" type="password" className="input" data-type="password"/>
 				</div>
-				<div class="group">
-					<input id="check" type="checkbox" class="check" />
-					<label for="check"><span class="icon"></span> Keep me Signed in</label>
+				<div className="group">
+					<input id="check" type="checkbox" className="check" />
+					<label htmlFor="check"><span className="icon"></span> Keep me Signed in</label>
 				</div>
-				<div class="group">
-					<input type="submit" class="button" value="Sign In"/>
+				<div className="group">
+					<input type="submit" className="button" value="Sign In"/>
 				</div>
-				<div class="hr"></div>
-				<div class="foot-lnk">
+				<div className="hr"></div>
+				<div className="foot-lnk">
 					<a href="#forgot">? Forgot Password</a>
 				</div>
 			</div>
-			<div class="sign-up-htm">
-				<div class="group">
-					<label for="user" class="label">Username</label>
-					<input autoComplete='off' id="user" type="text" class="input"/>
+			<div className="sign-up-htm">
+				<div className="group">
+					<label htmlFor="user" className="label">Username</label>
+					<input autoComplete='off' id="user1" type="text" className="input"/>
 				</div>
-				<div class="group">
-					<label for="pass" class="label">Password</label>
-					<input id="pass" type="password" class="input" data-type="password"/>
+				<div className="group">
+					<label htmlFor="pass" className="label">Password</label>
+					<input id="pass2" type="password" className="input" data-type="password"/>
 				</div>
-				<div class="group">
-					<label for="pass" class="label">Repeat Password</label>
-					<input id="pass" type="password" class="input" data-type="password"/>
+				<div className="group">
+					<label htmlFor="pass" className="label">Repeat Password</label>
+					<input id="pass3" type="password" className="input" data-type="password"/>
 				</div>
-				<div class="group">
-					<label for="pass" class="label">Email Address</label>
-					<input id="pass" type="email" class="input"/>
+				<div className="group">
+					<label htmlFor="pass" className="label">Email Address</label>
+					<input id="email" type="email" className="input"/>
 				</div>
-				<div class="group">
-					<input type="submit" class="button" value="Sign Up"/>
+				<div className="group">
+					<input type="submit" className="button" value="Sign Up"/>
 				</div>
-				<div class="hr"></div>
-				<div class="foot-lnk">
-					<label for="tab-1">Already Member?</label>
+				<div className="hr"></div>
+				<div className="foot-lnk">
+					<label htmlFor="tab-1">Already Member?</label>
 				</div>
 			</div>
 		</div>

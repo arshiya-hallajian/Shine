@@ -1,13 +1,20 @@
-body{
+
+.body{
 	margin:0;
-	color:#6a6f8c;
-	background:#c8c8c8;
+	color:#000000;
+	background:#191919;
+    width: 100vw;
+    height: 100vh;
 	font:600 16px/18px 'Open Sans',sans-serif;
 }
 *,:after,:before{box-sizing:border-box}
 .clearfix:after,.clearfix:before{content:'';display:table}
 .clearfix:after{clear:both;display:block}
 a{color:inherit;text-decoration:none}
+
+input{
+    outline: none;
+}
 
 .login-wrap{
 	width:100%;
@@ -17,7 +24,7 @@ a{color:inherit;text-decoration:none}
 	position:relative;
 	background:url("../../../public/images/login3.jpg")  center;
 	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
-    margin-top: 40px;
+    /* margin-top: 40px; */
     border-radius: 15px;
 
 }
@@ -87,7 +94,7 @@ a{color:inherit;text-decoration:none}
 	background:rgba(255,255,255,.1);
 }
 .login-form .group input[data-type="password"]{
-	text-security:circle;
+	/* text-security:circle; */
 	-webkit-text-security:circle;
 }
 .login-form .group .label{
@@ -155,4 +162,8 @@ a{color:inherit;text-decoration:none}
 
 .foot-lnk label{
     margin-bottom: 5px;
+}
+
+.foot-lnk a{
+    text-decoration: none;
 }

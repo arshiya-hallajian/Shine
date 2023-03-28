@@ -13,9 +13,14 @@ function App() {
 
   return (
 
-    <div>
-      <Login />
-    </div>
+   
+    <>
+    <Header/>
+      {router}
+
+   </>
+
+
   );
 }
 

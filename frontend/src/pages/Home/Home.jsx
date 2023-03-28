@@ -71,16 +71,21 @@ export default function Home() {
       }}
          breakpoints={{
           320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          768: {
             slidesPerView: 2,
-            spaceBetween: 20,
+            spaceBetween: 0,
           },
          
-          1024: {
+         
+          1364: {
             slidesPerView: 3,
             spaceBetween: 20,
           },
         }}
-      modules={[Pagination]} className="mySwiper">
+      modules={[Pagination]} className="mySwiper Home-swiper">
         <SwiperSlide>
            <OnSaleCart/>
      </SwiperSlide>

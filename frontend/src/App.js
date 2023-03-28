@@ -12,10 +12,11 @@ let router =useRoutes(routes)
 
   return (
    
-    <div>
+    <>
+    <Header/>
       {router}
 
-   </div>
+   </>
   );
 }
 

@@ -109,3 +109,23 @@ transform: translateX(-20px) translateZ(0);
     .On-Sale-Cart-icon:hover:before, .On-Sale-Cart-icon:hover:after {
       opacity: 1;
     }
+
+    @media (max-width:767px) {
+        .On-Sale-Cart{
+            width: 100% !important;
+        }.On-Sale-Cart img {
+        
+            margin-right: auto;
+            margin-left: auto;
+        }.On-Sale-Cart-badge {
+      
+            right: 15% !important;
+        }
+    }
+    @media (max-width:400px) {
+        .On-Sale-Cart-badge {
+      
+            right: 10% !important;
+        }
+
+    }

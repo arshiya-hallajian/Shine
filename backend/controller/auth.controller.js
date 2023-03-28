@@ -39,19 +39,24 @@ module.exports.login = async (req, res) => {
             },
             "MySecretKey",
             {
-                expiresIn: "2h",
+                expiresIn: "1h",
             }
         );
 
         //add token to the collection
-        await Token.create(
+        await Token.findOneAndUpdate(
             {
                 _userId: user._id,
-                token: token,
                 tokenType: "login",
+            },
+            {
+                token,
+            },
+            {
+                new: true,
+                upsert: true,
             }
         );
-
 
         // send response
         res.status(200).json({
@@ -174,8 +179,7 @@ module.exports.forgetPassword = async (req, res) => {
     if (!user) return res.status(400).send("email not found");
 
     //find token and create hash
-    await Token.find({_userId: user._id});
-    await Token.deleteMany();
+    await Token.findOneAndDelete({_userId: user._id});
     const cryptedToken = crypto.randomBytes(32).toString("hex");
     const hash = await bcrypt.hash(cryptedToken, 10);
 
@@ -204,7 +208,7 @@ module.exports.resetPassword = async (req, res) => {
 
 
     //check token in TokenCollection
-    const resetPasswordToken = await Token.findOne({_userId: userId, tokenType: 'forgetPassword'})
+    const resetPasswordToken = await Token.findOne({_userId: userId})
     if (!resetPasswordToken) {
         return res.status(400).json({
             status: false,
@@ -231,8 +235,6 @@ module.exports.resetPassword = async (req, res) => {
         {$set: {password: hashedPassword}},
         {new: true}
     );
-
-
     if (!changeUserPassword) {
         return res.status(400).json({
             status: false,

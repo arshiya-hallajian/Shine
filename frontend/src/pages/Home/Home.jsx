@@ -115,7 +115,7 @@ export default function Home() {
       </div>
       {/* Back to Top Button  */}
       <a href="#" class="to-top">
-        <i class="btn-icon"><img src="images/backtotop.png" alt="" /></i>
+        <i class="btn-icon"><img src="images/backtotop2.png" alt="" /></i>
       </a>
     </div>
   )

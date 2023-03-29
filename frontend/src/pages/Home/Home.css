@@ -197,20 +197,22 @@
 
 @media (max-width:500px) {
 
-    .why-this-shop section{
-     display: grid !important;
-     grid-template-columns: auto !important;
-    } .why-this-shop{
-        padding:0rem 1rem;
-    } 
+    .why-this-shop section {
+        display: grid !important;
+        grid-template-columns: auto !important;
+    }
+
+    .why-this-shop {
+        padding: 0rem 1rem;
+    }
 
 }
 
 /* Intro products */
 .Home main {
     display: flex;
-    justify-content: space-around;  
-      background-color: #3A3730;
+    justify-content: space-around;
+    background-color: #3A3730;
     background-image: url(https://dev-wp.ir/goldpluss/wp-content/uploads/2022/03/Mask-Group-9-4-1-min.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -226,8 +228,8 @@
 }
 
 @media (max-width:768px) {
-    .Home main{
-        padding: 5rem 2rem ;
+    .Home main {
+        padding: 5rem 2rem;
     }
 }
 
@@ -307,60 +309,118 @@
 .swiper-button-next {
     right: 40px !important;
 }
+
 .swiper-pagination-bullet-active {
     background: white !important;
     width: 20px !important;
     border-radius: 5px !important;
 }
-.swiper-pagination-bullet{
+
+.swiper-pagination-bullet {
     cursor: pointer;
 }
 
 @media (max-width:1364px) {
-    .on-sale{
+    .on-sale {
         padding: 50px 12px 80px 0px;
         margin: 5rem 3rem 5rem 4rem;
         background-size: 100% 226px;
-    }.Home-swiper{
+    }
+
+    .Home-swiper {
         width: 84%;
-    }.on-sale section .vazirlight{
+    }
+
+    .on-sale section .vazirlight {
         font-size: .9rem;
     }
 }
+
 @media (max-width:768px) {
-    .on-sale{
+    .on-sale {
         display: flex;
         flex-direction: column;
         gap: 54px;
         background-position: top;
-    }.Home-swiper{
+    }
+
+    .Home-swiper {
         width: 100% !important;
-    }.on-sale {
+    }
+
+    .on-sale {
         padding-top: 0px !important;
-    }.on-sale section {
+    }
+
+    .on-sale section {
         margin-left: auto;
         width: 100% !important;
-    }.on-sale {
+    }
+
+    .on-sale {
         margin: 5rem 2rem 5rem 2rem;
         background-size: 100% 208px;
     }
 }
+
 @media (max-width:767px) {
     .on-sale {
         margin: 5rem 1rem !important;
         background-size: 100% 28%;
         padding: 0px 0px 80px 0px !important;
-    }.Home-swiper {
+    }
+
+    .Home-swiper {
         width: 96% !important;
         margin-left: 2rem !important;
-    margin-right: 0px !important;
+        margin-right: 0px !important;
     }
-  
+
 }
+
 @media (max-width:320px) {
     .on-sale {
-  
+
         background-size: 100% 35%;
     }
-  
+
+}
+
+/* Back to Top Button  */
+
+.to-top {
+    position: fixed;
+    right: 25px;
+    bottom: 15px;
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    color: #000;
+    opacity: 0;
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+}
+
+.to-top.active {
+    opacity: 1;
+    bottom: 40px;
+}
+
+.to-top svg {
+    font-size: 30px;
+}
+
+.btn-icon img{
+width: 30px;
 }

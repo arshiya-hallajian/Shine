@@ -41,7 +41,7 @@ export default function Home() {
         </div>
 
         <div className="scrollButton">
-          <span class="loader"></span>
+          <span className="loader"></span>
         </div>
       </div>
 
@@ -114,8 +114,8 @@ export default function Home() {
         </Swiper>
       </div>
       {/* Back to Top Button  */}
-      <a href="#" class="to-top">
-        <i class="btn-icon"><img src="images/backtotop2.png" alt="" /></i>
+      <a href="#" className="to-top">
+        <i className="btn-icon"><img src="images/backtotop2.png" alt="" /></i>
       </a>
     </div>
   )

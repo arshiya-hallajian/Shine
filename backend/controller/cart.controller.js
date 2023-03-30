@@ -27,6 +27,26 @@ module.exports.addToCart = async (req, res) => {
             const productPrice = product.price;
 
             if(cart) {
+                const productIndex = cart.products.findIndex((item) => {
+                    const itemId = item.productId.toString();
+                    return itemId === productId;
+                });
+
+
+
+                if (productIndex === -1) {
+                    cart.products.push({productId, name: productName, quantity, price: productPrice});
+                    cart.checkout = cart.products.reduce((totalPrice, productPrice) => {
+                        return totalPrice + productPrice.price * productPrice.quantity
+                    },0)
+                    await cart.save();
+                    res.status(200).json({
+                        status: true,
+                        data: cart,
+                        message: "added to cart"
+                    });
+
+                }
 
             }else{
                 const newCart = new Cart({

@@ -12,73 +12,88 @@ module.exports.addToCart = async (req, res) => {
     const productId = req.body.productId;
     const quantity = req.body.quantity;
     try {
-        const product = await Product.findOne({_id: productId});
+        //find product and cart details by id from db
+        const product = await Product.findById({productId});
         const cart = await Cart.findOne({sellerId: sellerId});
 
 
-        if(!product) {
+        //check if product is in db
+        if (!product) {
             return res.status(400).json({
                 status: false,
                 data: undefined,
                 message: "product not found"
             });
         }
-            const productName = product.name;
-            const productPrice = product.price;
+        const productName = product.name;
+        const productPrice = product.price;
 
-            if(cart) {
-                const productIndex = cart.products.findIndex((item) => {
-                    const itemId = item.productId.toString();
-                    return itemId === productId;
-                });
+        //check if cart is in db
+        if (cart) {
 
+            //check if product exists in cart or not
+            const productIndex = cart.products.findIndex((item) => {
+                const itemId = item.productId.toString();
+                return itemId === productId;
+            });
 
+            //if product not exists in cart
+            if (productIndex === -1) {
+                //add product to cart
+                cart.products.push({productId, name: productName, quantity, price: productPrice});
 
-                if (productIndex === -1) {
-                    cart.products.push({productId, name: productName, quantity, price: productPrice});
-                    cart.checkout = cart.products.reduce((totalPrice, productPrice) => {
-                        return totalPrice + productPrice.price * productPrice.quantity
-                    },0)
-                    await cart.save();
-                    res.status(200).json({
-                        status: true,
-                        data: cart,
-                        message: "added to cart"
-                    });
+                //calc bill price
+                cart.checkout = cart.products.reduce((totalPrice, productPrice) => {
+                    return totalPrice + productPrice.price * productPrice.quantity
+                }, 0)
 
-                }else{
-                    const pd = cart.products[productIndex];
-                    pd.quantity = quantity + pd.quantity;
-                    cart.products[productIndex] = pd;
+                await cart.save();
 
-                    cart.checkout = cart.products.reduce((totalPrice, productPrice) => {
-                        return totalPrice + productPrice.price * productPrice.quantity;
-                    }, 0)
-
-                    await cart.save();
-
-                    res.status(200).json({
-                        status: true,
-                        data: cart,
-                        message: "added to cart"
-                    });
-                }
-
-            }else{
-                const newCart = new Cart({
-                    sellerId,
-                    products: [{productId: productId, name: productName, quantity: quantity, price: productPrice}],
-                    checkout: productPrice * quantity
-                });
-                await newCart.save();
                 res.status(200).json({
                     status: true,
                     data: cart,
-                    message: "new cart added"
-                })
+                    message: "added to cart"
+                });
+
+            } else {
+
+                const pd = cart.products[productIndex];
+                //add number of quantity to existing product
+                pd.quantity = quantity + pd.quantity;
+                cart.products[productIndex] = pd;
+
+                //calc bill price
+                cart.checkout = cart.products.reduce((totalPrice, productPrice) => {
+                    return totalPrice + productPrice.price * productPrice.quantity;
+                }, 0)
+
+                await cart.save();
+
+                res.status(200).json({
+                    status: true,
+                    data: cart,
+                    message: "added to cart"
+                });
             }
 
-    }catch (e) {
+        } else {
+            //create a new cart
+            const newCart = new Cart({
+                sellerId,
+                products: [{productId: productId, name: productName, quantity: quantity, price: productPrice}],
+                checkout: productPrice * quantity
+            });
+
+            await newCart.save();
+
+            res.status(200).json({
+                status: true,
+                data: cart,
+                message: "new cart added"
+            })
+        }
+
+    } catch (e) {
         res.status(400).json({
             status: false,
             data: e,
@@ -86,12 +101,8 @@ module.exports.addToCart = async (req, res) => {
         })
     }
 }
-/*
 
-if cart exist then find index of item
--and get total number
--and save item in cart
-*/
+
 module.exports.removeFromCart = (req, res) => {
-    
+
 }

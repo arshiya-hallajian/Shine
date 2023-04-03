@@ -11,6 +11,10 @@
     float: right;
     padding: 15px;
 }
+#contact{
+    margin-right: 50px;
+    /* text-align: center; */
+}
 
 .footer_vasat {
     width: 20%;
@@ -99,8 +103,26 @@
 
 
 @media screen and (max-width: 1200px){
-    .footer_namad{
+    #namad{
         display: none;
     }
 } 
+
+@media screen and (max-width: 550px){
+    #spn3{
+        display: none;
+    
+    }
+    .footer-social-icons a svg{
+        width: 30px;
+        height: 30px;
+    }
+    .under_footer p{
+        font-size: 14px;
+    }
+    .footer_card h4 {
+        padding:0 20px;
+    }
+  
+}
 

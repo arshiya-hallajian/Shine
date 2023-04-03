@@ -15,14 +15,14 @@ const footer = () => {
         <div>
           <div className="footer_kenar">
             <div className="footer_card">
-              <h4>_ درباره ما</h4>
+              <h4>درباره ما</h4>
               <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. </p>
             </div>
           </div>
 
           <div className="footer_vasat">
             <div className="footer_card">
-              <h4> دسته بندی ها</h4>
+              <h4>محصولات</h4>
               <ul>
                 <li><a href="#"> گوشواره</a> </li>
                 <li><a href="#"> ساعت</a> </li>
@@ -35,18 +35,18 @@ const footer = () => {
 
           <div className="footer_vasat">
             <div className="footer_card">
-              <h4>راه های ارتباطی</h4>
+              <h4 id='contact'>ارتباط</h4>
               <ul>
                 <li><span>تماس:09178376279</span> </li>
-                <li><span>تلفن:XXX-XXXXX</span> </li>
-                <li><span> ایمیل:arta.dev21@gmail.com</span></li>
-                <li><span>آدرس:شیراز-معالی آباد کوچه 32</span> </li>
+                <li><span>تلفن:XXXXXXXX</span> </li>
+                <li id='spn3'><span> ایمیل:arta.dev21@gmail.com</span></li>
+                <li><span>آدرس:شیراز معالی آباد کوچه ششم</span> </li>
               </ul>
             </div>
           </div>
 
           <div className="footer_kenar">
-            <div className="footer_card">
+            <div id='namad' className="footer_card">
 
               <div className="footer_namad">
                 <img src="images/enamad.png" alt="E-nemad" />

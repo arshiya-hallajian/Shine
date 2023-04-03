@@ -49,7 +49,7 @@
     transition: 0.3s;
 }
 
-.footer_card ul li a:hover{
+.footer_card ul li a:hover {
     color: #c8c3c3;
 
 }
@@ -65,7 +65,7 @@
 }
 
 
-/* under */
+/* under Footer */
 
 .border-hr {
     border-color: #8f8f8f;
@@ -83,13 +83,14 @@
     display: inline-block;
 }
 
-.under_footer_icons {
+.footer-social-icons {
     float: left;
 }
 
-.under_footer_icons img {
-    width: 26px;
-    height: auto;
+.footer-social-icons a svg {
+    width: 35px;
+    height: 35px;
     margin: 5px;
     padding-top: 8px;
+    color: rgb(225, 217, 217);
 }

@@ -1,5 +1,11 @@
 import React from 'react';
-import "./footer.css"
+import "./footer.css";
+import { AiFillInstagram } from "react-icons/ai";
+import { BsTelegram } from "react-icons/bs";
+import { AiOutlineTwitter } from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai"
+
+
 
 const footer = () => {
   return (
@@ -57,13 +63,12 @@ const footer = () => {
           <div class="under_footer">
             <p>تمامی حقوق سایت محفوظ میباشد.</p>
 
-            <div class="under_footer_icons">
-              <a href=""><img src="assets/image/icon/instagram.svg" alt="" /></a>
+            <div class="footer-social-icons">
 
-              <a href=""><img src="assets/image/icon/telegram.svg" alt="" /></a>
-
-              <a href=""><img src="assets/image/icon/twitter.svg" alt="" /></a>
-
+              <a href="#"><AiFillInstagram /></a>
+              <a href="#"><BsTelegram /></a>
+              <a href="#"><AiOutlineTwitter /></a>
+              <a href="https://github.com/arshiya-hallajian/Shine"><AiFillGithub /></a>
 
             </div>
 

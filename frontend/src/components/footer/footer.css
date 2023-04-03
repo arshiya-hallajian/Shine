@@ -45,11 +45,12 @@
     color: #f6f6df;
     font-weight: 200;
     font-size: 16;
-    transition: 0.5ms;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
 .footer_card ul li a:hover{
-    color: #aaa6a6;
+    color: #c8c3c3;
 
 }
 

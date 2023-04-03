@@ -3,7 +3,7 @@ import "./footer.css";
 import { AiFillInstagram } from "react-icons/ai";
 import { BsTelegram } from "react-icons/bs";
 import { AiOutlineTwitter } from "react-icons/ai";
-import { AiFillGithub } from "react-icons/ai"
+import { AiFillGithub } from "react-icons/ai";
 
 
 
@@ -11,18 +11,17 @@ const footer = () => {
   return (
     <div>
 
-      <footer class="main_footer">
-        <div class="container">
-          <div class="footer_kenar">
-            <div class="footer_card">
+      <footer className="main_footer">
+        <div className="container">
+          <div className="footer_kenar">
+            <div className="footer_card">
               <h4>_ درباره ما</h4>
               <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحانگرافیک است. چاپگرها و متون بلکه روزنامه و مجله درستون و سطرآنچنان که لازماست و برای..</p>
             </div>
           </div>
 
-
-          <div class="footer_vasat">
-            <div class="footer_card">
+          <div className="footer_vasat">
+            <div className="footer_card">
               <h4> دسته بندی ها</h4>
               <ul>
                 <li><a href="#"> گوشواره</a> </li>
@@ -34,8 +33,8 @@ const footer = () => {
             </div>
           </div>
 
-          <div class="footer_vasat">
-            <div class="footer_card">
+          <div className="footer_vasat">
+            <div className="footer_card">
               <h4>راه های ارتباطی</h4>
               <ul>
                 <li><span>تماس:09178376279</span> </li>
@@ -46,24 +45,24 @@ const footer = () => {
             </div>
           </div>
 
-          <div class="footer_kenar">
-            <div class="footer_card">
+          <div className="footer_kenar">
+            <div className="footer_card">
 
-              <div class="footer_namad">
+              <div className="footer_namad">
                 <img src="images/enamad.png" alt="E-nemad" />
                 <img src="images/neshan_meli.jpg" alt="neshan-melli" />
               </div>
             </div>
           </div>
 
-          <div class="clearfix"></div>
+          <div className="clearfix"></div>
 
-          <hr class="border-hr" />
+          <hr className="border-hr" />
 
-          <div class="under_footer">
+          <div className="under_footer">
             <p>تمامی حقوق سایت محفوظ میباشد.</p>
 
-            <div class="footer-social-icons">
+            <div className="footer-social-icons">
 
               <a href="#"><AiFillInstagram /></a>
               <a href="#"><BsTelegram /></a>
@@ -71,12 +70,9 @@ const footer = () => {
               <a href="https://github.com/arshiya-hallajian/Shine"><AiFillGithub /></a>
 
             </div>
-
           </div>
-
         </div>
       </footer>
-
     </div>
   )
 }

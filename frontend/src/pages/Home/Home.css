@@ -410,6 +410,7 @@
     -moz-transition: all .4s ease-in-out;
     -ms-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
+    z-index: 1000;
 }
 
 .to-top.active {

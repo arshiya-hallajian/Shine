@@ -117,6 +117,11 @@ export default function Home() {
       <a href="#" className="to-top">
         <i className="btn-icon"><img src="images/backtotop2.png" alt="" /></i>
       </a>
+
+          {/* bottom Menu */}
+
+          
+
     </div>
   )
 }

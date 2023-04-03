@@ -35,7 +35,7 @@ const footer = () => {
                 <li><span>تماس:09178376279</span> </li>
                 <li><span>تلفن:XXXXXXXX</span> </li>
                 <li><span> ایمیل:arta.dev21@gmail.com</span></li>
-                <li><span>آدرس:لورم ایپسوم متن ساختگی با تولید سادگی نا مـفهـوم از صـنعـت چـاپ و با استـفـاده از طـراحان گرافـیـک اسـت.</span> </li>
+                <li><span>آدرس:لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ.</span> </li>
               </ul>
             </div>
           </div>
@@ -44,8 +44,8 @@ const footer = () => {
             <div class="footer_card">
 
               <div class="footer_namad">
-                <img src="assets/image/enamad.png" alt="E-nemad" />
-                <img src="assets/image/neshan_meli.jpg" alt="neshan-melli" />
+                <img src="images/enamad.png" alt="E-nemad" />
+                <img src="images/neshan_meli.jpg" alt="neshan-melli" />
               </div>
             </div>
           </div>

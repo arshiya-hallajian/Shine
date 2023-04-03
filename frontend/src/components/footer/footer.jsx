@@ -12,11 +12,11 @@ const footer = () => {
     <>
 
       <footer className="main_footer">
-        <div className="container">
+        <div>
           <div className="footer_kenar">
             <div className="footer_card">
               <h4>_ درباره ما</h4>
-              <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله درستون و سطرآنچنان که لازم است و برای.</p>
+              <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه </p>
             </div>
           </div>
 
@@ -40,7 +40,7 @@ const footer = () => {
                 <li><span>تماس:09178376279</span> </li>
                 <li><span>تلفن:XXX-XXXXX</span> </li>
                 <li><span> ایمیل:arta.dev21@gmail.com</span></li>
-                <li><span>آدرس:لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ.</span> </li>
+                <li><span>آدرس:شیراز-معالی آباد کوچه 32</span> </li>
               </ul>
             </div>
           </div>

@@ -95,3 +95,12 @@
     padding-top: 8px;
     color: #dfdada;
 }
+
+
+
+@media screen and (max-width: 1200px){
+    .footer_namad{
+        display: none;
+    }
+} 
+

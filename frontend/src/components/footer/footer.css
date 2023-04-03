@@ -68,12 +68,13 @@
 /* under Footer */
 
 .border-hr {
-    border-color: #8f8f8f;
+    border-color: #686868;
 }
 
 .under_footer {
     text-align: right;
 }
+
 
 .under_footer p {
     color: #fff;
@@ -92,5 +93,5 @@
     height: 35px;
     margin: 5px;
     padding-top: 8px;
-    color: rgb(225, 217, 217);
+    color: #dfdada;
 }

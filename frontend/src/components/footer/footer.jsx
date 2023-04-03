@@ -9,14 +9,14 @@ import { AiFillGithub } from "react-icons/ai";
 
 const footer = () => {
   return (
-    <div>
+    <>
 
       <footer className="main_footer">
         <div className="container">
           <div className="footer_kenar">
             <div className="footer_card">
               <h4>_ درباره ما</h4>
-              <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحانگرافیک است. چاپگرها و متون بلکه روزنامه و مجله درستون و سطرآنچنان که لازماست و برای..</p>
+              <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحانگرافیک است. چاپگرها و متون بلکه روزنامه و مجله درستون و سطرآنچنان که لازماست و برای.</p>
             </div>
           </div>
 
@@ -62,8 +62,8 @@ const footer = () => {
           <div className="under_footer">
             <p>تمامی حقوق سایت محفوظ میباشد.</p>
 
+            
             <div className="footer-social-icons">
-
               <a href="#"><AiFillInstagram /></a>
               <a href="#"><BsTelegram /></a>
               <a href="#"><AiOutlineTwitter /></a>
@@ -73,8 +73,8 @@ const footer = () => {
           </div>
         </div>
       </footer>
-    </div>
+    </>
   )
 }
 
-export default footer
+export default footer;

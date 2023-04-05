@@ -358,7 +358,9 @@
     }
 
     .on-sale {
+
         margin: 5rem 2rem;
+
         background-size: 100% 208px;
     }
 }
@@ -367,7 +369,9 @@
     .on-sale {
         margin: 5rem 1rem !important;
         background-size: 100% 28%;
+
         padding: 0px 0px 80px !important;
+
     }
 
     .Home-swiper {
@@ -424,4 +428,181 @@
 
 .btn-icon img{
 width: 40px;
+}
+/* order */
+.order{
+    position: relative;
+    background-image: url(https://dev-wp.ir/goldpluss/wp-content/uploads/2022/03/Mask-Group-9-6-min.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 2rem 6rem;
+    background-size: contain;
+    border-radius: 10px;
+}
+.order-bg{
+    background-color: #000000;
+    opacity: 0.44;
+    height: 424px;
+    width: 100%;
+    top: -10px;
+    left: 0;
+    border-radius: 30px;
+    position: absolute;
+}
+.order section{
+    display: flex;
+    margin-right: -10px;
+    width: 100%;
+    justify-content: space-around;
+    margin-left: -10px;
+}
+.order section div{
+    text-align: right;
+    width: 72%;
+    padding: 30px;
+    padding-left: 13rem;
+}
+.order section .vazirlight{
+    color: white;
+    position: relative;
+    font-size: 14px;
+}
+.order section .vazir{
+    font-size: 1.4rem;
+    color: white;
+    letter-spacing: -1px;
+    position: relative;
+}
+.order section .mt-3{
+    font-size: 1.5rem;
+    position: relative;
+}
+.order img{
+    position: relative;
+    left: 100px;
+    bottom: 70px;
+}
+.order-btns{
+    display: flex;
+   
+    width: 100% !important;
+    position: relative;
+    z-index: 1000;
+    gap: 23px;
+}
+.order-btns button:nth-child(1){
+    font-weight: 500;
+    fill: #383838;
+    color: #383838;
+    color: black;
+    font-family: vazirlight;
+    border: none !important;
+    background-color: #F0CC80;
+    width: 188px;
+    border-radius: 185px;
+    padding: 13px 30px;
+}
+.order-btns button:nth-child(2){
+    font-weight: 500;
+    background-color: #61CE7000;
+    border-style: solid;
+    color: white;
+    font-family: vazirlight;
+    width: 216px;
+    border-width: 1px;
+    border-color: #F0CC80;
+    border-radius: 185px;
+
+
+}
+.order br{
+    display: none;
+}
+@media (max-width:1350px) {
+    .order{
+        margin: 2rem;
+        
+    background-size: 100% 392px;
+
+    }
+    .order img{
+            height: 253px;
+            width: 209px;
+            position: relative;
+            right: -30px;
+    }.order section div {
+        text-align: right;
+        width: 100%;
+        padding: 30px;
+        padding-left: 1rem;
+    }
+    .order br{
+        display: unset !important;
+    }
+}
+@media (max-width:1023px) {
+    .order section {
+flex-direction: column-reverse;
+        width: 100%;
+        justify-content: center;
+      
+    }.order img {
+        display: block;
+        margin-right: auto;
+       
+        position: relative;
+        top: 113px;
+    }.order-bg {
+        height: 424px;
+        width: 100%;
+        top: 129px;
+        position: absolute;
+    }.order section {
+        bottom: 127px;
+        position: relative;
+    }
+    
+}
+@media (max-width:767px) {
+    .order img{
+        display: none !important;
+    }.order-bg {
+        top: 3px;
+    }.order section {
+        bottom: 0px;
+    }.order-bg {
+        height: 100%;
+    }
+    .order{
+        background-size: 100% 95%;
+    }.order-btns button{
+        display: block;
+    margin-right: auto;
+    margin-left: auto;
+
+    }.order-btns{
+        flex-direction: column;
+    }.order-btns button:nth-child(2){
+        padding: .7rem;
+
+    }.order section .mt-3 {
+        font-size: 1.2rem;
+    }
+}
+@media (max-width:500px) {
+    .order{
+        margin: 1rem !important;
+    }
+}
+@media (max-width:368px) {
+    .order section .mt-3 {
+        font-size: 1rem !important;
+    }  .order section .vazir {
+        font-size: 1.2rem !important; 
+    }.order-btns{
+        font-size: .9rem;
+    }
+    .order-btns button {
+        width: 100% !important;
+    }
 }

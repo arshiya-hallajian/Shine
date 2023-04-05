@@ -113,6 +113,26 @@ export default function Home() {
 
         </Swiper>
       </div>
+
+
+      <div className="order">
+        <div className="order-bg"> </div>
+        <section>
+          <div>
+            <p className="vazir mt-1">خاص بودن برازنده <span style={{ color: '#f0cc80' }}>شما</span>ست ....</p>
+            <p className="mt-3" style={{ color: ' #FFFFFF21' }}>Being unique is your graceunique</p>
+            <p className="vazirlight">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،  <br></br>چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+
+            <div className="order-btns">
+              <button>ثبت سفارش طراحی</button>
+              <button>درخواست مشاوره و راهنمایی</button>
+            </div>
+          </div>
+          <img width={322} height={408} src="https://dev-wp.ir/goldpluss/wp-content/uploads/2022/03/Group-168-min.png" alt="" />
+
+        </section>
+      </div>
+
       {/* Back to Top Button  */}
       <a href="#" className="to-top">
         <i className="btn-icon"><img src="images/backtotop2.png" alt="" /></i>

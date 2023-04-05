@@ -370,7 +370,7 @@
         margin: 5rem 1rem !important;
         background-size: 100% 28%;
 
-        padding: 0px 0px 80px 0px !important;
+        padding: 0px 0px 80px !important;
 
     }
 
@@ -436,7 +436,6 @@ width: 40px;
     background-position: center center;
     background-repeat: no-repeat;
     margin: 2rem 6rem;
-    border-radius: 50px 50px 50px 50px;
     background-size: contain;
     border-radius: 10px;
 }
@@ -492,7 +491,6 @@ width: 40px;
     gap: 23px;
 }
 .order-btns button:nth-child(1){
-    font-family: "Pinar-vf", Sans-serif;
     font-weight: 500;
     fill: #383838;
     color: #383838;
@@ -501,20 +499,19 @@ width: 40px;
     border: none !important;
     background-color: #F0CC80;
     width: 188px;
-    border-radius: 185px 185px 185px 185px;
-    padding: 13px 30px 13px 30px;
+    border-radius: 185px;
+    padding: 13px 30px;
 }
 .order-btns button:nth-child(2){
-    font-family: "Pinar-vf", Sans-serif;
     font-weight: 500;
     background-color: #61CE7000;
     border-style: solid;
     color: white;
     font-family: vazirlight;
     width: 216px;
-    border-width: 1px 1px 1px 1px;
+    border-width: 1px;
     border-color: #F0CC80;
-    border-radius: 185px 185px 185px 185px;
+    border-radius: 185px;
 
 
 }

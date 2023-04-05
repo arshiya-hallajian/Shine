@@ -427,7 +427,7 @@
 
 .btn-icon img{
 width: 40px;
-
+}
 /* order */
 .order{
     position: relative;
@@ -484,9 +484,10 @@ width: 40px;
 }
 .order-btns{
     display: flex;
-    position: absolute;
+   
     width: 100% !important;
-    right: 0px;
+    position: relative;
+    z-index: 1000;
     gap: 23px;
 }
 .order-btns button:nth-child(1){
@@ -515,4 +516,95 @@ width: 40px;
     border-radius: 185px 185px 185px 185px;
 
 
+}
+.order br{
+    display: none;
+}
+@media (max-width:1350px) {
+    .order{
+        margin: 2rem;
+        
+    background-size: 100% 392px;
+
+    }
+    .order img{
+            height: 253px;
+            width: 209px;
+            position: relative;
+            right: -30px;
+    }.order section div {
+        text-align: right;
+        width: 100%;
+        padding: 30px;
+        padding-left: 1rem;
+    }
+    .order br{
+        display: unset !important;
+    }
+}
+@media (max-width:1023px) {
+    .order section {
+flex-direction: column-reverse;
+        width: 100%;
+        justify-content: center;
+      
+    }.order img {
+        display: block;
+        margin-right: auto;
+       
+        position: relative;
+        top: 113px;
+    }.order-bg {
+        height: 424px;
+        width: 100%;
+        top: 129px;
+        position: absolute;
+    }.order section {
+        bottom: 127px;
+        position: relative;
+    }
+    
+}
+@media (max-width:767px) {
+    .order img{
+        display: none !important;
+    }.order-bg {
+        top: 3px;
+    }.order section {
+        bottom: 0px;
+    }.order-bg {
+        height: 100%;
+    }
+    .order{
+        background-size: 100% 95%;
+    }.order-btns button{
+        display: block;
+    margin-right: auto;
+    margin-left: auto;
+
+    }.order-btns{
+        flex-direction: column;
+    }.order-btns button:nth-child(2){
+        padding: .7rem;
+
+    }.order section .mt-3 {
+        font-size: 1.2rem;
+    }
+}
+@media (max-width:500px) {
+    .order{
+        margin: 1rem !important;
+    }
+}
+@media (max-width:368px) {
+    .order section .mt-3 {
+        font-size: 1rem !important;
+    }  .order section .vazir {
+        font-size: 1.2rem !important; 
+    }.order-btns{
+        font-size: .9rem;
+    }
+    .order-btns button {
+        width: 100% !important;
+    }
 }

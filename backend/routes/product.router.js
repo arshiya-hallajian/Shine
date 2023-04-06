@@ -18,7 +18,7 @@ router.get('/', getAllProducts);
 router.get('/:id', getOneProduct);
 
 // create a product
-router.post('/', auth, multi.array('picture'), createOneProduct);
+router.post('/', auth, createOneProduct);
 
 //update a product
 router.put('/:id', auth, updateOneProduct);

@@ -81,6 +81,7 @@
     background-color: transparent;
     border: none;
     display: none;
+    color: #fff;
 }
 
 
@@ -172,62 +173,68 @@ ul.list-left {
         margin-bottom: 5px;
     }
 
-    .hambur-menu img{
-        width: 35px;
-        height: auto;
+    .hambur-menu img {
+        width: 40px;
+        height: 48px;
+        opacity: 0.9;
     }
 
     .logo {
-        width: 64px;
+        width: 69px;
         margin-right: 25%;
     }
 
- 
+
 }
 
 
-@media screen and (max-width: 905px){
+@media screen and (max-width: 905px) {
     .list-left li {
-       margin-left: -5px;
+        margin-left: -5px;
         padding: 5px 6.5px;
     }
-  
-    .list-left li a{
+
+    .list-left li a {
         font-size: 22px;
     }
-  
-    ul.list-left{
+
+    ul.list-left {
         margin-left: 20px;
     }
 
-    .hambur-menu img{
-        width: 32px;
-        height: auto;
+    .hambur-menu img {
+        width: 35px;
+        height: 43px;
     }
-  
-  }
+
+}
 
 
-  @media screen and (max-width: 785px){
+@media screen and (max-width: 785px) {
+    .navbar {
+        height: 92px;
+    }
+
     .list-left li {
         margin-left: -6.3px;
-         padding: 5px 6.5px;
-     }
-   
-     .list-left li a{
-         font-size: 20px;
-     }
-   
-     ul.list-left{
-         margin-left: 20px;
-     }
- 
-     .hambur-menu img{
-         width: 30px;
-         height: auto;
-     }
+        padding: 5px 6.5px;
+    }
 
-     .logo {
+    .list-left li a {
+        font-size: 20px;
+    }
+
+    ul.list-left {
+        margin-left: 20px;
+    }
+
+    .hambur-menu img {
+        width: 31px;
+        height: 38;
+        margin-top: -3px;
+    }
+
+    .logo {
         width: 60px;
         margin-right: 25%;
     }
@@ -238,55 +245,76 @@ ul.list-left {
         margin-top: 11px;
         opacity: 0.3;
     }
-    
-   
-  }
+
+
+}
 
 
 
-  @media screen and (max-width: 740px){
+@media screen and (max-width: 740px) {
     .list-left li {
         margin-left: -6.5px;
-         padding: 5px 6.3px;
-     }
-   
-     .list-left li a{
-         font-size: 19px;
-     }
-   
-     ul.list-left{
-         margin-left: 20px;
-     }
- 
-     .hambur-menu img{
-         width: 29px;
-         height: auto;
-     }
+        padding: 5px 6.3px;
+    }
 
-     .logo {
+    .list-left li a {
+        font-size: 19px;
+    }
+
+    ul.list-left {
+        margin-left: 20px;
+    }
+
+    .hambur-menu img {
+        width: 31px;
+        height: 38;
+    }
+
+    .logo {
         width: 59px;
         margin-right: 25%;
     }
-  }
+}
 
-  
-  @media screen and (max-width: 720px){
-    .navbar{
-        height: 100px;
+
+@media screen and (max-width: 720px) {
+
+
+    .hambur-menu img {
+        width: 30px;
+        height: 30;
     }
 
-    .hambur-menu img{
-        width: 28px;
-        height: auto;
+    .hambur-menu {
+        margin-left: -43px;
     }
 
-    .hambur-menu{margin-right: 43px;}
     .logo {
         width: 57px;
         margin-right: 25%;
     }
+
     .list-left li {
         font-size: 18px;
     }
 
-  }
+}
+
+
+@media screen and (max-width: 710px) {
+    .logo {
+        width: 55px;
+        margin-right: 29%;
+    }
+
+    .list-left li a{
+        font-size: 15.5px;
+        margin-right:5px;
+    }
+
+    ul.list-left{
+        padding: 0 35px;
+        margin-left: 15px;
+    }
+
+}

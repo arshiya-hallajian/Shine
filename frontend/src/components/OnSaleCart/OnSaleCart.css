@@ -1,6 +1,6 @@
 .On-Sale-Cart{
     background-color: #47443E;
-    padding: 1.2rem 1.5rem 1rem 1.5rem;
+    padding: 1.2rem 1.5rem 1rem;
     border-radius: 20px;
     box-shadow: 0 0 4px rgba(0,0,0,.12);
     font-size: .8rem;
@@ -88,7 +88,6 @@ transform: translateX(-20px) translateZ(0);
     .On-Sale-Cart-icon:after {
       text-transform: none;
       content: attr(data-tooltip);
-      font-size: 14px;
       right: -149px;
       top: 2px;
       position: absolute;
@@ -97,7 +96,6 @@ transform: translateX(-20px) translateZ(0);
       text-align: center;
       background-color: #555;
       padding: 8px 12px;
-      width: max-content;
       max-width: 200px;
       opacity: 0;
       pointer-events: none;
@@ -108,4 +106,24 @@ transform: translateX(-20px) translateZ(0);
   
     .On-Sale-Cart-icon:hover:before, .On-Sale-Cart-icon:hover:after {
       opacity: 1;
+    }
+
+    @media (max-width:767px) {
+        .On-Sale-Cart{
+            width: 100% !important;
+        }.On-Sale-Cart img {
+        
+            margin-right: auto;
+            margin-left: auto;
+        }.On-Sale-Cart-badge {
+      
+            right: 15% !important;
+        }
+    }
+    @media (max-width:400px) {
+        .On-Sale-Cart-badge {
+      
+            right: 10% !important;
+        }
+
     }

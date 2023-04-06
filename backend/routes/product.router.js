@@ -12,6 +12,7 @@ const multi = require('../middleware/multi_image.middleware');
 
 //get all products
 router.get('/', getAllProducts);
+//should add cat query
 
 //get a product
 router.get('/:id', getOneProduct);

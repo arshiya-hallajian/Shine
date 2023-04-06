@@ -1,6 +1,5 @@
 {
     "version": 2,
-    "name": "shine sv",
     "builds": [
       { "src": "app.js", "use": "@vercel/node" }
     ],

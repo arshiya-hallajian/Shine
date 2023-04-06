@@ -24,6 +24,10 @@ app.use("/api/auth", auth_router);
 app.use("/api/product", product_router);
 app.use("/api/cart", cart_router);
 
-
+app.get("/",(req, res) => {
+    res.send("Welcome Shine Backend")
+})
 
 app.listen(port, () => console.log(`listening on port ${port}!`))
+
+module.exports = app;

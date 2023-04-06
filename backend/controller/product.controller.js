@@ -3,18 +3,25 @@ const product = require(".././models/product");
 
 module.exports.createOneProduct = async (req, res) => {
 
-    let payload = {
+
+    //create product in database
+    let products = new product({
         name: req.body.name,
         sellerId: req.userId,
         description: req.body.description,
         category: req.body.category,
+        gender: req.body.gender,
+        short_desc: req.body.short_desc,
+        inSale: req.body.inSale,
+        futures: req.body.futures,
+        specialFor: req.body.specialFor,
+        size: req.body.size,
+        colors: req.body.colors,
+        brand: req.body.brand,
         weight: req.body.weight,
         price: req.body.price,
+        inSale_Price: req.body.inSale_Price,
         picture: req.body.picture,
-    };
-    //create product in database
-    let products = new product({
-        ...payload,
     });
     try {
         await products.save();
@@ -89,7 +96,7 @@ module.exports.updateOneProduct = async (req, res) => {
     const productId = req.params.id;
     const json = req.body;
     const updates = Object.keys(json);
-    const allowedUpdate = ['name', 'description', 'category', 'weight', 'picture', 'price']
+    const allowedUpdate = ['name', 'description', 'category', 'weight', 'picture', 'price','inSale_Price', 'brand', 'colors', 'size', 'specialFor','futures', 'inSale', 'short_desc', 'gender']
 
     const validation = updates.every((update) =>
         allowedUpdate.includes(update)

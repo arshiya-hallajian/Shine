@@ -25,7 +25,7 @@
 
     font-size: 80px;
     line-height: 100px;
-    margin: 1rem 14rem 1rem 15rem;
+    margin:3rem 14rem 1rem 15rem;
 }
 
 .home-title p {
@@ -127,6 +127,8 @@
 
     .home-section-top video {
         height: 320px;
+    } .home-section-top{
+        bottom: -13px;
     }
 
     .home-title {
@@ -152,7 +154,12 @@
     }
 }
 
+@media (max-width: 1024px){
+.home-title h4 {
+    font-size: 66px ;
 
+}
+}
 
 
 /* why-this-shop  */

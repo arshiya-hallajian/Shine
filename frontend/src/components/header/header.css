@@ -44,18 +44,23 @@
 }
 
 .logo {
-    width: 80px;
-    margin-right: 45%;
-    /* margin-left: auto; */
-    margin-top: -16px;
+    
+   
+  width: 100%;
+
 
 }
-
+.logo-div{
+    width: 7%; 
+    position: absolute;
+    right: 47%;
+}
 
 .list-right {
     display: flex;
-    position: absolute;
 
+    padding-top: .5rem;
+  
 }
 
 .list-right li {
@@ -70,7 +75,7 @@
     transition: 500ms;
     color: #fff;
     font-size: 16px;
-
+    font-family: vazirlight !important;
 }
 
 .list-right li a:hover {
@@ -154,24 +159,21 @@ ul.list-left {
 }
 
 
+
 @media screen and (max-width: 1150px) {
     .list-right li a {
         font-weight: bold;
         font-size: 14.7px;
+    }.navbar {
+        width: 80%;
+        transform: translateX(-13%);
     }
 }
 
 
 @media screen and (max-width: 1100px) {
-    .list-right {
-        display: none;
-    }
-
-    .hambur-menu {
-        display: inline-block;
-        margin-right: 50px;
-        margin-bottom: 5px;
-    }
+   
+    
 
     .hambur-menu img {
         width: 40px;
@@ -179,10 +181,7 @@ ul.list-left {
         opacity: 0.9;
     }
 
-    .logo {
-        width: 69px;
-        margin-right: 25%;
-    }
+  
 
 
 }
@@ -206,7 +205,27 @@ ul.list-left {
         width: 35px;
         height: 43px;
     }
-
+.offcanvas-btn{
+    display: block !important;
+    margin-left: 1rem;
+}.list-right{
+    display: none;
+}.navbar {
+    width: 100% !important;
+    border-top: 0px !important;
+ 
+    position: absolute !important;
+    top: 0px;
+    margin-top: 0px;
+    border-bottom: ridge 3.6px #BFA772;
+    border-radius: 0px;
+    width: 100% !important;
+    z-index: 100;
+    transform: translateX(-0%) !important;
+}.list-left li {
+    margin-left: 0px;
+    padding: 5px 8.5px;
+}
 }
 
 
@@ -215,11 +234,7 @@ ul.list-left {
         height: 92px;
     }
 
-    .list-left li {
-        margin-left: -6.3px;
-        padding: 5px 6.5px;
-    }
-
+  
     .list-left li a {
         font-size: 20px;
     }
@@ -234,10 +249,7 @@ ul.list-left {
         margin-top: -3px;
     }
 
-    .logo {
-        width: 60px;
-        margin-right: 25%;
-    }
+    
 
     .list-left span {
         color: #fff;
@@ -270,10 +282,7 @@ ul.list-left {
         height: 38;
     }
 
-    .logo {
-        width: 59px;
-        margin-right: 25%;
-    }
+   
 }
 
 
@@ -289,10 +298,7 @@ ul.list-left {
         margin-left: -43px;
     }
 
-    .logo {
-        width: 57px;
-        margin-right: 25%;
-    }
+
 
     .list-left li {
         font-size: 18px;
@@ -302,10 +308,7 @@ ul.list-left {
 
 
 @media screen and (max-width: 710px) {
-    .logo {
-        width: 55px;
-        margin-right: 29%;
-    }
+   
 
     .list-left li a{
         font-size: 15.5px;
@@ -315,6 +318,116 @@ ul.list-left {
     ul.list-left{
         padding: 0 35px;
         margin-left: 15px;
+    }.list-left{
+        display: none !important;
+    }.shop-icon-mibile-size{
+        display: flex !important;
+        gap: 15px;
     }
 
+}
+.shop-icon-mibile-size a{
+    color: white !important;
+}
+.shop-icon-mibile-size a:hover{
+    color: white !important;
+}
+.shop-icon-mibile-size{
+    display: none;
+align-items: baseline;
+color: white;
+    font-size: 1.5rem;
+    width: 25%;
+    text-align: left;
+    justify-content: center;
+}
+.shop-icon-mibile-size p{
+    font-size: .8rem;
+}
+.offcanvas-btn{
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: .3rem;
+    width: 23%;
+    display: flex !important;
+    margin-right: 1rem;
+}
+
+
+@media (min-width:906px) {
+    .offcanvas-btn{
+        display: none !important;
+    }
+}
+.offcanvas {
+    background: #393630 !important;
+    height: 400px !important;
+    border-bottom: #BFA772 solid 1px !important;
+}
+.offcanvas-header{
+    color: #BFA772;
+    font-size: .8rem;
+  
+}
+
+.offcanvas-header h5{
+    font-family: vazirlight !important;
+}
+.btn-close-icon{
+    font-size: 2rem;
+    color: white;
+}
+.offcanvas-icon{
+    font-size: 1.2rem;
+    color: white;
+}
+.offcanvas-body ul{
+display: flex;
+padding-top: 3rem;
+flex-direction: column-reverse;
+gap: 30px;
+}
+.offcanvas-body ul li{
+display: flex;
+padding: 0rem 13rem;
+justify-content: space-between;
+color: #BFA772;
+}
+.logo-div{
+
+}
+
+@media (max-width:600px) {
+    .logo-div {
+        width: 53px;
+        position: absolute;
+        right: 45%;
+    }.offcanvas-body ul li {
+     
+        padding: 0rem 3rem;
+      
+    }.offcanvas-header h5{
+        font-size: .9rem;
+        margin-top: .5rem;
+    }
+}
+@media (max-width:390px) {
+    .offcanvas-body ul li {
+     
+        padding: 0rem 1rem !important;
+      
+    }.btn-close-icon{
+        font-size: 1.3rem;
+    }.logo-div{
+        display: none;
+    }.shop-icon-mibile-size {
+     
+        width: 34%;
+        gap: 7px;
+      
+    }.shop-icon-mibile-size{
+        padding-left: .5rem;
+    }
 }

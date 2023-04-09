@@ -26,10 +26,10 @@ const footer = () => {
               <div className="footer_card mx-lg-5">
                 <h4 className='fs-9'>دسترسی ها</h4>
                 <ul>
-                  <li><a href="#"> خانه</a> </li>
-                  <li><a href="#"> فروشگاه</a> <span className='footer-span-badge'>جدید</span> </li>
-                  <li><a href="#"> درباره ما</a> </li>
-                  <li><a href="#"> تماس با ما</a> </li>
+                  <li><a href="we"> خانه</a> </li>
+                  <li><a href="we"> فروشگاه</a> <span className='footer-span-badge'>جدید</span> </li>
+                  <li><a href="ew"> درباره ما</a> </li>
+                  <li><a href="we"> تماس با ما</a> </li>
 
                 </ul>
               </div>

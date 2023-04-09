@@ -2,7 +2,7 @@
     width: 100%;
     height: auto;
     background-color: #0d0c0cf2;
-    padding: 3rem 5rem 0rem 5rem;
+    padding: 3rem 5rem 0rem ;
     border-top: 1px solid white;
 }
 
@@ -158,7 +158,7 @@ footer  section{
     justify-content: center;
     gap: 34px;
 }.main_footer {
-    padding: 3rem 2rem 0rem 2rem;
+    padding: 3rem 2rem 0rem ;
 }.border-hr-2{
     display: block !important;
 }
@@ -174,9 +174,9 @@ footer  section{
         display: grid !important;
         grid-template-columns: auto; 
       }.main_footer {
-        padding: 3rem 1rem 0rem 1rem;
+        padding: 3rem 1rem 0rem ;
     }.footer_card{
-        margin: 0rem 0rem !important;
+        margin: 0rem !important;
     }
 }
 

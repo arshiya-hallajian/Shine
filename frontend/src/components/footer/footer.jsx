@@ -13,56 +13,69 @@ const footer = () => {
 
       <footer className="main_footer">
         <div>
-          <div className="footer_kenar">
-            <div className="footer_card">
-              <h4>درباره ما</h4>
-              <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. </p>
-            </div>
-          </div>
 
-          <div className="footer_vasat">
-            <div className="footer_card">
-              <h4>محصولات</h4>
-              <ul>
-                <li><a href="#"> گوشواره</a> </li>
-                <li><a href="#"> ساعت</a> </li>
-                <li><a href="#"> گردنبند</a> </li>
-                <li><a href="#"> انگشتر</a> </li>
-                <li><a href="#"> دستبند</a> </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="footer_vasat">
-            <div className="footer_card">
-              <h4 id='contact'>ارتباط</h4>
-              <ul>
-                <li><span>تماس:09178376279</span> </li>
-                <li><span>تلفن:XXXXXXXX</span> </li>
-                <li id='spn3'><span> ایمیل:arta.dev21@gmail.com</span></li>
-                <li><span>آدرس:شیراز معالی آباد کوچه ششم</span> </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="footer_kenar">
-            <div id='namad' className="footer_card">
-
-              <div className="footer_namad">
-                <img src="images/enamad.png" alt="E-nemad" />
-                <img src="images/neshan_meli.jpg" alt="neshan-melli" />
+          <section>
+            <div className="footer_kenar">
+              <div className="footer_card">
+                <h4 className='mb-2'>درباره جواهری ما</h4>
+                <p className='vazirlight footer-about-text'>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد </p>
               </div>
             </div>
-          </div>
 
+            <div className="footer_vasat">
+              <div className="footer_card mx-lg-5">
+                <h4 className='fs-9'>دسترسی ها</h4>
+                <ul>
+                  <li><a href="#"> خانه</a> </li>
+                  <li><a href="#"> فروشگاه</a> <span className='footer-span-badge'>جدید</span> </li>
+                  <li><a href="#"> درباره ما</a> </li>
+                  <li><a href="#"> تماس با ما</a> </li>
+
+                </ul>
+              </div>
+            </div>
+
+            <div className="footer_vasat">
+              <div className="footer_card">
+                <h4 className='fs-9'>دسترسی ها</h4>
+                <ul className='mt-4'>
+                  <li><span className='vazirlight fs-8'><strong>تماس :</strong> 09178376279 </span> </li>
+                  <li><span className='vazirlight fs-8'> <strong>تلفن :</strong> XXXXXXXX</span> </li>
+                  <li id='spn3'><span className='vazirlight fs-8'> <strong> ایمیل :</strong> arta.dev21@gmail.com</span></li>
+                  <li><span className='vazirlight fs-8'> <strong>آدرس :</strong>  شیراز معالی آباد کوچه ششم</span> </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="footer_kenar licens-1">
+              <div id='namad' className="footer_card">
+                <p>نماد های اعتماد به وودمارت گیفت</p>
+                <div className="footer_namad">
+                  <img src="images/enamad.png" alt="E-nemad" />
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXo2tOGrj_yyBevtlFzSTONyVYjjxH5cVmZg&usqp=CAU" alt="" />
+                  <img src="images/neshan_meli.jpg" alt="neshan-melli" />
+                </div>
+              </div>
+            </div>
+          </section>
           <div className="clearfix"></div>
 
           <hr className="border-hr" />
-
+          <div className="footer_kenar licens-2 mb-4">
+              <div id='namad' className="footer_card">
+                <p>نماد های اعتماد به وودمارت گیفت</p>
+                <div className="footer_namad">
+                  <img src="images/enamad.png" alt="E-nemad" />
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXo2tOGrj_yyBevtlFzSTONyVYjjxH5cVmZg&usqp=CAU" alt="" />
+                  <img src="images/neshan_meli.jpg" alt="neshan-melli" />
+                </div>
+              </div>
+            </div>
+            <hr className="border-hr border-hr-2 w-100 " />
           <div className="under_footer">
             <p>تمامی حقوق سایت محفوظ میباشد.</p>
 
-            
+
             <div className="footer-social-icons">
               <a href="#"><AiFillInstagram /></a>
               <a href="#"><BsTelegram /></a>

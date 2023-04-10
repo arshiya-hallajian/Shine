@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import './Home.css'
 import WhyThisShop from '../../components/whyThisShop/WhyThisShop'
 import HomeIntroProducts from '../../components/HomeIntroProducts/HomeIntroProducts'
-
+import blogs from "../../components/blogs/Blogs"
 import OnSaleCart from '../../components/OnSaleCart/OnSaleCart'
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -138,9 +138,19 @@ export default function Home() {
         <i className="btn-icon"><img src="images/backtotop2.png" alt="" /></i>
       </a>
 
-          {/* bottom Menu */}
+      {/* Blogs */} 
+    <hr className="hr-line"/>
+      <div className="blogs-content">
 
-          
+        <h4>مطالب وبلاگ</h4>
+        <p>Blog content</p>
+
+        <section className="blog-card">
+
+        </section>
+      </div>
+
+
 
     </div>
   )

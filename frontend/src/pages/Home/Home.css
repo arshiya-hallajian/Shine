@@ -1,6 +1,6 @@
 .Home {
     background-color: #3A3730;
-
+    padding-bottom: 3rem;
 }
 
 .home-section-top {
@@ -442,7 +442,8 @@ width: 40px;
     background-image: url(https://dev-wp.ir/goldpluss/wp-content/uploads/2022/03/Mask-Group-9-6-min.png);
     background-position: center center;
     background-repeat: no-repeat;
-    margin: 2rem 6rem;
+    margin: 2rem 6rem 0rem;
+   
     background-size: contain;
     border-radius: 10px;
 }

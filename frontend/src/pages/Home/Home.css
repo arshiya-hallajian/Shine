@@ -548,7 +548,9 @@ hr.hr-line{
 }
 
 
-
+.blog_card{
+    display: flex;
+}
 
 
 

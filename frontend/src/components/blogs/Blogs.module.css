@@ -1,0 +1,55 @@
+div.container{
+width:calc(100% / 3 - 40px);
+height:450px ;
+background-color:#47443E ;
+border-radius:25px ;
+margin: 20px;
+
+}
+
+.header_blog{
+    width: 30%;
+    height: 10px;
+    background-color: #F0CC80;
+    border-radius: 30px;
+    margin: auto;
+  
+}
+
+.container img{
+    width: 380px;
+    height: 220px;
+    border-radius: 30px;
+    margin: auto;
+    margin:10px 30px;
+
+}
+
+
+
+.title{
+    font-size: 1rem;
+    color: #6c1111;
+    font-weight: bold;
+   
+}
+.paragraph{
+    font-size: 15px;
+    opacity: .7;
+}
+
+
+.card_body a{
+    text-decoration: none;
+    color: #e6e6e6;
+    margin: 10px auto;
+    vertical-align: middle;
+  transition: .5s;
+ 
+}
+
+.card_body a:hover{
+    color:#d8d2d2
+        
+    
+}

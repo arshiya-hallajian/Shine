@@ -526,6 +526,40 @@ width: 40px;
 .order br{
     display: none;
 }
+
+hr.hr-line{
+    color: #a6b111;
+    width: 100%;
+
+
+}
+
+
+
+.blogs-content h4{
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.blogs-content p{
+    text-align: center;
+    color: #eee;
+    font-weight: 100;
+    padding: 15px;
+}
+
+
+.blog_card{
+    display: flex;
+}
+
+
+
+
+
+
+
 @media (max-width:1350px) {
     .order{
         margin: 2rem;

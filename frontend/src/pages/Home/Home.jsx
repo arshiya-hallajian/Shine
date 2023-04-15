@@ -2,16 +2,16 @@ import React, { useRef, useState } from "react";
 import './Home.css'
 import WhyThisShop from '../../components/whyThisShop/WhyThisShop'
 import HomeIntroProducts from '../../components/HomeIntroProducts/HomeIntroProducts'
-
 import OnSaleCart from '../../components/OnSaleCart/OnSaleCart'
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
 import "swiper/css/navigation";
 import { Navigation } from "swiper";
 import { RxPinTop } from "react-icons/rx"
+import Blogs from "../../components/blogs/Blogs"
+
 
 export default function Home() {
   window.addEventListener('scroll', function () {
@@ -138,9 +138,24 @@ export default function Home() {
         <i className="btn-icon"><img src="images/backtotop2.png" alt="" /></i>
       </a>
 
-          {/* bottom Menu */}
+      {/* Blogs */} 
 
-          
+    <hr className="hr-line"/>
+      <div className="blogs-content">
+
+        <h4 className="con-h4">مطالب وبلاگ</h4>
+        <p>Blog content</p>
+
+        <section className="blog_card">
+
+        <Blogs image="https://dev-wp.ir/goldpluss/wp-content/uploads/2021/12/cover04-min.jpg" title ="قصد هدیه گرفتن دارید ؟" parag ="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است..." />
+        <Blogs image="https://dev-wp.ir/goldpluss/wp-content/uploads/2021/12/1-5-min.jpg" title ="به سلایق و علایق توجه کنید!" parag ="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است..." />
+        <Blogs image="https://dev-wp.ir/goldpluss/wp-content/uploads/2021/12/2-8-min.jpg" title ="خرید هدیه ارزان و کاربردی" parag ="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است..." />
+      
+        </section>
+      </div>
+
+
 
     </div>
   )

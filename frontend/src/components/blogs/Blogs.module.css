@@ -43,12 +43,14 @@ div.container {
     font-size: 15px;
     opacity: .7;
 }
-
+.continiue{
+    text-align: center;
+}
 
 .card_body a {
     text-decoration: none;
-    color: #e6e6e6;
-    text-align: center;
+    color: #e6e3e3;
+    margin: auto;
     transition: .4s;
     opacity: .7;
 
@@ -56,7 +58,7 @@ div.container {
 
 .card_body a:hover{
     opacity: 1;
-    color:#e6e6e6 ;
+    color:#fff ;
 }
 
 .card_body a:hover::after{

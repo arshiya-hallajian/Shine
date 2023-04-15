@@ -10,7 +10,9 @@ const Blogs = ({ image, title, parag }) => {
             <div className={styles.card_body}>
                 <strong><h4 className={styles.title}>{title}</h4></strong>
                 <p className={styles.paragraph}>{parag}</p>
+                <div className={styles.continiue}>
                 <a href="#">ادامه مطلب</a>
+                </div>
             </div>
 
         </div>

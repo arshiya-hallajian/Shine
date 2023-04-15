@@ -8,7 +8,7 @@ const Blogs = ({ image, title, parag }) => {
             <img src={image} alt='blog image' />
 
             <div className={styles.card_body}>
-               <strong><h4 className={styles.title}>{title}</h4></strong>
+                <strong><h4 className={styles.title}>{title}</h4></strong>
                 <p className={styles.paragraph}>{parag}</p>
                 <a href="#">ادامه مطلب</a>
             </div>

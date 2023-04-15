@@ -1,54 +1,65 @@
-div.container{
-width:calc(100% / 3 - 40px);
-height:450px ;
-background-color:#47443E ;
-border-radius:25px ;
-margin: 20px;
+div.container {
+    width: calc(100% / 3 - 40px);
+    height: 450px;
+    background-color: #47443E;
+    border-radius: 25px;
+    margin: 20px;
 
 
 }
 
-.header_blog{
+.header_blog {
     width: 30%;
     height: 10px;
     background-color: #F0CC80;
     border-radius: 30px;
     margin: auto;
-  
+
 }
 
-.container img{
+.container img {
     width: 80%;
     height: 50%;
     border-radius: 30px;
     margin: auto;
-    margin:3% 9%;
+    margin: 3% 9%;
+    transition: .3s;
+}
+
+.container img:hover{
+    opacity: .8;
+    background-color: black;
 }
 
 
 
-.title{
+.title {
     font-size: 1.2rem;
     font-weight: bold;
-   
+
 }
-.paragraph{
+
+.paragraph {
     font-size: 15px;
     opacity: .7;
 }
 
 
-.card_body a{
+.card_body a {
     text-decoration: none;
     color: #e6e6e6;
-    margin: 10px auto;
-    vertical-align: middle;
-  transition: .5s;
- 
+    text-align: center;
+    transition: .4s;
+    opacity: .7;
+
 }
 
 .card_body a:hover{
-    color:#d8d2d2
-        
-    
+    opacity: 1;
+    color:#e6e6e6 ;
+}
+
+.card_body a:hover::after{
+    transition: .5;
+    content: "..";
 }

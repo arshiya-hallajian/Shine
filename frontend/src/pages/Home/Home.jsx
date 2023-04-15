@@ -143,14 +143,14 @@ export default function Home() {
     <hr className="hr-line"/>
       <div className="blogs-content">
 
-        <h4>مطالب وبلاگ</h4>
+        <h4 className="con-h4">مطالب وبلاگ</h4>
         <p>Blog content</p>
 
         <section className="blog_card">
 
         <Blogs image="https://dev-wp.ir/goldpluss/wp-content/uploads/2021/12/cover04-min.jpg" title ="قصد هدیه گرفتن دارید ؟" parag ="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است..." />
-        <Blogs image="https://dev-wp.ir/goldpluss/wp-content/uploads/2021/12/1-5-min.jpg" title ="قصد هدیه گرفتن دارید ؟" parag ="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است..." />
-        <Blogs image="https://dev-wp.ir/goldpluss/wp-content/uploads/2021/12/2-8-min.jpg" title ="قصد هدیه گرفتن دارید ؟" parag ="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است..." />
+        <Blogs image="https://dev-wp.ir/goldpluss/wp-content/uploads/2021/12/1-5-min.jpg" title ="به سلایق و علایق توجه کنید!" parag ="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است..." />
+        <Blogs image="https://dev-wp.ir/goldpluss/wp-content/uploads/2021/12/2-8-min.jpg" title ="خرید هدیه ارزان و کاربردی" parag ="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است..." />
       
         </section>
       </div>

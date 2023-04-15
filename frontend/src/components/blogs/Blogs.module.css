@@ -5,6 +5,7 @@ background-color:#47443E ;
 border-radius:25px ;
 margin: 20px;
 
+
 }
 
 .header_blog{
@@ -17,19 +18,17 @@ margin: 20px;
 }
 
 .container img{
-    width: 380px;
-    height: 220px;
+    width: 370px;
+    height: 210px;
     border-radius: 30px;
     margin: auto;
-    margin:10px 30px;
-
+    margin:5% 10%;
 }
 
 
 
 .title{
-    font-size: 1rem;
-    color: #6c1111;
+    font-size: 1.2rem;
     font-weight: bold;
    
 }

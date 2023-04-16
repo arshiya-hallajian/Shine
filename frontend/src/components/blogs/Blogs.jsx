@@ -11,7 +11,7 @@ const Blogs = ({ image, title, parag }) => {
                 <strong><h4 className={styles.title}>{title}</h4></strong>
                 <p className={styles.paragraph}>{parag}</p>
                 <div className={styles.continiue}>
-                <a href="#">ادامه مطلب</a>
+                    <a href="#">ادامه مطلب</a>
                 </div>
             </div>
 

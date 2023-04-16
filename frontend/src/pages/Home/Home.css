@@ -15,7 +15,6 @@
     z-index: 0;
     position: relative;
     height: 868px;
-
     bottom: 108px;
 }
 
@@ -25,7 +24,7 @@
 
     font-size: 80px;
     line-height: 100px;
-    margin:3rem 14rem 1rem 15rem;
+    margin: 3rem 14rem 1rem 15rem;
 }
 
 .home-title p {
@@ -127,7 +126,9 @@
 
     .home-section-top video {
         height: 320px;
-    } .home-section-top{
+    }
+
+    .home-section-top {
         bottom: -13px;
     }
 
@@ -154,11 +155,11 @@
     }
 }
 
-@media (max-width: 1024px){
-.home-title h4 {
-    font-size: 66px ;
+@media (max-width: 1024px) {
+    .home-title h4 {
+        font-size: 66px;
 
-}
+    }
 }
 
 
@@ -425,7 +426,7 @@
 }
 
 .to-top.active {
-    opacity:0.8;
+    opacity: 0.8;
     bottom: 40px;
 }
 
@@ -433,21 +434,23 @@
     font-size: 30px;
 }
 
-.btn-icon img{
-width: 40px;
+.btn-icon img {
+    width: 40px;
 }
+
 /* order */
-.order{
+.order {
     position: relative;
     background-image: url(https://dev-wp.ir/goldpluss/wp-content/uploads/2022/03/Mask-Group-9-6-min.png);
     background-position: center center;
     background-repeat: no-repeat;
     margin: 2rem 6rem 0rem;
-   
+
     background-size: contain;
     border-radius: 10px;
 }
-.order-bg{
+
+.order-bg {
     background-color: #000000;
     opacity: 0.44;
     height: 424px;
@@ -457,48 +460,56 @@ width: 40px;
     border-radius: 30px;
     position: absolute;
 }
-.order section{
+
+.order section {
     display: flex;
     margin-right: -10px;
     width: 100%;
     justify-content: space-around;
     margin-left: -10px;
 }
-.order section div{
+
+.order section div {
     text-align: right;
     width: 72%;
     padding: 30px;
     padding-left: 13rem;
 }
-.order section .vazirlight{
+
+.order section .vazirlight {
     color: white;
     position: relative;
     font-size: 14px;
 }
-.order section .vazir{
+
+.order section .vazir {
     font-size: 1.4rem;
     color: white;
     letter-spacing: -1px;
     position: relative;
 }
-.order section .mt-3{
+
+.order section .mt-3 {
     font-size: 1.5rem;
     position: relative;
 }
-.order img{
+
+.order img {
     position: relative;
     left: 100px;
     bottom: 70px;
 }
-.order-btns{
+
+.order-btns {
     display: flex;
-   
+
     width: 100% !important;
     position: relative;
     z-index: 1000;
     gap: 23px;
 }
-.order-btns button:nth-child(1){
+
+.order-btns button:nth-child(1) {
     font-weight: 500;
     fill: #383838;
     color: #383838;
@@ -510,7 +521,8 @@ width: 40px;
     border-radius: 185px;
     padding: 13px 30px;
 }
-.order-btns button:nth-child(2){
+
+.order-btns button:nth-child(2) {
     font-weight: 500;
     background-color: #61CE7000;
     border-style: solid;
@@ -523,11 +535,12 @@ width: 40px;
 
 
 }
-.order br{
+
+.order br {
     display: none;
 }
 
-hr.hr-line{
+hr.hr-line {
     color: #a6b111;
     width: 100%;
 
@@ -536,13 +549,13 @@ hr.hr-line{
 
 
 
-.blogs-content h4{
+.blogs-content h4 {
     color: #fff;
     font-weight: bold;
     text-align: center;
 }
 
-.blogs-content p{
+.blogs-content p {
     text-align: center;
     color: #eee;
     font-weight: 100;
@@ -550,7 +563,7 @@ hr.hr-line{
 }
 
 
-.blog_card{
+.blog_card {
     display: flex;
 }
 
@@ -561,89 +574,123 @@ hr.hr-line{
 
 
 @media (max-width:1350px) {
-    .order{
+    .order {
         margin: 2rem;
-        
-    background-size: 100% 392px;
+
+        background-size: 100% 392px;
 
     }
-    .order img{
-            height: 253px;
-            width: 209px;
-            position: relative;
-            right: -30px;
-    }.order section div {
+
+    .order img {
+        height: 253px;
+        width: 209px;
+        position: relative;
+        right: -30px;
+    }
+
+    .order section div {
         text-align: right;
         width: 100%;
         padding: 30px;
         padding-left: 1rem;
     }
-    .order br{
+
+    .order br {
         display: unset !important;
     }
 }
+
 @media (max-width:1023px) {
     .order section {
-flex-direction: column-reverse;
+        flex-direction: column-reverse;
         width: 100%;
         justify-content: center;
-      
-    }.order img {
+
+    }
+
+    .order img {
         display: block;
         margin-right: auto;
-       
+
         position: relative;
         top: 113px;
-    }.order-bg {
+    }
+
+    .order-bg {
         height: 424px;
         width: 100%;
         top: 129px;
         position: absolute;
-    }.order section {
+    }
+
+    .order section {
         bottom: 127px;
         position: relative;
     }
-    
+
 }
+
 @media (max-width:767px) {
-    .order img{
+    .order img {
         display: none !important;
-    }.order-bg {
+    }
+
+    .order-bg {
         top: 3px;
-    }.order section {
+    }
+
+    .order section {
         bottom: 0px;
-    }.order-bg {
+    }
+
+    .order-bg {
         height: 100%;
     }
-    .order{
-        background-size: 100% 95%;
-    }.order-btns button{
-        display: block;
-    margin-right: auto;
-    margin-left: auto;
 
-    }.order-btns{
+    .order {
+        background-size: 100% 95%;
+    }
+
+    .order-btns button {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+
+    }
+
+    .order-btns {
         flex-direction: column;
-    }.order-btns button:nth-child(2){
+    }
+
+    .order-btns button:nth-child(2) {
         padding: .7rem;
 
-    }.order section .mt-3 {
+    }
+
+    .order section .mt-3 {
         font-size: 1.2rem;
     }
 }
+
 @media (max-width:500px) {
-    .order{
+    .order {
         margin: 1rem !important;
     }
 }
+
 @media (max-width:368px) {
     .order section .mt-3 {
         font-size: 1rem !important;
-    }  .order section .vazir {
-        font-size: 1.2rem !important; 
-    }.order-btns{
+    }
+
+    .order section .vazir {
+        font-size: 1.2rem !important;
+    }
+
+    .order-btns {
         font-size: .9rem;
     }
+
     .order-btns button {
         width: 100% !important;
     }

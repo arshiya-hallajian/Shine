@@ -13,12 +13,12 @@ function App() {
 
   return (
 
-   
+
     <>
-    <Header/>
+      <Header />
       {router}
-    <Footer />
-   </>
+      <Footer />
+    </>
 
 
   );

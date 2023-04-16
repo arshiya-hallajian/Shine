@@ -39,9 +39,9 @@ const footer = () => {
               <div className="footer_card">
                 <h4 className='fs-9'>دسترسی ها</h4>
                 <ul className='mt-4'>
-                  <li><span className='vazirlight fs-8'><strong>تماس :</strong> 09178376279 </span> </li>
+                  <li><span className='vazirlight fs-8'><strong>تماس :</strong> 0917123456 </span> </li>
                   <li><span className='vazirlight fs-8'> <strong>تلفن :</strong> XXXXXXXX</span> </li>
-                  <li id='spn3'><span className='vazirlight fs-8'> <strong> ایمیل :</strong> arta.dev21@gmail.com</span></li>
+                  <li id='spn3'><span className='vazirlight fs-8'> <strong> ایمیل :</strong> xrxrx.dev21@gmail.com</span></li>
                   <li><span className='vazirlight fs-8'> <strong>آدرس :</strong>  شیراز معالی آباد کوچه ششم</span> </li>
                 </ul>
               </div>
@@ -52,7 +52,7 @@ const footer = () => {
                 <p>نماد های اعتماد به وودمارت گیفت</p>
                 <div className="footer_namad">
                   <img src="images/enamad.png" alt="E-nemad" />
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXo2tOGrj_yyBevtlFzSTONyVYjjxH5cVmZg&usqp=CAU" alt="" />
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXo2tOGrj_yyBevtlFzSTONyVYjjxH5cVmZg&usqp=CAU" alt="E-namad" />
                   <img src="images/neshan_meli.jpg" alt="neshan-melli" />
                 </div>
               </div>
@@ -66,7 +66,7 @@ const footer = () => {
                 <p>نماد های اعتماد به وودمارت گیفت</p>
                 <div className="footer_namad">
                   <img src="images/enamad.png" alt="E-nemad" />
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXo2tOGrj_yyBevtlFzSTONyVYjjxH5cVmZg&usqp=CAU" alt="" />
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXo2tOGrj_yyBevtlFzSTONyVYjjxH5cVmZg&usqp=CAU" alt="E-namad" />
                   <img src="images/neshan_meli.jpg" alt="neshan-melli" />
                 </div>
               </div>

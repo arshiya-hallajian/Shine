@@ -26,8 +26,9 @@ export default function Home() {
     <div className='Home'>
 
       <div className='home-section-top'>
-        <video autoplay muted playsinline loop >
+        <video autoplay muted playsInline loop >
           <source src="../../Home_video.mp4" type='video/mp4' />
+          your browser kiri
         </video>
 
         <div className="home-title">
@@ -47,7 +48,7 @@ export default function Home() {
 
       <div className='why-this-shop'>
         <p className='why-this-shop-title'>چرا جواهری وودمارت</p>
-        <img src="https://dev-wp.ir/goldpluss/wp-content/uploads/2022/12/Group-158.png" alt="" />
+        <img src="https://dev-wp.ir/goldpluss/wp-content/uploads/2022/12/Group-158.png" alt="why-image" />
         <section>
           <WhyThisShop />
           <WhyThisShop />
@@ -138,9 +139,9 @@ export default function Home() {
         <i className="btn-icon"><img src="images/backtotop2.png" alt="" /></i>
       </a>
 
-      {/* Blogs */} 
+      {/* Blogs */}
 
-    <hr className="hr-line"/>
+      <hr className="hr-line" />
       <div className="blogs-content">
 
         <h4 className="con-h4">مطالب وبلاگ</h4>
@@ -148,10 +149,10 @@ export default function Home() {
 
         <section className="blog_card">
 
-        <Blogs image="https://dev-wp.ir/goldpluss/wp-content/uploads/2021/12/cover04-min.jpg" title ="قصد هدیه گرفتن دارید ؟" parag ="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است..." />
-        <Blogs image="https://dev-wp.ir/goldpluss/wp-content/uploads/2021/12/1-5-min.jpg" title ="به سلایق و علایق توجه کنید!" parag ="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است..." />
-        <Blogs image="https://dev-wp.ir/goldpluss/wp-content/uploads/2021/12/2-8-min.jpg" title ="خرید هدیه ارزان و کاربردی" parag ="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است..." />
-      
+          <Blogs image="https://dev-wp.ir/goldpluss/wp-content/uploads/2021/12/cover04-min.jpg" title="قصد هدیه گرفتن دارید ؟" parag="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است..." />
+          <Blogs image="https://dev-wp.ir/goldpluss/wp-content/uploads/2021/12/1-5-min.jpg" title="به سلایق و علایق توجه کنید!" parag="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است..." />
+          <Blogs image="https://dev-wp.ir/goldpluss/wp-content/uploads/2021/12/2-8-min.jpg" title="خرید هدیه ارزان و کاربردی" parag="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است..." />
+
         </section>
       </div>
 

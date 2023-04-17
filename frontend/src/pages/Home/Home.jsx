@@ -149,9 +149,49 @@ export default function Home() {
 
         <section className="blog_card">
 
-          <Blogs image="https://dev-wp.ir/goldpluss/wp-content/uploads/2021/12/cover04-min.jpg" title="قصد هدیه گرفتن دارید ؟" parag="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است..." />
-          <Blogs image="https://dev-wp.ir/goldpluss/wp-content/uploads/2021/12/1-5-min.jpg" title="به سلایق و علایق توجه کنید!" parag="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است..." />
-          <Blogs image="https://dev-wp.ir/goldpluss/wp-content/uploads/2021/12/2-8-min.jpg" title="خرید هدیه ارزان و کاربردی" parag="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است..." />
+
+
+
+
+
+          <Swiper
+            pagination={{
+              dynamicBullets: true,
+            }}
+            breakpoints={{
+              320: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 0,
+              },
+  
+  
+              1364: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+              },
+            }}
+
+            modules={[Pagination]}
+            className="mySwiperBlogs"
+          >
+            <SwiperSlide>          <Blogs image="https://dev-wp.ir/goldpluss/wp-content/uploads/2021/12/cover04-min.jpg" title="قصد هدیه گرفتن دارید ؟" parag="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است..." />
+            </SwiperSlide>
+            <SwiperSlide>          <Blogs image="https://dev-wp.ir/goldpluss/wp-content/uploads/2021/12/1-5-min.jpg" title="به سلایق و علایق توجه کنید!" parag="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است..." />
+            </SwiperSlide>
+            <SwiperSlide>          <Blogs image="https://dev-wp.ir/goldpluss/wp-content/uploads/2021/12/2-8-min.jpg" title="خرید هدیه ارزان و کاربردی" parag="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است..." />
+            </SwiperSlide>
+
+          </Swiper>
+
+
+
+
+
+
 
         </section>
       </div>

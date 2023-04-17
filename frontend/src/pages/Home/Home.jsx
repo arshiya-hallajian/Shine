@@ -28,11 +28,11 @@ export default function Home() {
       <div className='home-section-top'>
         <video autoplay muted playsInline loop >
           <source src="../../Home_video.mp4" type='video/mp4' />
-          your browser kiri
+
         </video>
 
         <div className="home-title">
-          <h4>shine bright like a diamond</h4>
+          <h4>Shine bright like a diamond</h4>
 
           <p className='vazir'>( مانند الماس درخشان باش )</p>
         </div>

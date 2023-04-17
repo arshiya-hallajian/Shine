@@ -26,7 +26,7 @@ const Header = () => {
 
 
           <button className='hambur-menu'>
-            <img src="images/hambur-menu.png" alt="" />
+            <img src="images/hambur-menu.png" alt="hamber-menu" />
           </button>
 
           <ul className='list-right'>

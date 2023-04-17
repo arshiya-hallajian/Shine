@@ -1,16 +1,17 @@
 div.container {
-    width: calc(100% / 3 - 40px);
+    width: 450px; 
+           /* calc(100% / 3 - 40px) */
     height: 450px;
     background-color: #47443E;
     border-radius: 25px;
-    margin: 20px;
+    margin: 20px 20px 20px 0;
 
 
 }
 
 .header_blog {
     width: 30%;
-    height: 10px;
+    height: 8px;
     background-color: #F0CC80;
     border-radius: 30px;
     margin: auto;

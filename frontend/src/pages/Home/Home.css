@@ -675,6 +675,9 @@ hr.hr-line {
 @media (max-width:500px) {
     .order {
         margin: 1rem !important;
+    }.mySwiperBlogs{
+        margin: 0rem !important;
+        right: 0px !important;
     }
 }
 
@@ -693,5 +696,12 @@ hr.hr-line {
 
     .order-btns button {
         width: 100% !important;
+    }
+}
+
+@media (min-width:501px) {
+    .mySwiperBlogs{
+        margin: 0rem 4rem !important;
+        right: 0px !important;
     }
 }

@@ -163,26 +163,40 @@ export default function Home() {
                 slidesPerView: 1,
                 spaceBetween: 10,
               },
-              768: {
+              800: {
                 slidesPerView: 2,
                 spaceBetween: 0,
               },
-  
-  
+
+
               1364: {
                 slidesPerView: 3,
-                spaceBetween: 10,
+                spaceBetween: 0,
               },
             }}
 
             modules={[Pagination]}
             className="mySwiperBlogs"
           >
-            <SwiperSlide>          <Blogs image="https://dev-wp.ir/goldpluss/wp-content/uploads/2021/12/cover04-min.jpg" title="قصد هدیه گرفتن دارید ؟" parag="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است..." />
+            <SwiperSlide>
+              <Blogs date='10 ' image="https://dev-wp.ir/goldpluss/wp-content/uploads/2021/12/cover04-min.jpg" title="قصد هدیه گرفتن دارید ؟" parag="
+					
+به وردپرس خوش آمدید. این اولین نوشتهٔ شماست. این را ویرایش یا حذف کنید، سپس نو..." />
             </SwiperSlide>
-            <SwiperSlide>          <Blogs image="https://dev-wp.ir/goldpluss/wp-content/uploads/2021/12/1-5-min.jpg" title="به سلایق و علایق توجه کنید!" parag="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است..." />
+            <SwiperSlide>
+              <Blogs  date='10 ' image="https://dev-wp.ir/goldpluss/wp-content/uploads/2021/12/cover04-min.jpg" title="قصد هدیه گرفتن دارید ؟" parag="
+					
+به وردپرس خوش آمدید. این اولین نوشتهٔ شماست. این را ویرایش یا حذف کنید، سپس نو..." />
             </SwiperSlide>
-            <SwiperSlide>          <Blogs image="https://dev-wp.ir/goldpluss/wp-content/uploads/2021/12/2-8-min.jpg" title="خرید هدیه ارزان و کاربردی" parag="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است..." />
+            <SwiperSlide>
+              <Blogs  date='10 ' image="https://dev-wp.ir/goldpluss/wp-content/uploads/2021/12/1-5-min.jpg" title="به سلایق و علایق توجه کنید!" parag="
+					
+به وردپرس خوش آمدید. این اولین نوشتهٔ شماست. این را ویرایش یا حذف کنید، سپس نو..." />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Blogs  date='10 ' image="https://dev-wp.ir/goldpluss/wp-content/uploads/2021/12/2-8-min.jpg" title="خرید هدیه ارزان و کاربردی" parag="
+					
+به وردپرس خوش آمدید. این اولین نوشتهٔ شماست. این را ویرایش یا حذف کنید، سپس نو..." />
             </SwiperSlide>
 
           </Swiper>

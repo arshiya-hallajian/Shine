@@ -8,7 +8,10 @@
     font-family: vazir;
     src: url(./fonts/vazir/Vazir-Bold.woff) format('woff');
   }
-  
+  @font-face {
+    font-family: vazirmd;
+    src: url(./fonts/vazir/Vazir.woff) format('woff');
+  }
 .vazir{
     font-family: vazir;
   }
@@ -16,7 +19,10 @@
     font-family: vazirlight;
     
   }
-
+  .vazirmd{
+    font-family: vazirmd;
+    
+  }
   .fs-12{
     font-size:1.2rem;
   }  

@@ -11,7 +11,7 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper";
 import { RxPinTop } from "react-icons/rx"
 import Blogs from "../../components/blogs/Blogs"
-
+import Header from '../../components/IndexHeader/Header'
 
 export default function Home() {
   window.addEventListener('scroll', function () {
@@ -23,7 +23,9 @@ export default function Home() {
     }
   })
   return (
-    <div className='Home'>
+    <>
+    <Header/>
+     <div className='Home'>
 
       <div className='home-section-top'>
         <video autoplay muted playsInline loop >
@@ -213,6 +215,8 @@ export default function Home() {
 
 
     </div>
+    </>
+   
   )
 }
 

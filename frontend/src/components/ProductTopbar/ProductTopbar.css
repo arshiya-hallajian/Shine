@@ -1,0 +1,40 @@
+.ProductTopbar{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: .5rem 6rem .5rem 5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.427);
+}
+.ProductTopbar div{
+    display: flex;
+    gap: 10px;
+    flex-direction: row-reverse;
+}
+.ProductTopbar p{
+    font-family: vazirmd;
+}
+.ProductTopbar div a{
+    color: white;
+    font-size: 1.2rem;
+    transition: all .25s ease;
+}
+@media (max-width:500px) {
+    .ProductTopbar p{
+        display: none;
+    }
+    .ProductTopbar{
+        justify-content: center;
+    }.ProductTopbar div{
+        gap: 30px;
+    }
+}
+.ProductTopbar div a:hover{
+    opacity: .6;
+}
+
+@media (max-width:1023px) {
+   .ProductTopbar{
+        padding: .5rem 3rem .5rem 2rem;
+    }
+}

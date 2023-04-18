@@ -1,0 +1,135 @@
+.ProductPage-header-general{
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 6rem .5rem 5rem;
+    align-items: center;
+}
+.ProductPage-header-general div{
+    display: flex;
+    gap: 10px;
+}
+.ProductPage-header-general div a:nth-child(3){
+    color: white;
+}
+.ProductPage-header-general div a:nth-child(1){
+    border-right: 0px;
+}
+.ProductPage-header-general div a{
+    font-size: 1.4rem;
+    transition: all .25s ease;
+    color: #909090;
+    height: 18px;
+    border-right: 1px solid gray;
+    display: flex;
+    align-items: center;
+    padding-right: .5rem;
+    position: relative;
+}
+.ProductPage-header-general div a span{
+    position: absolute;
+    font-size: .4rem;
+    color: white;
+    left: -6px;
+    border-radius: 20px;
+    top: -3px;
+    background-color: rgba(58, 55, 48, 1);
+    padding:  0rem .3rem;
+}
+.ProductPage-header-general section{
+    width: 50%;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+.ProductPage-header-general input:focus-visible{
+    outline: 0 !important;
+}
+.ProductPage-header-general input{
+    width: 100%;
+    height: 46px;
+    font-size: 15px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    letter-spacing: 2px;
+    padding: 0rem 1rem;
+    font-family: vazirmd;
+}
+.ProductPage-header-general input::placeholder{
+position:absolute;
+left: 35%;
+top: 20%;
+
+}
+@media (max-width:1300px) {
+    .ProductPage-header-general input::placeholder{
+        left: 25%;
+top: 20%;
+    }
+}
+.ProductPage-header-general section a{
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    padding: .54376rem 1rem;
+    border:1px solid white;
+    position: relative;
+    left: 14px;
+}
+.ProductPage-header-general section a:hover {
+    color: #fff;
+    box-shadow: inset 0 0 200px rgba(0,0,0,.1);
+}
+.ProductPage-general-serarch-icon{
+    font-size: 1.4rem;
+    color: white;
+}
+
+.ProductPage-header-general button{
+    display: none;
+    background-color: transparent;
+    border: none;
+    padding: .5rem 0rem .5rem .5rem;
+    font-size: 1.4rem;
+    color: white;
+}
+.ProductPage-header-general img:nth-child(2){
+    display: none ;
+    width: 179px;
+    height: 38px;
+  margin-right: 0rem;
+ }
+@media (max-width:1023px) {
+    .ProductPage-header-general section{
+        display: none;
+    }.ProductPage-header-general button{
+        display: block;
+    }.ProductPage-header-general{
+        padding: 1.5rem 3rem 1.5rem 2rem;
+    }.ProductPage-header-general img:nth-child(2){
+       display: block !important;
+    }
+    .ProductPage-general-first-logo{
+        display: none !important;
+     }.ProductPage-header-general div a:nth-child(3){
+     display: none;
+    }
+    .ProductPage-header-general div a:nth-child(1){
+        display: none;
+    }
+    .ProductPage-header-general div a:nth-child(2){
+    border: 0px !important;
+    }
+    
+}
+@media (max-width:500px) {
+    .ProductPage-header-general img:nth-child(2){
+        display: none ;
+        width: 150px;
+        height: 38px;
+      margin-right: 0rem;
+     }
+}
+@media (max-width:426px) {
+    .ProductPage-header-general {
+        padding: 1.5rem 1rem 1.5rem 1rem !important;
+    } 
+}

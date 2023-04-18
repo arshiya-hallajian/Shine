@@ -129,7 +129,7 @@ export default function Home() {
               <button>درخواست مشاوره و راهنمایی</button>
             </div>
           </div>
-          <img width={322} height={408} src="https://dev-wp.ir/goldpluss/wp-content/uploads/2022/03/Group-168-min.png" alt="image" />
+          <img width={322} height={408} src="images/Group-168-min (1).png" alt="image" />
 
         </section>
       </div>

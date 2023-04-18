@@ -26,8 +26,8 @@ padding:0rem 1.2rem;
     height: 224px;
     border-radius: 30px;
     margin:1rem auto;
+  
 
-    transition: .3s;
 }
 
 .blogs-containerimg:hover {

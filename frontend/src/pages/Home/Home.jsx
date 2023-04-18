@@ -38,7 +38,7 @@ export default function Home() {
         </div>
 
         <div className="ring">
-          <img src="../Mask-Group-10-min.png" alt="" />
+          <img src="../Mask-Group-10-min.png" alt="mask-group" />
         </div>
 
         <div className="scrollButton">
@@ -129,14 +129,14 @@ export default function Home() {
               <button>درخواست مشاوره و راهنمایی</button>
             </div>
           </div>
-          <img width={322} height={408} src="https://dev-wp.ir/goldpluss/wp-content/uploads/2022/03/Group-168-min.png" alt="" />
+          <img width={322} height={408} src="https://dev-wp.ir/goldpluss/wp-content/uploads/2022/03/Group-168-min.png" alt="image" />
 
         </section>
       </div>
 
       {/* Back to Top Button  */}
       <a href="#" className="to-top">
-        <i className="btn-icon"><img src="images/backtotop2.png" alt="" /></i>
+        <i className="btn-icon"><img src="images/backtotop2.png" alt="icon" /></i>
       </a>
 
       {/* Blogs */}
@@ -184,19 +184,19 @@ export default function Home() {
 به وردپرس خوش آمدید. این اولین نوشتهٔ شماست. این را ویرایش یا حذف کنید، سپس نو..." />
             </SwiperSlide>
             <SwiperSlide>
-              <Blogs  date='10 ' image="https://dev-wp.ir/goldpluss/wp-content/uploads/2021/12/cover04-min.jpg" title="قصد هدیه گرفتن دارید ؟" parag="
+              <Blogs date='10 ' image="https://dev-wp.ir/goldpluss/wp-content/uploads/2021/12/2-8-min.jpg" title="خرید هدیه ارزان و کاربردی" parag="
+					
+          به وردپرس خوش آمدید. این اولین نوشتهٔ شماست. این را ویرایش یا حذف کنید، سپس نو..." />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Blogs date='10 ' image="https://dev-wp.ir/goldpluss/wp-content/uploads/2021/12/1-5-min.jpg" title="به سلایق و علایق توجه کنید!" parag="
 					
 به وردپرس خوش آمدید. این اولین نوشتهٔ شماست. این را ویرایش یا حذف کنید، سپس نو..." />
             </SwiperSlide>
             <SwiperSlide>
-              <Blogs  date='10 ' image="https://dev-wp.ir/goldpluss/wp-content/uploads/2021/12/1-5-min.jpg" title="به سلایق و علایق توجه کنید!" parag="
+              <Blogs date='10 ' image="https://dev-wp.ir/goldpluss/wp-content/uploads/2021/12/cover04-min.jpg" title="قصد هدیه گرفتن دارید ؟" parag="
 					
-به وردپرس خوش آمدید. این اولین نوشتهٔ شماست. این را ویرایش یا حذف کنید، سپس نو..." />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Blogs  date='10 ' image="https://dev-wp.ir/goldpluss/wp-content/uploads/2021/12/2-8-min.jpg" title="خرید هدیه ارزان و کاربردی" parag="
-					
-به وردپرس خوش آمدید. این اولین نوشتهٔ شماست. این را ویرایش یا حذف کنید، سپس نو..." />
+          به وردپرس خوش آمدید. این اولین نوشتهٔ شماست. این را ویرایش یا حذف کنید، سپس نو..." />
             </SwiperSlide>
 
           </Swiper>
@@ -215,3 +215,5 @@ export default function Home() {
     </div>
   )
 }
+
+

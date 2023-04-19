@@ -1,0 +1,51 @@
+.container h4 {
+    color: #fff;
+    font-weight: bold;
+
+}
+
+.container p {
+    color: #eee;
+    font-weight: 100;
+}
+
+
+.container label {
+    font-size: 1.3rem;
+    color: #eee;
+    font-weight: bold;
+}
+
+.user-comment {
+    margin: 10px auto;
+    background-color: transparent;
+    border: 2px solid #767171;
+    border-radius: 25px;
+    resize: none;
+    outline: none;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px;
+    width: 96%;
+    height: 240px;
+}
+
+.inputs{
+    display: flex;
+}
+
+.inputs label{
+margin: 12px;
+
+}
+.inputs input{
+    background-color: transparent;
+    width: 43%;
+    height: 43px;
+    border: 1px solid #767171;
+    border-radius: 25px;
+    outline: none;
+    color: #fff;
+    padding: 4px;
+}
+

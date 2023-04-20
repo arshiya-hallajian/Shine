@@ -1,7 +1,7 @@
 .container h4 {
     color: #fff;
     font-weight: bold;
-
+margin: 30px 0;
 }
 
 .container p {
@@ -9,7 +9,10 @@
     font-weight: 100;
 }
 
-
+.red-star{
+    color: #a80202;
+    font-size: 1rem;
+}
 .container label {
     font-size: 1.3rem;
     color: #eee;
@@ -64,15 +67,16 @@
 }
 .submit-btn{
     padding: 6px 10px;
+    margin: 0 25px;
     border-radius: 5px;
     border: none;
     transition: .5s;
     color: #312e2e;
-    background-color: #e5e085;
+    background-color: #ebe462;
 }
 
 .submit-btn:hover{
-    background-color:#d7d261 ;
+    background-color:#e4de70 ;
     color:#eee ;
 }
 

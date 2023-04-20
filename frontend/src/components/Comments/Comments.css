@@ -30,15 +30,19 @@
     height: 240px;
 }
 
-.inputs{
+.inputs label {
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin: 12px;
+
+}
+
+.inputs {
     display: flex;
 }
 
-.inputs label{
-margin: 12px;
 
-}
-.inputs input{
+.inputs input {
     background-color: transparent;
     width: 43%;
     height: 43px;
@@ -47,5 +51,43 @@ margin: 12px;
     outline: none;
     color: #fff;
     padding: 4px;
+    margin: 8px 0 0 0;
 }
 
+.radio-btn {
+    margin: 10px 8px 0 0;
+}
+
+.radio-btn label {
+    font-size: 1rem;
+    margin: 8px;
+}
+.submit-btn{
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: none;
+    transition: .5s;
+    color: #312e2e;
+    background-color: #e5e085;
+}
+
+.submit-btn:hover{
+    background-color:#d7d261 ;
+    color:#eee ;
+}
+
+
+@media screen and (max-width: 700px) {
+    .inputs label {
+        font-size: 1.1rem;
+        font-weight: 100;
+        margin: 12px;
+        margin-top: 2px;
+    }
+
+    .radio-btn label {
+        font-size: .9rem;
+        
+    }
+
+}

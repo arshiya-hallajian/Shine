@@ -6,7 +6,7 @@ const Comments = () => {
         <div className='container'>
             <h4>دیدگاه ها</h4>
 
-            <p>اولین نفری باشید که برای این محصول دیدگاهی را ثبت میکنید</p>
+            <p>اولین نفری باشید که برای این محصول دیدگاهی را ثبت میکنید..</p>
 
             <label>نظر خود را وارد کنید :</label>
 
@@ -15,13 +15,18 @@ const Comments = () => {
 
                 <div className="inputs">
                     <label htmlFor="">نام:</label>
-                    <input type="text" />
+                    <input id='name' type="text" />
 
                     <label htmlFor="">ایمیل:</label>
-                    <input type="email" />
-
+                    <input id='email' type="email" />
                 </div>
-                    <br /><br /><br /><br /><br /><br />
+                <div className="radio-btn">
+                    <input id='check' type="checkbox" value="اطلاعات من ذخیره شود ." />
+                    <label htmlFor="check">اطلاعات من ذخیره شود .</label>
+                <input className='submit-btn' type="submit" value="ارسال" />
+                </div>
+
+                <br /><br /><br /><br /><br /><br />
             </form>
 
 

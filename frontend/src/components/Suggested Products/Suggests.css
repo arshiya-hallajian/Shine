@@ -1,0 +1,13 @@
+.components{
+    display: flex;
+    margin: 25px 10px;
+}
+
+.suggests-section h4{
+    color: #eee;
+    
+}
+.container span.pipe{
+color: #f3d4ae;
+margin: 0 5px;
+}

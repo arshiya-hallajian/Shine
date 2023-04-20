@@ -17,7 +17,7 @@ const Comments = () => {
                     <label htmlFor="">نام:</label>
                     <input id='name' type="text" />
 
-                    <label htmlFor="">ایمیل:</label>
+                    <label htmlFor="">ایمیل<span className='red-star'>*</span>:</label>
                     <input id='email' type="email" />
                 </div>
                 <div className="radio-btn">
@@ -26,7 +26,7 @@ const Comments = () => {
                 <input className='submit-btn' type="submit" value="ارسال" />
                 </div>
 
-                <br /><br /><br /><br /><br /><br />
+                <br /><br />
             </form>
 
 

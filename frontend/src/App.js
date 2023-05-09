@@ -15,8 +15,8 @@ function App() {
 
 
     <>
-      {/* {router} */}
-      <ProductPage />
+      {router}
+      {/* <ProductPage /> */}
       <Footer />
     </>
 

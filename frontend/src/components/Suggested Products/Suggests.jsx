@@ -23,6 +23,10 @@ const Suggests = () => {
                             slidesPerView: 2,
                             spaceBetween: 10,
                         },
+                        450:{
+                            slidesPerView: 2,
+                            spaceBetween: 8,
+                        },
                         800: {
                             slidesPerView: 3,
                             spaceBetween: 7,

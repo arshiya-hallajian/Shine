@@ -17,7 +17,10 @@ export default function ProductPage_general() {
       <button onClick={handleShow}>
       <AiOutlineMenu/>
       </button>
+
+  
       <img src="	https://dev-wp.ir/goldpluss/wp-content/themes/woodmart/images/wood-logo-dark.svg"  alt="" />
+      
     <img src="https://dev-wp.ir/goldpluss/wp-content/uploads/2022/03/Group-160-1.png" alt="" className='ProductPage-general-first-logo'/>
     <section>
         <input type="text" placeholder='جستجو برای محصولات' />

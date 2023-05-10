@@ -5,9 +5,7 @@
 }
 
 body {
-	
 	font-family: Montsrrat, sans-serif;
-	
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -31,22 +29,20 @@ p {
 }
 
 .card-container {
-	background-color: #515151;
+	background-color: #5a5a5a;
 	border-radius: 5px;
 	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
 	color: #B3B8CD;
 	padding-top: 30px;
 	position: relative;
-	width: 90%;
+	width: 300px;
 	max-width: 100%;
 	text-align: center;
-    margin: 10px;
-    
+   margin: 28px;
 }
 
 .card-container .pro {
 	color: #333;
-	
 	border-radius: 3px;
 	font-size: 14px;
 	font-weight: bold;
@@ -59,10 +55,63 @@ p {
 .card-container .round {
     width: 115px;
     height: 115px;
-	border: 1px solid #a9a9a9;
+	border: 1px solid #fff;
 	border-radius: 50%;
-	padding: 7px;
+	padding: 4px;
+	object-fit: cover;
 }
+/* new */
+
+.button {
+	height: 50px;
+	width: 200px;
+	position: relative;
+	background-color: transparent;
+	cursor: pointer;
+	border: 2px solid #978d8d;
+	overflow: hidden;
+	border-radius: 30px;
+	-webkit-transition: all 0.3s ease-in-out;
+	color: #f4f4f4;
+	transition: all 0.3s ease-in-out;
+	margin: 5px;
+  }
+  
+  .btn-txt {
+	z-index: 1;
+	font-weight: 800;
+	letter-spacing: 2px;
+  }
+  
+  .type1::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	background-color: #444444;
+	border-radius: 30px;
+	visibility: hidden;
+	height: 10px;
+	width: 10px;
+	z-index: -1;
+  }
+  
+  .button:hover {
+	-webkit-box-shadow: 1px 1px 200px #000000;
+	box-shadow: 1px 1px 200px #000000;
+	color: #d3d3d3;
+  }
+  
+  .type1:hover::after {
+	visibility: visible;
+	-webkit-transform: scale(100) translateX(2px);
+      -ms-transform: scale(100) translateX(2px);
+          transform: scale(100) translateX(2px);
+  }
+
+/* new */
 
 button.primary {
 	background-color: #bebebe;

@@ -1,7 +1,7 @@
 import React from 'react';
 import "./ContactCard.css"
 
-const ContactCard = ({U_img , name , city,title,title2}) => {
+const ContactCard = ({ U_img, name, city, title, title2 }) => {
     return (
         <div className='card_body'>
             <div class="card-container">
@@ -10,11 +10,11 @@ const ContactCard = ({U_img , name , city,title,title2}) => {
                 <h6>{city}</h6>
                 <p>{title}<br /> {title2}</p>
                 <div class="buttons">
-                    <button class="primary">
-                        Message
+                    <button class="button type1">
+                        <span class="btn-txt">Message</span>
                     </button>
-                    <button class="primary ghost">
-                       Github
+                    <button class="button type1">
+                        <span class="btn-txt">Github</span>
                     </button>
                 </div>
                 <div class="skills">
@@ -28,7 +28,7 @@ const ContactCard = ({U_img , name , city,title,title2}) => {
                         <li>React</li>
                         <li>Solidity</li>
                         <li>SEO</li>
-                        
+
 
                     </ul>
                 </div>

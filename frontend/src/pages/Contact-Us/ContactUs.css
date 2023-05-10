@@ -18,7 +18,7 @@
     color: aliceblue;
     text-align: center;
     font-weight: bold;
-    padding: 25px 0;
+    padding: 20px 0;
 }
 .aboutUs p{
     color: #b5aaaa;
@@ -30,7 +30,7 @@
 
 .aboutUs img{
     width: 83%;
-    height: 420px;
+    height: 450px;
     border-radius: 20px;
     margin-right: 8.5%;
 }

@@ -2,8 +2,15 @@
 
 .breadcrumb {
   margin-bottom: 2rem;
-  padding: 0.5rem 6rem 0.5rem 5rem !important;
+
   width: 100%;
+}
+@media (min-width:1023px) {
+  .breadcrumb {
+
+    padding: 0.5rem 6rem 0.5rem 5rem !important;
+
+  }
 }
 
 .breadcrumb__content {
@@ -69,3 +76,27 @@
 }
 
 /* Finish Breadcrumb Styles */
+
+@media (max-width:1022px) {
+  .breadcrumb {
+    padding: 0.5rem 3rem 0.5rem 2rem !important;
+  }
+}
+
+@media (max-width:500px) {
+  .breadcrumb__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-right: 0px !important;
+    padding-left: 0px;
+}.breadcrumb__content {
+    justify-content: center;
+}
+}
+
+@media (max-width:700px) {
+  .ProductPage-detail section button {
+    width: 100%;
+}
+}

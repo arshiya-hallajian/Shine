@@ -3,7 +3,7 @@ import "./Comments.css";
 
 const Comments = () => {
     return (
-        <div className='container'>
+        <div className='container product-page-comments'>
             <h4>دیدگاه ها</h4>
 
             <p>اولین نفری باشید که برای این محصول دیدگاهی را ثبت میکنید..</p>

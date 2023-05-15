@@ -33,7 +33,7 @@ export default function ProductPage() {
             />
 
                 <main>
-
+                <div className='product-page-parent'>
                     <div className="ProductPage-img">
                         <img src="https://dev-wp.ir/goldpluss/wp-content/uploads/2022/03/9-min.jpg" alt="" />
                     </div>
@@ -73,6 +73,8 @@ export default function ProductPage() {
                                 <a href=""><BsPinterest/></a>
                             </div>
                     </div>
+                </div>
+                    
 
 
                     <div className="ProductPage-feature">

@@ -3,7 +3,9 @@
     font-weight: bold;
 margin: 30px 0;
 }
-
+.product-page-comments{
+    padding: 0rem 6rem;
+}
 .container p {
     color: #eee;
     font-weight: 100;
@@ -95,3 +97,4 @@ margin: 30px 0;
     }
 
 }
+

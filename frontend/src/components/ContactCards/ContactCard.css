@@ -15,12 +15,14 @@ body {
 }
 
 h3 {
-	margin: 10px 0;
+	margin: 17px 0;
 }
 
 h6 {
-	margin: 5px 0;
+	margin: 8px 0;
+	border-bottom: solid 1px rgb(133, 132, 132);
 	text-transform: uppercase;
+	opacity: .5;
 }
 
 p {
@@ -77,10 +79,11 @@ p {
 	margin: 5px;
   }
   
-  .btn-txt {
+  a button span.btn-txt {
 	z-index: 1;
 	font-weight: 800;
 	letter-spacing: 2px;
+	text-decoration: none;
   }
   
   .type1::after {

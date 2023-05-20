@@ -8,8 +8,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
 import "swiper/css/navigation";
-import { Navigation } from "swiper";
-import { RxPinTop } from "react-icons/rx"
+
 import Blogs from "../../components/blogs/Blogs"
 import Header from '../../components/IndexHeader/Header'
 
@@ -144,7 +143,7 @@ export default function Home() {
         {/* Blogs */}
 
         <hr className="hr-line" />
-        <div className="blogs-content">
+        <div className="blogs-content mt-5">
 
           <h4 className="con-h4">مطالب وبلاگ</h4>
           <p>Blog content</p>

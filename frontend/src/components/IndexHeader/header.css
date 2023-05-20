@@ -22,9 +22,11 @@
 .header_backgruond {
     width: 100%;
     height: 60px;
-    background-color: #47443E;
+    background-color: #0d0c0cf2;
     position: relative;
     z-index: 100;
+    border-bottom: 1px solid white;
+     
 }
 
 .navbar {

@@ -55,7 +55,8 @@ const Header = () => {
 
           <div className="shop-icon-mibile-size">
           <a href="#"><AiOutlineShoppingCart /></a> 
-               <p>0/0 تومان</p>
+          <a href="#"><AiOutlineHeart /></a> 
+                
     
           </div>
 

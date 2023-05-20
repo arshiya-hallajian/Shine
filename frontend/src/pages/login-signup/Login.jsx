@@ -1,16 +1,22 @@
 import React from 'react'
 import "./Login.css"
-
+import ProductPage_general from '../../components/ProductPage-header-general/ProductPage_general'
+import ProductTopbar from '../../components/ProductTopbar/ProductTopbar'
 const Login = () => {
 
 	return (
 
-		<div className="body">
+		<div className="Login_SignUp">
+			<ProductTopbar/>
+			<ProductPage_general/>
 			<form action="">
 				<div className="login-wrap">
 					<div className="login-html">
-						<input id="tab-1" type="radio" name="tab" className="sign-in" checked /><label htmlFor="tab-1" className="tab">ورود</label>
-						<input id="tab-2" type="radio" name="tab" className="sign-up" /><label htmlFor="tab-2" className="tab">ثبت نام</label>
+						
+							<input id="tab-1" type="radio" name="tab" className="sign-in" checked /><label htmlFor="tab-1" className="tab tab1">ورود</label>
+						<input id="tab-2" type="radio" name="tab" className="sign-up" /><label htmlFor="tab-2" className="tab tab2">ثبت نام</label>
+						
+						
 						<div className="login-form">
 							<div className="sign-in-htm">
 								<div className="group">
@@ -21,9 +27,9 @@ const Login = () => {
 									<label htmlFor="pass" className="label">رمز عبور</label>
 									<input id="pass1" type="password" className="input" data-type="password" />
 								</div>
-								<div className="group">
-									<input id="check" type="checkbox" className="check" />
-									<label htmlFor="check"><span className="icon"></span> من را عضو نگه دار</label>
+								<div className="group group-checkBox">
+									<input id="check"   type="checkbox" className="check span-checkBox" />
+									<label className='mx-2' htmlFor="check"> من را عضو نگه دار</label>
 								</div>
 								<div className="group">
 									<input type="submit" className="button" value="ورود به حساب کاربری" />
@@ -60,8 +66,20 @@ const Login = () => {
 							</div>
 						</div>
 					</div>
+					<div class="drops">
+
+					<div class="drop drop-1"></div>
+					<div class="drop drop-2"></div>
+					<div class="drop drop-3"></div>
+					<div class="drop drop-4"></div>
+					<div class="drop drop-5"></div>
+
 				</div>
+				</div>
+
+				
 			</form>
+		 
 		</div>
 
 	)

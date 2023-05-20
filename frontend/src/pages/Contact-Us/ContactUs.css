@@ -7,11 +7,15 @@
 
 .aboutUs{
     background-color: #333;
-    width: 90%;
+    width: 90vw;
     height: 620px;
     border-radius: 15px;
     margin-right: 5.5%;
     margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .aboutUs h3{
@@ -28,9 +32,11 @@
     text-align: center;
 }
 
-.aboutUs img{
-    width: 83%;
-    height: 450px;
+img.container_image{
+    width: 83vw;
+    height: 75%;
     border-radius: 20px;
-    margin-right: 8.5%;
+    justify-content: flex-end;
+
 }
+   

@@ -11,11 +11,11 @@ export default function Category() {
             <ProductPage_general />
             <Breadcrumb
                 links={[
-                    { id: 1, title: "خانه", to: "/", isThisEnd: false },
+                    { id: 1, title: "خانه", to: " ", isThisEnd: false },
                     {
                         id: 2,
                         title: "فروشگاه",
-                        to: "/category",
+                        to: "Category",
                         isThisEnd: true
                     },
 

@@ -16,19 +16,14 @@ export default function ProductPage() {
 
             <Breadcrumb
                 links={[
-                    { id: 1, title: "خانه", to: "/", isThisEnd: false },
+                    { id: 1, title: "خانه", to: " ", isThisEnd: false },
                     {
                         id: 2,
                         title: "دستبند",
-                        to: "/",
+                        to: "Product",
                         isThisEnd: false
                     },
-                    {
-                        id: 3,
-                        title: "گردنبند اقا ارشیا",
-                        to: "/"
-                        , isThisEnd: true
-                    },
+                     
                 ]}
             />
 

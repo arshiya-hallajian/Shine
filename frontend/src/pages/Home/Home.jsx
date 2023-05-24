@@ -21,13 +21,17 @@ export default function Home() {
       toTop.classList.remove('active');
     }
   })
+  let video = document.querySelector("#video-back")
+  window.addEventListener("load" , ()=>{
+    video.play()
+  })
   return (
     <>
       <Header />
       <div className='Home'>
 
         <div className='home-section-top'>
-          <video autoplay muted playsInline loop >
+          <video id="video-back" autoplay muted playsInline loop >
             <source src="../../Home_video.mp4" type='video/mp4' />
 
           </video>

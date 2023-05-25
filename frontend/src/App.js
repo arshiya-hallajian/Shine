@@ -1,7 +1,7 @@
 
 import './App.css';
-import { useEffect, useState, } from 'react';
-import { useRoutes } from 'react-router-dom';
+// import { useEffect, useState, } from 'react';
+import { useRoutes } from 'react-router-dom';2
 import routes from './routes';
 import Footer from './components/footer/footer';
  

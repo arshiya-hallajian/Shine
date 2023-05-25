@@ -1,4 +1,4 @@
-.Login_SignUp form input{
+.Login_SignUp input{
 	border: none;
 	padding: 15px 20px;
 	border-radius: 25px;
@@ -36,7 +36,7 @@
 	align-items: baseline;
 	gap: 0px !important;
 }
-.group-checkBox  input{
+.group-checkBox input{
 	width: 20px !important;
 }
 .login-title{

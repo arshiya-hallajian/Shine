@@ -66,9 +66,9 @@ const [error,setError]=useState(false)
 								<Field name="pass" placeholder='arshiya@8585'  type={!showPassword?"password":"text"} />
 								{errors.pass && touched.pass && errors.pass}
 								{!showPassword ?(
-										<AiOutlineEyeInvisible  onClick={passIconHandler}   className='pass-icon'/>
-								):( 
 									<AiOutlineEye onClick={passIconHandler} className='pass-icon'/>
+								):( 
+								<AiOutlineEyeInvisible  onClick={passIconHandler}   className='pass-icon'/>
 								)}
 							
 							</div>

@@ -9,8 +9,8 @@ import "swiper/css/navigation";
 
 const Suggests = () => {
     return (
-        <div className='container'>
-            <h4><span className='pipe'>|</span>محصولات پیشنهادی</h4>
+        <div className='Suggests_parent'>
+            <h4 className='my-4'><span className='pipe'>|</span>محصولات پیشنهادی</h4>
 
             <div className="components">
 
@@ -20,7 +20,7 @@ const Suggests = () => {
                     }}
                     breakpoints={{
                         320: {
-                            slidesPerView: 2,
+                            slidesPerView: 1,
                             spaceBetween: 10,
                         },
                         450:{

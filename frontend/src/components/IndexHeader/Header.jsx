@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <>
 
-      <header className='header'>
+      <header className='index-header'>
         <div className='header_backgruond'>
 
         </div>

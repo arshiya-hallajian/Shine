@@ -97,13 +97,16 @@ top: 20%;
     height: 38px;
   margin-right: 0rem;
  }
+@media (max-width:1200px) {
+    .ProductPage-header-general{
+        padding: 1.5rem 3rem 1.5rem 2rem;
+    }
+}
 @media (max-width:1023px) {
     .ProductPage-header-general section{
         display: none;
     }.ProductPage-header-general button{
         display: block;
-    }.ProductPage-header-general{
-        padding: 1.5rem 3rem 1.5rem 2rem;
     }.ProductPage-header-general img:nth-child(2){
        display: block !important;
     }

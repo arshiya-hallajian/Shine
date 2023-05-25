@@ -3,17 +3,17 @@ import "./Comments.css";
 
 const Comments = () => {
     return (
-        <div className='container product-page-comments'>
+        <div className='product-page-comments'>
             <h4>دیدگاه ها</h4>
 
-            <p>اولین نفری باشید که برای این محصول دیدگاهی را ثبت میکنید..</p>
+            <p className='product-page-comments-title'>اولین نفری باشید که برای این محصول دیدگاهی را ثبت میکنید..</p>
 
             <label>نظر خود را وارد کنید :</label>
 
             <form action="">
                 <textarea className='user-comment' name="User-comment" id="User-comment" ></textarea>
 
-                <div className="inputs">
+                <div className="comments-inputs">
                     <label htmlFor="">نام:</label>
                     <input id='name' type="text" />
 
@@ -21,9 +21,12 @@ const Comments = () => {
                     <input id='email' type="email" />
                 </div>
                 <div className="radio-btn">
-                    <input id='check' type="checkbox" value="اطلاعات من ذخیره شود ." />
+                    <div>
+                          <input id='check' type="checkbox" value="اطلاعات من ذخیره شود ." />
                     <label htmlFor="check">اطلاعات من ذخیره شود .</label>
-                <input className='submit-btn' type="submit" value="ارسال" />
+                    </div>
+                  
+                <input className='comments-submit-btn' type="submit" value="ارسال" />
                 </div>
 
                 <br /><br />

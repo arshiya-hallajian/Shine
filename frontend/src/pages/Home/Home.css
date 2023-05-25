@@ -705,3 +705,13 @@ hr.hr-line {
         right: 0px !important;
     }
 }
+
+@media (max-width:350px) {
+    .home-section-top video {
+        height: 340px !important;
+    }.ring img{
+        bottom: -3px; position: relative;
+    }.scrollButton {
+        bottom:53px;
+    }
+}

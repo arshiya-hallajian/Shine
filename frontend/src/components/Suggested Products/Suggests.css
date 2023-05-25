@@ -1,13 +1,30 @@
 .components{
     display: flex;
-    margin: 25px 10px;
+    margin: 0px 10px;
+    padding-bottom: 3rem;
 }
 
 .suggests-section h4{
     color: #eee;
     
+    
 }
 .container span.pipe{
 color: #f3d4ae;
 margin: 0 5px;
+}
+
+.Suggests_parent{
+    padding: 0rem 6rem;
+    color: white;
+}
+@media (max-width:800px) {
+    .Suggests_parent{
+        padding: 0rem 2rem;
+    }  
+}
+@media (max-width:500px) {
+    .Suggests_parent{
+        padding: 0rem 1rem !important;
+    }
 }

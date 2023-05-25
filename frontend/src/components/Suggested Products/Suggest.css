@@ -2,7 +2,8 @@
     width: 180px;
     height: 230px;
     border-radius: 3px;
-    margin: 10px 28px;
+    margin: 10px auto;
+    border-radius: 10px;
 }
 
 .pro-title {

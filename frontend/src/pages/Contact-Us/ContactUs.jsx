@@ -10,7 +10,7 @@ const ContactUs = () => {
             <ProductTopbar />
             <ProductPage_general />
 
-            <hr className='hr_Line' />
+           
 
             <div className="aboutUs">
                 <h3>درباره ما</h3>

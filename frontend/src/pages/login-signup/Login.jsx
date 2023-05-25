@@ -1,85 +1,116 @@
-import React from 'react'
+import React,{useState} from 'react'
 import "./Login.css"
 import ProductPage_general from '../../components/ProductPage-header-general/ProductPage_general'
 import ProductTopbar from '../../components/ProductTopbar/ProductTopbar'
+import { Formik, Form, Field,   } from "formik";
+import {AiOutlineEye,AiOutlineEyeInvisible}from 'react-icons/ai'
 const Login = () => {
+const [showPassword,setShowPassword]=useState(false)
+const [error,setError]=useState(false)
+
+	const passIconHandler=()=>{
+		setShowPassword(prev=>!prev)
+	}
 
 	return (
 
-		<div className="Login_SignUp">
-			<ProductTopbar/>
-			<ProductPage_general/>
-			<form action="">
-				<div className="login-wrap">
-					<div className="login-html">
-						
-							<input id="tab-1" type="radio" name="tab" className="sign-in" checked /><label htmlFor="tab-1" className="tab tab1">ورود</label>
-						<input id="tab-2" type="radio" name="tab" className="sign-up" /><label htmlFor="tab-2" className="tab tab2">ثبت نام</label>
-						
-						
-						<div className="login-form">
-							<div className="sign-in-htm">
-								<div className="group">
-									<label htmlFor="user" className="label">نام کاربری</label>
-									<input autoComplete='off' id="user" type="text" className="input" />
-								</div>
-								<div className="group">
-									<label htmlFor="pass" className="label">رمز عبور</label>
-									<input id="pass1" type="password" className="input" data-type="password" />
-								</div>
-								<div className="group group-checkBox">
-									<input id="check"   type="checkbox" className="check span-checkBox" />
-									<label className='mx-2' htmlFor="check"> من را عضو نگه دار</label>
-								</div>
-								<div className="group">
-									<input type="submit" className="button" value="ورود به حساب کاربری" />
-								</div>
-								<div className="hr"></div>
-								<div className="foot-lnk">
-									<a href="#forgot">گذرواژه را فراموش کرده اید ؟</a>
-								</div>
+		<div className="Login_SignUp login">
+			<ProductTopbar />
+			<ProductPage_general />
+
+			<Formik
+				validate={(values) => {
+					const errors = {};
+
+					if (values.name == "") {
+						errors.name = "وارد کردن نام اجباری می‌باشد";
+						setError(true)
+					} else if (values.name.length < 4){
+						errors.name = "طول نام حداقل باید ۴ کاراکتر باشد";
+						setError(true)
+					}else{
+						setError(false)
+					}
+
+				    if (values.pass === "") {
+                        errors.pass = "وارد کردن نام اجباری می‌باشد";
+						setError(true)
+                    } else if (values.pass.length < 4) {
+                        errors.pass = "طول نام حداقل باید ۴ کاراکتر باشد";
+						setError(true)
+                    }
+                     if (error) {
+						return errors
+					 }
+				}}
+				initialValues={{ name: "", pass: "" }}
+				onSubmit={(values) => {
+					console.log("Form Inputs Data =>", values);
+				}} >
+
+				{({ values, handleChange, handleSubmit, errors, touched }) => ( 
+					<Form onSubmit={handleSubmit}>
+
+						<p className='login-title'>ورود به حساب کاربری</p>
+						<div className="hr"></div>
+						<main >
+							<div className="group">
+								<label className="label">نام کاربری</label>
+
+								<Field name="name" placeholder='ارشیا'  type="text"  />
+								
+								{errors.name && touched.name && errors.name}
 							</div>
-							<div className="sign-up-htm">
-								<div className="group">
-									<label htmlFor="user" className="label">نام کاربری</label>
-									<input autoComplete='off' id="user1" type="text" className="input" />
-								</div>
-								<div className="group">
-									<label htmlFor="pass" className="label">رمز عبور</label>
-									<input id="pass2" type="password" className="input" data-type="password" />
-								</div>
-								<div className="group">
-									<label htmlFor="pass" className="label">تکرار رمز عبور</label>
-									<input id="pass3" type="password" className="input" data-type="password" />
-								</div>
-								<div className="group">
-									<label htmlFor="pass" className="label">آدرس ایمیل</label>
-									<input id="email" type="email" className="input" />
-								</div><br />
-								<div className="group">
-									<input type="submit" className="button" value=" ثبت نام" />
-								</div>
-								<div className="hr"></div>
-								<div className="foot-lnk">
-									<label htmlFor="tab-1"> عضو هستید ؟</label>
-								</div>
+							<div className="group">
+								<label className="label">رمز عبور</label>
+								<Field name="pass" placeholder='arshiya@8585'  type={!showPassword?"password":"text"} />
+								{errors.pass && touched.pass && errors.pass}
+								{!showPassword ?(
+									<AiOutlineEye onClick={passIconHandler} className='pass-icon'/>
+								):( 
+								<AiOutlineEyeInvisible  onClick={passIconHandler}   className='pass-icon'/>
+								)}
+							
 							</div>
+							<div className="group group-checkBox mt-4">
+								<input id="check" type="checkbox" />
+								<label className='mx-2' > من را عضو نگه دار</label>
+							</div>
+							 
+							<button type="submit" className=' login-btn mt-5' >
+								ورود به حساب کاربری
+						    </button>
+							 
+								
+
+							<div className="hr mt-5"></div>
+
+							<a id='forgot' href="#forgot">گذرواژه را فراموش کرده اید ؟</a>
+
+						</main>
+
+
+
+
+						<div className="drops">
+
+							<div className="drop drop-1"></div>
+							<div className="drop drop-2"></div>
+							<div className="drop drop-3"></div>
+							<div className="drop drop-4"></div>
+							<div className="drop drop-5"></div>
+
 						</div>
-					</div>
-					<div class="drops">
 
-					<div class="drop drop-1"></div>
-					<div class="drop drop-2"></div>
-					<div class="drop drop-3"></div>
-					<div class="drop drop-4"></div>
-					<div class="drop drop-5"></div>
 
-				</div>
-				</div>
 
-				
-			</form>
-		 
+					</Form>
+				)}
+			</Formik>
+
+
+			
+
 		</div>
 
 	)

@@ -233,7 +233,7 @@ ul.list-left {
 
 @media screen and (max-width: 785px) {
     .navbar {
-        height: 92px;
+        height: 66px;
     }
 
   
@@ -365,7 +365,7 @@ color: white;
 }
 .index-header .offcanvas {
     background: #393630 !important;
-    height: 400px !important;
+    height: 100% !important;
     border-bottom: #BFA772 solid 1px !important;
 }
 .index-header .offcanvas-header{
@@ -393,7 +393,7 @@ gap: 30px;
 }
 .index-header .offcanvas-body ul li{
 display: flex;
-padding: 0rem 13rem;
+padding: 0rem 10rem;
 justify-content: space-between;
 color: #BFA772;
 }
@@ -430,4 +430,7 @@ color: #BFA772;
     }.shop-icon-mibile-size{
         padding-left: .5rem;
     }
+}
+.offcanvas-body ul a{
+    text-decoration: none;
 }

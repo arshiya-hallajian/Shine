@@ -3,7 +3,7 @@ import "./ContactCard.css"
 
 const ContactCard = ({ U_img, name, city, title, title2 , Skills,Github }) => {
     return (
-        <div className='card_body'>
+        <div className='contact_card_body'>
             <div class="card-container">
                 <img class="round" src={U_img} alt="user" />
                 <h3>{name}</h3>

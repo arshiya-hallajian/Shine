@@ -34,7 +34,7 @@
     opacity: .6;
 }
 
-@media (max-width:1023px) {
+@media (max-width:1200px) {
    .ProductTopbar{
         padding: .5rem 3rem .5rem 2rem;
     }

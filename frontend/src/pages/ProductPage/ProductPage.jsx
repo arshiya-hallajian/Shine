@@ -100,7 +100,7 @@ export default function ProductPage() {
             <Suggests />
 
 
-            <br /><br /><br /><br /><br /><br /><br /><br />
+          
         </div>
     )
 }

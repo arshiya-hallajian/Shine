@@ -10,7 +10,7 @@
     color:rgb(58,55,48);
     text-align: center;
     justify-content: center;
-    
+    align-items: center;
     background-color: #ffffff;
     border: none;
     gap: 10px;
@@ -89,9 +89,12 @@ color: #ffffff80;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0);
     transition: all .3s ease;
     border-radius: 15px;
-font-size: 1.4rem;
+font-size: 1rem;
 transform: translateX(-20px) translateZ(0);
 
+}
+.CategoryItem-icons .On-Sale-Cart-icon{
+font-size: 1rem !important;
 }
 .CategoryItem:hover .CategoryItem-icons{
     opacity: 1;

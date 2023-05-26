@@ -1,9 +1,9 @@
-import React,{useState} from 'react'
-import "./Login.css"
-import ProductPage_general from '../../components/ProductPage-header-general/ProductPage_general'
-import ProductTopbar from '../../components/ProductTopbar/ProductTopbar'
+import React,{useState} from 'react';
+import "./Login.css";
+import ProductPage_general from '../../components/ProductPage-header-general/ProductPage_general';
+import ProductTopbar from '../../components/ProductTopbar/ProductTopbar';
 import { Formik, Form, Field,   } from "formik";
-import {AiOutlineEye,AiOutlineEyeInvisible}from 'react-icons/ai'
+import {AiOutlineEye,AiOutlineEyeInvisible}from 'react-icons/ai';
 const Login = () => {
 const [showPassword,setShowPassword]=useState(false)
 const [error,setError]=useState(false)

@@ -5,8 +5,8 @@ import ProductPage_general from '../../components/ProductPage-header-general/Pro
 import Comments from '../../components/Comments/Comments';
 import Suggests from '../../components/Suggested Products/Suggests';
 import Breadcrumb from '../../components/Breadcrumb/Breadcrumb';
-import {AiFillYoutube, AiOutlineHeart, AiOutlineInstagram, AiOutlineTwitter} from 'react-icons/ai'
-import {ImFacebook} from 'react-icons/im'
+import {AiFillYoutube, AiOutlineHeart, AiOutlineInstagram, AiOutlineTwitter} from 'react-icons/ai';
+import {ImFacebook} from 'react-icons/im';
 import { BsPinterest } from 'react-icons/bs';
 export default function ProductPage() {
     return (

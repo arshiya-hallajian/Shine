@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import ProductPage_general from '../../components/ProductPage-header-general/ProductPage_general';
 import ProductTopbar from '../../components/ProductTopbar/ProductTopbar';
-import './SignUp.css'
+import './SignUp.css';
 import { Formik, Form, Field } from "formik";
-import { AiOutlineEye, AiOutlineEyeInvisible } from 'react-icons/ai'
+import { AiOutlineEye, AiOutlineEyeInvisible } from 'react-icons/ai';
 export default function SignUp() {
     const [showPassword, setShowPassword] = useState(false)
     const [showRepeatPassword, setShowRepeatPassword] = useState(false)

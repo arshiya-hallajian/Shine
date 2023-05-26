@@ -1,6 +1,6 @@
 
 import './App.css';
-// import { useEffect, useState, } from 'react';
+import { useEffect, useState, } from 'react';
 import { useRoutes } from 'react-router-dom';
 import routes from './routes';
 import Footer from './components/footer/footer';

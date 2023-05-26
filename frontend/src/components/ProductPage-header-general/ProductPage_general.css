@@ -119,6 +119,56 @@ top: 20%;
     height: 38px;
   margin-right: 0rem;
  }
+
+ /* Offcanvas Styles */
+
+.offcanvas-header{
+    background-color: #191717;
+}
+
+.PP_general_canvas_searchbar input {
+border-radius: 10px;
+background-color: transparent;
+border:none;
+padding: 5px;
+font-size: 1.2rem;
+outline: none;
+color: #fff;
+}
+.PP_general_canvas_searchbar input::placeholder{
+    color: #ebe8e8;
+}
+
+.canvas_searchbar_submit{
+    background-color: transparent;
+    border: none;
+   margin-right: 80px;
+    font-size: 30px;
+    color: #fff;
+}
+.offcanvas-body{
+    background-color: #191717;
+}
+
+.canvas_body_items{
+    padding: 5px 0;
+}
+
+.canvas_body_items li{
+font-size: 1rem;
+color: #fff;
+list-style: none;
+border-bottom: solid 1px #cbc7c7;
+padding: 20px 0;
+
+}
+
+.canvas_body_items span{
+    font-size: 25px;
+    padding: 5px;
+}
+
+
 @media (max-width:1200px) {
     .ProductPage-header-general{
         padding: 1.5rem 3rem 1.5rem 2rem;

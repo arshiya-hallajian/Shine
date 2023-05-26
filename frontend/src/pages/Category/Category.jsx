@@ -1,7 +1,7 @@
-import React from 'react'
-import './Category.css'
-import ProductTopbar from '../../components/ProductTopbar/ProductTopbar'
-import ProductPage_general from '../../components/ProductPage-header-general/ProductPage_general'
+import React from 'react';
+import './Category.css';
+import ProductTopbar from '../../components/ProductTopbar/ProductTopbar';
+import ProductPage_general from '../../components/ProductPage-header-general/ProductPage_general';
 import Breadcrumb from '../../components/Breadcrumb/Breadcrumb';
 import CategoryItem from '../../components/CategoryItem/CategoryItem';
 export default function Category() {
@@ -86,7 +86,7 @@ export default function Category() {
                             <span className='filter-section-span'>4</span>
                         </div>
                         <div>
-                            <p>آبی</p>
+                            <p>نقره ای</p>
                             <span className='filter-section-span'>4</span>
                         </div>
                         <div>
@@ -94,11 +94,11 @@ export default function Category() {
                             <span className='filter-section-span'>4</span>
                         </div>
                         <div>
-                            <p>رنگ بابات</p>
+                            <p>مشکی</p>
                             <span className='filter-section-span'>4</span>
                         </div>
                         <div>
-                            <p>قرمز</p>
+                            <p>کرمی</p>
                             <span className='filter-section-span'>4</span>
                         </div>
                     </section>

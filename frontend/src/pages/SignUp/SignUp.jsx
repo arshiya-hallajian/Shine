@@ -75,18 +75,20 @@ export default function SignUp() {
                             <label className="label">رمز عبور</label>
                             <Field placeholder='arshiya@8585' name="pass" type={!showPassword ? "password" : "text"} />
                             {!showPassword ? (
-                                <AiOutlineEye onClick={passIconHandler} className='pass-icon' />
-                            ) : (
                                 <AiOutlineEyeInvisible onClick={passIconHandler} className='pass-icon' />
+                                
+                            ) : (
+                                <AiOutlineEye onClick={passIconHandler} className='pass-icon' />
                             )}
                         </div>
                         <div className="group">
                             <label className="label">تکرار رمز عبور</label>
                             <Field placeholder='arshiya@8585' name="repeatPass" type={!showRepeatPassword ? "password" : "text"} />
                             {!showRepeatPassword ? (
-                                <AiOutlineEye onClick={repeatPassIconHandler} className='pass-icon' />
-                            ) : (
                                 <AiOutlineEyeInvisible onClick={repeatPassIconHandler} className='pass-icon' />
+                                
+                            ) : (
+                                <AiOutlineEye onClick={repeatPassIconHandler} className='pass-icon' />
                             )}
                         </div>
 

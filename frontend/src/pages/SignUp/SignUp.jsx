@@ -68,12 +68,12 @@ export default function SignUp() {
                     <main >
                         <div className="group">
                             <label className="label">نام کاربری</label>
-                            <Field placeholder='ارشیا' name="name" type="text" />
+                            <Field placeholder='عرشیا' name="name" type="text" />
 
                         </div>
                         <div className="group">
                             <label className="label">رمز عبور</label>
-                            <Field placeholder='arshiya@8585' name="pass" type={!showPassword ? "password" : "text"} />
+                            <Field placeholder='arshiya@gmail.com' name="pass" type={!showPassword ? "password" : "text"} />
                             {!showPassword ? (
                                 <AiOutlineEyeInvisible onClick={passIconHandler} className='pass-icon' />
                                 
@@ -83,7 +83,7 @@ export default function SignUp() {
                         </div>
                         <div className="group">
                             <label className="label">تکرار رمز عبور</label>
-                            <Field placeholder='arshiya@8585' name="repeatPass" type={!showRepeatPassword ? "password" : "text"} />
+                            <Field placeholder='arshiya@gmail.com' name="repeatPass" type={!showRepeatPassword ? "password" : "text"} />
                             {!showRepeatPassword ? (
                                 <AiOutlineEyeInvisible onClick={repeatPassIconHandler} className='pass-icon' />
                                 

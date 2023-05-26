@@ -82,7 +82,7 @@ export default function Category() {
                     <section className="filter-section mt-4">
                         <p className="filter-section-title">فیلتر بر اساس رنگ:</p>
                         <div className='mt-4'>
-                            <p>آبی</p>
+                            <p>طلایی</p>
                             <span className='filter-section-span'>4</span>
                         </div>
                         <div>
@@ -90,7 +90,7 @@ export default function Category() {
                             <span className='filter-section-span'>4</span>
                         </div>
                         <div>
-                            <p>سبز</p>
+                            <p>نوک مدادی</p>
                             <span className='filter-section-span'>4</span>
                         </div>
                         <div>
@@ -131,23 +131,23 @@ export default function Category() {
                     <section className="filter-section mt-4">
                         <p className="filter-section-title">فیلتر بر اساس برند:</p>
                         <div  className='mt-4'>
-                            <p>LG</p>
+                            <p>Rolex</p>
                             <span className='filter-section-span'>2</span>
                         </div>
                         <div>
-                            <p>آیسان</p>
+                            <p>LV</p>
                             <span className='filter-section-span'>3</span>
                         </div>
                         <div>
-                            <p>امرسان</p>
+                            <p>Guess</p>
                             <span className='filter-section-span'>2</span>
                         </div>
                         <div>
-                            <p>ایران شرق</p>
+                            <p>Tiffany</p>
                             <span className='filter-section-span'>2</span>
                         </div>
                         <div>
-                            <p>پارس خزر</p>
+                            <p>Gucci</p>
                             <span className='filter-section-span'>1</span>
                         </div>
                     </section>

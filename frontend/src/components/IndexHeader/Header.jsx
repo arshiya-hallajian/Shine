@@ -64,7 +64,7 @@ const Header = () => {
 
         <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
           <div class="offcanvas-header">
-            <h5 id="offcanvasTopLabel">الماس فروشی آرتا و برادران به جز ارشیا</h5>
+            <h5 id="offcanvasTopLabel">مانند الماس درخشان باش!</h5>
             <AiOutlineClose  class="btn-close-icon" data-bs-dismiss="offcanvas" aria-label="Close"/>
           
           </div>

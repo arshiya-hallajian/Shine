@@ -41,6 +41,16 @@ export default function ProductPage_general() {
     </div>
 
 
+ 
+      <nav className="ProductPage-nav">
+        <ul>
+          <Link to='/'><li>خانه</li></Link>
+          <Link to='/Category'> <li>فروشگاه</li></Link>
+          <Link to='/ContactUs'><li>درباره ما</li></Link>
+          <Link to='/Login'><li>ورود / ثبت نام</li> </Link>
+        </ul>
+      </nav>
+ 
 
     <Offcanvas show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton>

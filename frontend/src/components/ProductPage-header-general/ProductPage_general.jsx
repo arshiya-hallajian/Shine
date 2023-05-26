@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
-import './ProductPage_general.css'
+import React, { useState } from 'react';
+import './ProductPage_general.css';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import { BsSearch, BsPerson } from 'react-icons/bs'
+import { BsSearch, BsPerson } from 'react-icons/bs';
 import { AiOutlineShoppingCart, AiOutlineHeart, AiOutlineMenu,AiOutlineTeam,AiOutlinePhone } from 'react-icons/ai';
-import {BiSearch,BiHomeAlt,BiStore,BiGitCompare,BiLogIn} from 'react-icons/bi'
+import {BiSearch,BiHomeAlt,BiStore,BiGitCompare,BiLogIn} from 'react-icons/bi';
 import { Link } from 'react-router-dom';
 export default function ProductPage_general() {
 

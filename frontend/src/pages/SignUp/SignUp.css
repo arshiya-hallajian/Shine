@@ -1,4 +1,4 @@
-.Login_SignUp input{
+.Login_SignUp form input{
 	border: none;
 	padding: 15px 20px;
 	border-radius: 25px;
@@ -7,7 +7,7 @@
 	outline: 0;
 	color: white;
 }
-.Login_SignUp input::placeholder{
+.Login_SignUp form input::placeholder{
     color: rgba(255, 255, 255, 0.321);
 }
 .Login_SignUp {
@@ -39,7 +39,7 @@
 	align-items: baseline;
 	gap: 0px !important;
 }
-.group-checkBox input{
+.group-checkBox form input{
 	width: 20px !important;
 }
 .SignUp-title{

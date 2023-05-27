@@ -162,7 +162,13 @@ border-bottom: solid 1px #cbc7c7;
 padding: 20px 0;
 
 }
-
+.canvas_body_items a{
+    color: white;
+    font-family: vazirlight;
+    position: relative;
+    bottom: 2px;
+    text-decoration: none;
+}
 .canvas_body_items span{
     font-size: 25px;
     padding: 5px;
@@ -207,6 +213,17 @@ padding: 20px 0;
         display: none;
      }.ProductPage-header-general{
         border-bottom: 1px solid rgba(255, 255, 255, 0.427);
+     }.offcanvas-2{
+        width: 260px !important;
+     }.canvas_searchbar_submit {
+        margin-right: 10px;
+     }.PP_general_canvas_searchbar input {
+        width: 75%;
+        font-size: .9rem;
+     }.offcanvas-title{
+        width: 100%;
+     }.canvas_body section{
+        width: 113.3% !important;
      }
 }
  
@@ -217,3 +234,23 @@ padding: 20px 0;
         padding: 1.5rem 1rem 1.5rem 1rem !important;
     }
 }
+.canvas_body {
+    position: relative;
+}
+.canvas_body section p{
+position: relative;
+top: 9px;
+}
+.canvas_body section{
+    text-align: center;
+    background-color: white;
+    color: black;
+    position: absolute;
+    
+    width: 108.5%;
+    right: -15px;
+    bottom: -70px;
+    
+}
+ 
+   

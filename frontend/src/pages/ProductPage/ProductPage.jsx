@@ -19,13 +19,13 @@ export default function ProductPage() {
                     { id: 1, title: "خانه", to: "/", isThisEnd: false },
                     {
                         id: 2,
-                        title: "دستبند",
+                        title: "گردنبند",
                         to: "/",
                         isThisEnd: false
                     },
                     {
                         id: 3,
-                        title: "گردنبند اقا ارشیا",
+                        title: "گردنبند طرح ستاره",
                         to: "/"
                         , isThisEnd: true
                     },
@@ -35,7 +35,7 @@ export default function ProductPage() {
                 <main>
                 <div className='product-page-parent'>
                     <div className="ProductPage-img">
-                        <img src="https://dev-wp.ir/goldpluss/wp-content/uploads/2022/03/9-min.jpg" alt="" />
+                        <img src="https://dev-wp.ir/goldpluss/wp-content/uploads/2022/03/9-min.jpg" alt="image" />
                     </div>
 
 
@@ -49,13 +49,13 @@ export default function ProductPage() {
                             <li>سایز :200 گرم</li>
                         </ul>
 
-                        <p className='ProductPage-price'>25.000 تومان</p>
+                        <p className='ProductPage-price'>250.000 تومان</p>
 
                         <section>
                             <button>افزودن به سبد خرید</button>
                             <div className='ProductPage-number'>
                                 <div>-</div>
-                                <p>2</p>
+                                <p>1</p>
                                 <div>+</div>
                             </div>
                         </section>
@@ -63,7 +63,7 @@ export default function ProductPage() {
                         <button className='add-to-favorite'>افزودن به علاقه مندی <AiOutlineHeart/></button>
 
                             <hr />
-                            <p className='vazirlight'>دسته: دستبند</p>
+                            <p className='vazirlight'>دسته: گردنبند</p>
                             <div className="share">
                                 <p>اشتراک گذاری :</p>
                                 <a href=""><AiOutlineTwitter/></a>
@@ -81,15 +81,15 @@ export default function ProductPage() {
                         <p className="ProductPage-feature-title">ویژگی های محصول</p>
                         <hr />
                         <ul>
+                            <li>کاملا ضد حساسیت برای پوست</li>
                             <li>حاوی 70 درصد الکل خالص</li>
-                            <li>حاوی 70 درصد الکل خالص</li>
-                            <li>حاوی 70 درصد الکل خالص</li>
-                            <li>حاوی 70 درصد الکل خالص</li>
-                            <li>حاوی 70 درصد الکل خالص</li>
-                            <li>حاوی 70 درصد الکل خالص</li>
-                            <li>حاوی 70 درصد الکل خالص</li>
-                            <li>حاوی 70 درصد الکل خالص</li>
-                            <li>حاوی 70 درصد الکل خالص</li>
+                            <li>رنگ ماندگار و دایمی</li>
+                            <li>جنس مرغوب و ضخیم</li>
+                            <li>قابل حمل و سبک</li>
+                            <li>آنتی باکتریال و ضدعفونی شده</li>
+                            <li>گیره محکم و مرغوب</li>
+                            <li>قابل تنظیم برای اندازه مختلف</li>
+                            
                            
                         </ul>
                     </div>

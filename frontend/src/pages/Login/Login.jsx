@@ -57,13 +57,13 @@ const [error,setError]=useState(false)
 							<div className="group">
 								<label className="label">نام کاربری</label>
 
-								<Field name="name" placeholder='ارشیا'  type="text"  />
+								<Field name="name" placeholder='عرشیا'  type="text"  />
 								
 								{errors.name && touched.name && errors.name}
 							</div>
 							<div className="group">
 								<label className="label">رمز عبور</label>
-								<Field name="pass" placeholder='arshiya@8585'  type={!showPassword?"password":"text"} />
+								<Field name="pass" placeholder='arshiya@gmail.com '  type={!showPassword?"password":"text"} />
 								{errors.pass && touched.pass && errors.pass}
 								{!showPassword ?(
 										<AiOutlineEyeInvisible  onClick={passIconHandler}   className='pass-icon'/>

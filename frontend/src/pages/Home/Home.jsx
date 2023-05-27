@@ -31,9 +31,9 @@ export default function Home() {
       <div className='Home'>
 
         <div className='home-section-top'>
-          <video id="video-back" autoplay muted playsInline loop >
+          <video id="video-back" autoPlay muted playsInline loop >
             <source src="../../Home_video.mp4" type='video/mp4' />
-
+            Your browser does not support the video tag..!!
           </video>
 
           <div className="home-title">

@@ -1,15 +1,15 @@
-import React,{useState} from 'react';
+import React, { useState } from 'react';
 import "./Login.css";
 import ProductPage_general from '../../components/ProductPage-header-general/ProductPage_general';
 import ProductTopbar from '../../components/ProductTopbar/ProductTopbar';
-import { Formik, Form, Field,   } from "formik";
-import {AiOutlineEye,AiOutlineEyeInvisible}from 'react-icons/ai';
+import { Formik, Form, Field, } from "formik";
+import { AiOutlineEye, AiOutlineEyeInvisible } from 'react-icons/ai';
 const Login = () => {
-const [showPassword,setShowPassword]=useState(false)
-const [error,setError]=useState(false)
+	const [showPassword, setShowPassword] = useState(false)
+	const [error, setError] = useState(false)
 
-	const passIconHandler=()=>{
-		setShowPassword(prev=>!prev)
+	const passIconHandler = () => {
+		setShowPassword(prev => !prev)
 	}
 
 	return (
@@ -25,30 +25,30 @@ const [error,setError]=useState(false)
 					if (values.name == "") {
 						errors.name = "وارد کردن نام اجباری می‌باشد";
 						setError(true)
-					} else if (values.name.length < 4){
+					} else if (values.name.length < 4) {
 						errors.name = "طول نام حداقل باید ۴ کاراکتر باشد";
 						setError(true)
-					}else{
+					} else {
 						setError(false)
 					}
 
-				    if (values.pass === "") {
-                        errors.pass = "وارد کردن نام اجباری می‌باشد";
+					if (values.pass === "") {
+						errors.pass = "وارد کردن نام اجباری می‌باشد";
 						setError(true)
-                    } else if (values.pass.length < 4) {
-                        errors.pass = "طول نام حداقل باید ۴ کاراکتر باشد";
+					} else if (values.pass.length < 4) {
+						errors.pass = "طول نام حداقل باید ۴ کاراکتر باشد";
 						setError(true)
-                    }
-                     if (error) {
+					}
+					if (error) {
 						return errors
-					 }
+					}
 				}}
 				initialValues={{ name: "", pass: "" }}
 				onSubmit={(values) => {
 					console.log("Form Inputs Data =>", values);
 				}} >
 
-				{({ values, handleChange, handleSubmit, errors, touched }) => ( 
+				{({ values, handleChange, handleSubmit, errors, touched }) => (
 					<Form onSubmit={handleSubmit}>
 
 						<p className='login-title'>ورود به حساب کاربری</p>
@@ -57,31 +57,31 @@ const [error,setError]=useState(false)
 							<div className="group">
 								<label className="label">نام کاربری</label>
 
-								<Field name="name" placeholder='عرشیا'  type="text"  />
-								
+								<Field name="name" placeholder='عرشیا' type="text" />
+
 								{errors.name && touched.name && errors.name}
 							</div>
 							<div className="group">
 								<label className="label">رمز عبور</label>
-								<Field name="pass" placeholder='arshiya@gmail.com '  type={!showPassword?"password":"text"} />
+								<Field name="pass" placeholder='arshiya@gmail.com ' type={!showPassword ? "password" : "text"} />
 								{errors.pass && touched.pass && errors.pass}
-								{!showPassword ?(
-										<AiOutlineEyeInvisible  onClick={passIconHandler}   className='pass-icon'/>
-								):( 
-									<AiOutlineEye onClick={passIconHandler} className='pass-icon'/>
+								{!showPassword ? (
+									<AiOutlineEyeInvisible onClick={passIconHandler} className='pass-icon' />
+								) : (
+									<AiOutlineEye onClick={passIconHandler} className='pass-icon' />
 								)}
-							
+
 							</div>
 							<div className="group group-checkBox mt-4">
 								<input id="check" type="checkbox" />
 								<label className='mx-2' > من را عضو نگه دار</label>
 							</div>
-							 
+
 							<button type="submit" className=' login-btn mt-5' >
 								ورود به حساب کاربری
-						    </button>
-							 
-								
+							</button>
+
+
 
 							<div className="hr mt-5"></div>
 
@@ -109,7 +109,7 @@ const [error,setError]=useState(false)
 			</Formik>
 
 
-			
+
 
 		</div>
 

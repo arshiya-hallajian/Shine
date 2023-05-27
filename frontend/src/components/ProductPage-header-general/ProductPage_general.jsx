@@ -21,7 +21,7 @@ export default function ProductPage_general() {
         </button>
 
 
-        <img src="	https://dev-wp.ir/goldpluss/wp-content/themes/woodmart/images/wood-logo-dark.svg" alt="" />
+        <img src=" https://dev-wp.ir/goldpluss/wp-content/themes/woodmart/images/wood-logo-dark.svg" alt="" />
 
         <img src="https://dev-wp.ir/goldpluss/wp-content/uploads/2022/03/Group-160-1.png" alt="" className='ProductPage-general-first-logo' />
         <section>
@@ -44,7 +44,7 @@ export default function ProductPage_general() {
 
 
 
-        <Offcanvas show={show} onHide={handleClose}>
+        <Offcanvas className='offcanvas-2' placement='end' show={show} onHide={handleClose}>
           <Offcanvas.Header >
             <Offcanvas.Title>
               <div className='PP_general_canvas_searchbar'>
@@ -59,15 +59,18 @@ export default function ProductPage_general() {
         <div className='canvas_body'>
       <ul className='canvas_body_items'>
 
-        <li><span><BiHomeAlt /></span>خانه اصلی</li>
-        <li><span><BiStore /></span> فروشگاه</li>
-        <li> <span><AiOutlineTeam /></span>درباره ما</li>
-        <li><span><AiOutlinePhone /></span> تماس با ما</li>
-        <li><span><BiGitCompare /></span> مقایسه</li>
-        <li><span><BiLogIn /></span> ورود | ثبت نام</li>
+        <li><span><BiHomeAlt /></span> <Link to="/">خانه اصلی</Link></li>
+        <li><span><BiStore /></span><Link to="/Category"> فروشگاه</Link></li>
+        <li> <span><AiOutlineTeam /></span><Link to="/ContactUs">درباره ما</Link> </li>
+        <li><span><BiGitCompare /></span><Link to="/">مورد علاقه ها</Link> </li>
+        <li className='border-0'><span><BiLogIn /></span><Link to="/Login">ورود | ثبت نام</Link> </li>
 
 
       </ul>
+
+      <section>
+        <p>Shine Like A Diamond</p>
+      </section>
         </div>
           </Offcanvas.Body>
         </Offcanvas>

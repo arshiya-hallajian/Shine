@@ -30,32 +30,32 @@ export default function SignUp() {
                     } else if (values.name.length < 4) {
                         errors.name = "طول نام حداقل باید ۴ کاراکتر باشد";
                     }
-                    
+
                     if (values.pass === "") {
                         errors.pass = "وارد کردن نام اجباری می‌باشد";
                     } else if (values.pass.length < 4) {
                         errors.pass = "طول نام حداقل باید ۴ کاراکتر باشد";
                     }
-                    
+
                     if (values.repeatPass === "") {
                         errors.repeatPass = "وارد کردن نام اجباری می‌باشد";
                     } else if (values.repeatPass.length < 4) {
                         errors.repeatPass = "طول نام حداقل باید ۴ کاراکتر باشد";
                     }
 
-                 
-            if (values.email === "") {
-                errors.email = "وارد کردن ایمیل اجباری می‌باشد";
-              } else if (
-                !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
-              ) {
-                errors.email = "ایمیل وارد شده معتبر نیست";
-              }
-  
+
+                    if (values.email === "") {
+                        errors.email = "وارد کردن ایمیل اجباری می‌باشد";
+                    } else if (
+                        !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
+                    ) {
+                        errors.email = "ایمیل وارد شده معتبر نیست";
+                    }
+
 
                     return errors;
                 }}
-                initialValues={{ name: "", email: "",pass: "",repeatPass: "" }}
+                initialValues={{ name: "", email: "", pass: "", repeatPass: "" }}
                 onSubmit={(values) => {
                     console.log("Form Inputs Data =>", values);
                 }} >
@@ -63,68 +63,68 @@ export default function SignUp() {
                 {({ values, handleChange, handleSubmit, errors, touched }) => (
                     <Form >
 
-                    <p className='SignUp-title'>ایجاد به حساب کاربری</p>
-                    <div className="hr"></div>
-                    <main >
-                        <div className="group">
-                            <label className="label">نام کاربری</label>
-                            <Field placeholder='عرشیا' name="name" type="text" />
+                        <p className='SignUp-title'>ایجاد به حساب کاربری</p>
+                        <div className="hr"></div>
+                        <main >
+                            <div className="group">
+                                <label className="label">نام کاربری</label>
+                                <Field placeholder='عرشیا' name="name" type="text" />
+
+                            </div>
+                            <div className="group">
+                                <label className="label">رمز عبور</label>
+                                <Field placeholder='arshiya@gmail.com' name="pass" type={!showPassword ? "password" : "text"} />
+                                {!showPassword ? (
+                                    <AiOutlineEyeInvisible onClick={passIconHandler} className='pass-icon' />
+
+                                ) : (
+                                    <AiOutlineEye onClick={passIconHandler} className='pass-icon' />
+                                )}
+                            </div>
+                            <div className="group">
+                                <label className="label">تکرار رمز عبور</label>
+                                <Field placeholder='arshiya@gmail.com' name="repeatPass" type={!showRepeatPassword ? "password" : "text"} />
+                                {!showRepeatPassword ? (
+                                    <AiOutlineEyeInvisible onClick={repeatPassIconHandler} className='pass-icon' />
+
+                                ) : (
+                                    <AiOutlineEye onClick={repeatPassIconHandler} className='pass-icon' />
+                                )}
+                            </div>
+
+                            <div className="group">
+                                <label className="label">ایمیل</label>
+                                <Field placeholder='arshiya@gmail.com' name="email" type="email" />
+                            </div>
+
+
+
+                            <button type='submit' className="SignUp-btn mt-5" >
+                                ورود به حساب کاربری
+                            </button>
+
+                            <div className="hr mt-5"></div>
+
+                            <a id='forgot' href="#forgot">گذرواژه را فراموش کرده اید ؟</a>
+
+                        </main>
+
+
+
+
+                        <div className="drops">
+
+                            <div className="drop drop-1"></div>
+                            <div className="drop drop-2"></div>
+                            <div className="drop drop-3"></div>
+                            <div className="drop drop-4"></div>
+                            <div className="drop drop-5"></div>
 
                         </div>
-                        <div className="group">
-                            <label className="label">رمز عبور</label>
-                            <Field placeholder='arshiya@gmail.com' name="pass" type={!showPassword ? "password" : "text"} />
-                            {!showPassword ? (
-                                <AiOutlineEyeInvisible onClick={passIconHandler} className='pass-icon' />
-                                
-                            ) : (
-                                <AiOutlineEye onClick={passIconHandler} className='pass-icon' />
-                            )}
-                        </div>
-                        <div className="group">
-                            <label className="label">تکرار رمز عبور</label>
-                            <Field placeholder='arshiya@gmail.com' name="repeatPass" type={!showRepeatPassword ? "password" : "text"} />
-                            {!showRepeatPassword ? (
-                                <AiOutlineEyeInvisible onClick={repeatPassIconHandler} className='pass-icon' />
-                                
-                            ) : (
-                                <AiOutlineEye onClick={repeatPassIconHandler} className='pass-icon' />
-                            )}
-                        </div>
-
-                        <div className="group">
-                            <label className="label">ایمیل</label>
-                            <Field placeholder='arshiya@gmail.com' name="email" type="email" />
-                        </div>
 
 
 
-                        <button type='submit' className="SignUp-btn mt-5" >
-                            ورود به حساب کاربری
-                        </button>
-
-                        <div className="hr mt-5"></div>
-
-                        <a id='forgot' href="#forgot">گذرواژه را فراموش کرده اید ؟</a>
-
-                    </main>
-
-
-
-
-                    <div className="drops">
-
-                        <div className="drop drop-1"></div>
-                        <div className="drop drop-2"></div>
-                        <div className="drop drop-3"></div>
-                        <div className="drop drop-4"></div>
-                        <div className="drop drop-5"></div>
-
-                    </div>
-
-
-
-                </Form>
+                    </Form>
                 )}
             </Formik>
         </div>

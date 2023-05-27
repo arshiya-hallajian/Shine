@@ -1,9 +1,9 @@
 import React from 'react';
 import "./header.css";
-import { BiSearchAlt,BiUser,BiLogInCircle } from "react-icons/bi"; 
-import {MdProductionQuantityLimits} from 'react-icons/md'
-import {FiPhoneCall} from 'react-icons/fi'
-import { AiOutlineHeart, AiOutlineShoppingCart,AiOutlineMenu,AiOutlineClose,AiOutlineHome,AiOutlineInfoCircle } from "react-icons/ai";
+import { BiSearchAlt, BiUser, BiLogInCircle } from "react-icons/bi";
+import { MdProductionQuantityLimits } from 'react-icons/md'
+import { FiPhoneCall } from 'react-icons/fi'
+import { AiOutlineHeart, AiOutlineShoppingCart, AiOutlineMenu, AiOutlineClose, AiOutlineHome, AiOutlineInfoCircle } from "react-icons/ai";
 import { Link } from 'react-router-dom';
 
 
@@ -18,7 +18,7 @@ const Header = () => {
 
         <section className='navbar'>
 
-        <button class="offcanvas-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><AiOutlineMenu/></button>
+          <button class="offcanvas-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><AiOutlineMenu /></button>
 
 
 
@@ -30,14 +30,14 @@ const Header = () => {
 
           <ul className='list-right'>
             <li><Link to="/">صفحه اصلی</Link></li>
-            <li><Link to="/Category">فروشگاه</Link></li> 
+            <li><Link to="/Category">فروشگاه</Link></li>
             <li><Link to="/Login">ورود / ثبت نام</Link></li>
           </ul>
 
-      <div className='logo-div'>
-        <img className='logo' src="images/header-image3.png" alt="Site Logo" />
-      </div>
-          
+          <div className='logo-div'>
+            <img className='logo' src="images/header-image3.png" alt="Site Logo" />
+          </div>
+
 
 
 
@@ -52,32 +52,32 @@ const Header = () => {
 
 
           <div className="shop-icon-mibile-size">
-          <a href="#"><AiOutlineShoppingCart /></a> 
-          <a href="#"><AiOutlineHeart /></a> 
-                
-    
+            <a href="#"><AiOutlineShoppingCart /></a>
+            <a href="#"><AiOutlineHeart /></a>
+
+
           </div>
 
         </section>
 
-       
+
 
         <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
           <div class="offcanvas-header">
             <h5 id="offcanvasTopLabel">مانند الماس درخشان باش!</h5>
-            <AiOutlineClose  class="btn-close-icon" data-bs-dismiss="offcanvas" aria-label="Close"/>
-          
+            <AiOutlineClose class="btn-close-icon" data-bs-dismiss="offcanvas" aria-label="Close" />
+
           </div>
           <div class="offcanvas-body">
-          <ul>
-          <a href=""> <li> تماس با ما <FiPhoneCall className='offcanvas-icon'/></li></a>
-             <a href="#"> <li>ورود / ثبت نام  <BiLogInCircle className='offcanvas-icon'  /></li></a>
-             <a href="#"> <li >سبد خرید  <AiOutlineShoppingCart className='offcanvas-icon'/></li></a>
-             <a href="#"> <li>علاقه مندی ها <AiOutlineHeart className='offcanvas-icon'/> </li></a>  
-             <a href="">  <li> درباره ما <AiOutlineInfoCircle className='offcanvas-icon'/></li></a>
-             <a href=""> <li> محصولات <MdProductionQuantityLimits className='offcanvas-icon'/></li></a>
-             <a href=""> <li> صفحه اصلی <AiOutlineHome className='offcanvas-icon'/></li></a> 
-          </ul>
+            <ul>
+              <a href=""> <li> تماس با ما <FiPhoneCall className='offcanvas-icon' /></li></a>
+              <a href="#"> <li>ورود / ثبت نام  <BiLogInCircle className='offcanvas-icon' /></li></a>
+              <a href="#"> <li >سبد خرید  <AiOutlineShoppingCart className='offcanvas-icon' /></li></a>
+              <a href="#"> <li>علاقه مندی ها <AiOutlineHeart className='offcanvas-icon' /> </li></a>
+              <a href="">  <li> درباره ما <AiOutlineInfoCircle className='offcanvas-icon' /></li></a>
+              <a href=""> <li> محصولات <MdProductionQuantityLimits className='offcanvas-icon' /></li></a>
+              <a href=""> <li> صفحه اصلی <AiOutlineHome className='offcanvas-icon' /></li></a>
+            </ul>
           </div>
         </div>
       </header>

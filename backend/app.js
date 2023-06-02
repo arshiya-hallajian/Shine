@@ -9,6 +9,7 @@ const auth_router = require('./routes/auth.router');
 const product_router = require('./routes/product.router');
 const cart_router = require('./routes/cart.router')
 const profile_router = require('./routes/profile.router');
+const search_router = require('./routes/search.router');
 const fav_router = require('./routes/fav.router');
 
 //middleware 
@@ -28,6 +29,7 @@ app.use("/api/product", product_router);
 app.use("/api/cart", cart_router);
 app.use("/api/profile/", profile_router)
 app.use("/api/fav/", fav_router);
+app.use("/api/search/", search_router);
 
 app.get("/",(req, res) => {
     res.send("Welcome Shine Backend")

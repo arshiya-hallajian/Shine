@@ -11,6 +11,6 @@ router.get('/',auth ,getFav);
 router.post('/',auth ,addFav);
 
 //remove from favorite list
-router.delete('/',auth ,removeFav);
+// router.delete('/',auth ,removeFav);
 
 module.exports = router

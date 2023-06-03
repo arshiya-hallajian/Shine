@@ -22,7 +22,7 @@ export default function Home() {
     }
   })
   let video = document.querySelector("#video-back")
-  window.addEventListener("load" , ()=>{
+  window.addEventListener("load", () => {
     video.play()
   })
   return (
@@ -75,7 +75,7 @@ export default function Home() {
 
           <section>
             <p className="on-sale-title mb-2 mt-3">طلا را در حراج بخرید !!!</p>
-            <span className='vazirlight'>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحانگرافیک است. چاپگرها و متون بلکه روزنامه و مجلهدرستون و سطرآنچنان که لازماست و برای.شرایط فعلی تکنولوژی مورد نیاز بزارهای کاربردی می باشد</span>
+            <span className='vazirlight'>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحانگرافیک است. چاپگرها و متون بلکه روزنامه و مجله درستون و سطرآنچنان که لازماست و برای.شرایط فعلی تکنولوژی مورد نیاز بزارهای کاربردی می باشد</span>
           </section>
 
           <Swiper

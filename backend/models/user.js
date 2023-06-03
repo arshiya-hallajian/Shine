@@ -22,6 +22,10 @@ let User = new mongoose.Schema({
         minLength: 6,
         required: true
     },
+    picture: {
+        type: String,
+        default: "http://localhost:4001/assets/profile/defpic.jpg"
+    },
     date: {
         type: String,
         default: Date.now(),

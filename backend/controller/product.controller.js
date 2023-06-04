@@ -1,34 +1,32 @@
 const product = require(".././models/product");
 
 module.exports.createOneProduct = async (req, res) => {
-
-
-    //create product in database
-    let products = new product({
-        name: req.body.name,
-        sellerId: req.userId,
-        description: req.body.description,
-        category: req.body.category,
-        gender: req.body.gender,
-        short_desc: req.body.short_desc,
-        inSale: req.body.inSale,
-        futures: req.body.futures,
-        specialFor: req.body.specialFor,
-        size: req.body.size,
-        colors: req.body.colors,
-        brand: req.body.brand,
-        weight: req.body.weight,
-        price: req.body.price,
-        inSale_Price: req.body.inSale_Price,
-        picture: req.body.picture,
-    });
+  //create product in database
+  let products = new product({
+    name: req.body.name,
+    sellerId: req.userId,
+    description: req.body.description,
+    category: req.body.category,
+    gender: req.body.gender,
+    short_desc: req.body.short_desc,
+    inSale: req.body.inSale,
+    futures: req.body.futures,
+    specialFor: req.body.specialFor,
+    size: req.body.size,
+    colors: req.body.colors,
+    brand: req.body.brand,
+    weight: req.body.weight,
+    price: req.body.price,
+    inSale_Price: req.body.inSale_Price,
+    picture: req.body.picture,
+  });
   try {
-        await products.save();
-        res.status(200).json({
-            status: true,
-            data: products,
-        });
-    } catch (err) {
+    await products.save();
+    res.status(200).json({
+      status: true,
+      data: products,
+    });
+  } catch (err) {
     console.log(err);
     res.status(500).json({
       error: err,
@@ -37,6 +35,7 @@ module.exports.createOneProduct = async (req, res) => {
   }
 };
 
+// get all products
 module.exports.getAllProducts = async (req, res) => {
   try {
     const allProducts = await product.find({});
@@ -61,13 +60,13 @@ module.exports.getAllProducts = async (req, res) => {
   }
 };
 
+//get one product
 module.exports.getOneProduct = async (req, res) => {
   const productId = req.params.id;
   try {
     const findProduct = await product.findOne({
       _id: productId,
     });
-    console.log(findProduct);
     if (!findProduct) {
       res.status(404).json({
         status: false,
@@ -89,13 +88,28 @@ module.exports.getOneProduct = async (req, res) => {
   }
 };
 
+//update product
 module.exports.updateOneProduct = async (req, res) => {
-
-    const productId = req.params.id;
-    const json = req.body;
-    const updates = Object.keys(json);
-    const allowedUpdate = ['name', 'description', 'category', 'weight', 'picture', 'price','inSale_Price', 'brand', 'colors', 'size', 'specialFor','futures', 'inSale', 'short_desc', 'gender']
-
+  const productId = req.params.id;
+  const json = req.body;
+  const updates = Object.keys(json);
+  const allowedUpdate = [
+    "name",
+    "description",
+    "category",
+    "weight",
+    "picture",
+    "price",
+    "inSale_Price",
+    "brand",
+    "colors",
+    "size",
+    "specialFor",
+    "futures",
+    "inSale",
+    "short_desc",
+    "gender",
+  ];
 
   const validation = updates.every((update) => allowedUpdate.includes(update));
 

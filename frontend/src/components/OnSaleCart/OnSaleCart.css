@@ -5,10 +5,15 @@
     box-shadow: 0 0 4px rgba(0,0,0,.12);
     font-size: .8rem;
     position: relative;
+    display: block;
+    text-decoration: none;
     width: 250px;
     color: white;
     cursor: pointer;
     text-align: right;
+}
+.On-Sale-Cart:hover{
+    color: white ;
 }
 .On-Sale-Cart hr{
 border-color: white;

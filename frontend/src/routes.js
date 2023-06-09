@@ -15,7 +15,7 @@ const routes = [
     path: '/*', element: <PageNotFound />
   },
   {
-    path: '/Product', element: <ProductPage />
+    path: '/Product/:id', element: <ProductPage />
   },
   {
     path: '/Category', element: <Category />

@@ -80,7 +80,7 @@ module.exports.getOneProduct = async (req, res) => {
       message: "Product found",
     });
   } catch (e) {
-    res.status(400).json({
+    res.status(404).json({
       status: false,
       data: e,
       message: "error get a product",

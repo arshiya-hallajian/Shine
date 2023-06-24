@@ -29,7 +29,6 @@ export default function Home() {
     <>
       <Header />
       <div className='Home'>
-
         <div className='home-section-top'>
           <video id="video-back" autoPlay muted playsInline loop >
             <source src="../../Home_video.mp4" type='video/mp4' />
@@ -143,6 +142,7 @@ export default function Home() {
         <a href="#" className="to-top">
           <i className="btn-icon"><img src="images/backtotop2.png" alt="icon" /></i>
         </a>
+
 
         {/* Blogs */}
 

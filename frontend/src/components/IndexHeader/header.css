@@ -18,6 +18,16 @@
 
 
 }
+/* Custom Scrool */
+
+div #scroll{
+    width: 0%;
+    height: 3px;
+    background: rgb(82,72,19);
+    background: linear-gradient(90deg, rgba(82,72,19,1) 0%, rgba(139,134,19,1) 66%, rgba(57,45,3,1) 100%);
+    position: fixed ;
+    z-index: 50000;
+}
 
 .header_backgruond {
     width: 100%;

@@ -4,14 +4,15 @@ import {AiOutlineHeart} from'react-icons/ai'
 import {TfiShoppingCart} from'react-icons/tfi'
 import {GoSearch}from 'react-icons/go'
 import {MdCompareArrows}from 'react-icons/md'
-export default function OnSaleCart() {
+import { Link } from 'react-router-dom'
+export default function OnSaleCart(props) {
   return (
-    <div className='On-Sale-Cart'>
+    <Link to={`/Product/${props.sellerId}`} className='On-Sale-Cart'>
         <img src="https://dev-wp.ir/goldpluss/wp-content/uploads/2022/03/5-min.jpg" alt="" />
-        <p className='mb-2 On-Sale-Cart-title'>دستبند ظریف دخترانه</p>
+        <p className='mb-2 On-Sale-Cart-title'>{props.name}</p>
         <div dir='ltr'>
-        <span style={{textDecoration:'line-through',color:'gray'}}>22.000 تومان</span>
-            <span style={{ color:' rgb(191 167 114)'}} className='mx-1'>17.000 تومان</span>
+        <span style={{textDecoration:'line-through',color:'gray'}}>{props.price * 2} تومان</span>
+            <span style={{ color:' rgb(191 167 114)'}} className='mx-1'>{props.price} تومان</span>
          
         </div>
         <hr />
@@ -39,6 +40,6 @@ export default function OnSaleCart() {
         
         </div>
         <span className='On-Sale-Cart-badge'>حراج</span>
-    </div>
+    </Link>
   )
 }

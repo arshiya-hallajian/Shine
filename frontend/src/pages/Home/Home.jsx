@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import './Home.css'
 import WhyThisShop from '../../components/whyThisShop/WhyThisShop'
 import HomeIntroProducts from '../../components/HomeIntroProducts/HomeIntroProducts'
@@ -13,18 +13,32 @@ import Blogs from "../../components/blogs/Blogs"
 import Header from '../../components/IndexHeader/Header'
 
 export default function Home() {
-  window.addEventListener('scroll', function () {
-    const toTop = document.querySelector('.to-top');
-    if (window.pageYOffset > 400) {
-      toTop.classList.add('active');
-    } else {
-      toTop.classList.remove('active');
-    }
-  })
+  const [onSale, setOnSale] = useState()
+  // window.addEventListener('scroll', function () {
+  //   const toTop = document.querySelector('.to-top');
+  //   if (window.pageYOffset > 400) {
+  //     toTop.classList.add('active');
+  //   } else {
+  //     toTop.classList.remove('active');
+  //   }
+  // })
+
   let video = document.querySelector("#video-back")
   window.addEventListener("load", () => {
     video.play()
   })
+
+
+  useEffect(() => {
+    fetch('https://shine-back.vercel.app/api/product')
+      .then(res => res.json())
+      .then(data => {
+        console.log(data);
+        setOnSale(data.data)
+      })
+  }, [])
+
+
   return (
     <>
       <Header />
@@ -70,6 +84,8 @@ export default function Home() {
 
         </main>
 
+{onSale &&(
+   
         <div className="on-sale">
 
           <section>
@@ -100,25 +116,17 @@ export default function Home() {
               },
             }}
             modules={[Pagination]} className="mySwiper Home-swiper">
-            <SwiperSlide>
-              <OnSaleCart />
-            </SwiperSlide>
-            <SwiperSlide>
-              <OnSaleCart />
-            </SwiperSlide>
-            <SwiperSlide>
-              <OnSaleCart />
-            </SwiperSlide>
-            <SwiperSlide>
-              <OnSaleCart />
-            </SwiperSlide>
-            <SwiperSlide>
-              <OnSaleCart />
-            </SwiperSlide>
+            { onSale.slice(0,6).map(data => (
+              <SwiperSlide>
+                <OnSaleCart {...data}/>
+              </SwiperSlide>
+            ))}
+
 
           </Swiper>
         </div>
-
+)
+            }
 
         <div className="order">
           <div className="order-bg"> </div>

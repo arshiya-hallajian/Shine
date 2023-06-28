@@ -10,7 +10,7 @@ const ContactUs = () => {
             <ProductTopbar />
             <ProductPage_general />
 
-           
+
 
             <div className="aboutUs">
                 <h3>درباره ما</h3>
@@ -18,10 +18,10 @@ const ContactUs = () => {
                 <img className='container_image' src="https://cdn.seeklearning.com.au/media/images/career-guide/module/programmer.jpg" alt="aboutUs" />
             </div>
 
-<ContactCards />
+            <ContactCards />
 
-<br /><br /><br /><br /><br /><br /><br />
-<br /><br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br /><br /><br />
 
         </div>
     );

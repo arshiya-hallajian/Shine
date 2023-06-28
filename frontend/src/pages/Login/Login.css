@@ -1,4 +1,4 @@
-.Login_SignUp form input{
+.Login_SignUp form input {
 	border: none;
 	padding: 15px 20px;
 	border-radius: 25px;
@@ -7,20 +7,23 @@
 	outline: 0;
 	color: white;
 }
+
 .Login_SignUp {
- 
+
 	color: #e1d7d7;
-	
+
 	background: linear-gradient(180deg, #070707 10%, #edd754 59%, #000000 100%);
- padding-bottom: 6rem;
-	  
+	padding-bottom: 6rem;
+
 }
-.login .hr{
+
+.login .hr {
 	margin-bottom: 3rem;
 	margin-top: 20px;
 
 }
-.login-btn{
+
+.login-btn {
 	background-color: #1161ee;
 	border-radius: 20px;
 	border: 0;
@@ -30,43 +33,50 @@
 	width: 100%;
 	color: white;
 }
-.group-checkBox{
+
+.group-checkBox {
 	flex-direction: row !important;
 	justify-content: right;
 	align-items: baseline;
 	gap: 0px !important;
 }
-.group-checkBox  input{
+
+.group-checkBox input {
 	width: 20px !important;
 }
-.login-title{
+
+.login-title {
 	text-align: center;
-	font-size:1.7rem;
+	font-size: 1.7rem;
 	font-family: vazirlight !important;
 	color: white;
 	margin-bottom: 31x;
 }
-.login form main{
- padding: 0rem 2rem;
+
+.login form main {
+	padding: 0rem 2rem;
 }
-.login form .group{
-display: flex;
-gap: 10px;
-margin-top: .5rem;
-position: relative;
-flex-direction: column;
+
+.login form .group {
+	display: flex;
+	gap: 10px;
+	margin-top: .5rem;
+	position: relative;
+	flex-direction: column;
 }
-.pass-icon{
+
+.pass-icon {
 	position: absolute;
 	left: 10px;
 	top: 50px;
 	cursor: pointer;
 	font-size: 1.4rem;
 }
-.login form{
+
+.login form {
 	width: 100%;
 	margin: auto;
-	max-width: 525px; 
+	max-width: 525px;
 	padding-top: 2rem;
 	position: relative;
 	background: #0d0c0cf2;
@@ -76,17 +86,19 @@ flex-direction: column;
 	position: relative;
 	border-top-right-radius: 3px;
 }
-.Login_SignUp form{
+
+.Login_SignUp form {
 	margin-top: 7rem;
- padding-bottom: 4rem;
+	padding-bottom: 4rem;
 
 }
-.Login_SignUp form a{
+
+.Login_SignUp form a {
 	text-decoration: none !important;
 }
- 
- 
- 
+
+
+
 .login-form .group label .icon {
 	width: 15px;
 	height: 15px;
@@ -96,15 +108,15 @@ flex-direction: column;
 	background: rgba(255, 255, 255, .1);
 }
 
- 
 
-.Login_SignUp form  {
+
+.Login_SignUp form {
 	color: #fff;
 }
- 
+
 .hr {
 	height: 2px;
-	 
+
 	background: #f5f5f533;
 }
 
@@ -113,145 +125,150 @@ flex-direction: column;
 #forgot {
 	text-decoration: none;
 	transition: 0.3s;
-	color: #fff; 
-	text-align: center; 
+	color: #fff;
+	text-align: center;
 	margin-left: auto;
 	display: block;
 	margin-right: auto;
 }
 
 #forgot:hover {
-		color: #d6cccc;
+	color: #d6cccc;
 }
 
 /* drop */
 
 
 .drop {
-    background: rgba(255, 255, 255, 0.3);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    border-left: 1px solid rgba(255, 255, 255, 0.3);
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, 0.2);
-    position: absolute;
-    transition: all 0.2s ease;
+	background: rgba(255, 255, 255, 0.3);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+	border-radius: 10px;
+	border-left: 1px solid rgba(255, 255, 255, 0.3);
+	border-top: 1px solid rgba(255, 255, 255, 0.3);
+	box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, 0.2);
+	position: absolute;
+	transition: all 0.2s ease;
 }
 
 .drop-1 {
-    height: 80px;
-    width: 80px;
-    top: -20px;
-    left: -40px;
-    z-index: 1;
+	height: 80px;
+	width: 80px;
+	top: -20px;
+	left: -40px;
+	z-index: 1;
 }
 
 .drop-2 {
-    height: 80px;
-    width: 80px;
-    bottom: -30px;
-    right: 89px;
+	height: 80px;
+	width: 80px;
+	bottom: -30px;
+	right: 89px;
 }
 
 .drop-3 {
-    height: 100px;
-    width: 100px;
-    bottom: 80px;
-    right: -67px;
-    z-index: 1;
+	height: 100px;
+	width: 100px;
+	bottom: 80px;
+	right: -67px;
+	z-index: 1;
 }
 
 .drop-4 {
-    height: 120px;
-    width: 120px;
-    top: -60px;
-    right: -42px;
+	height: 120px;
+	width: 120px;
+	top: -60px;
+	right: -42px;
 }
 
 .drop-5 {
-    height: 60px;
-    width: 60px;
-    bottom: 120px;
-    left: -20px;
-    z-index: 1;
+	height: 60px;
+	width: 60px;
+	bottom: 120px;
+	left: -20px;
+	z-index: 1;
 }
 
 /* drop */
 
 
- .span-checkBox{
+.span-checkBox {
 	display: inline-block !important;
 	position: relative;
 	top: 2px;
- }
- .sign-up-htm .hr{
-	display: none !important;
- }
-
- @media (max-width:767px) {
-     
-
-    .drop-4 {
-        right: -14px;
-    }
-
-    .drop-3 {
-        bottom: 46px;
-        right: -20px;
-    }
-
-    .drop-1 {
-        left: -6px;
-    }
 }
 
- 
+.sign-up-htm .hr {
+	display: none !important;
+}
+
+@media (max-width:767px) {
+
+
+	.drop-4 {
+		right: -14px;
+	}
+
+	.drop-3 {
+		bottom: 46px;
+		right: -20px;
+	}
+
+	.drop-1 {
+		left: -6px;
+	}
+}
+
+
 
 @media (max-width:594px) {
-   
-  
 
-    .drop-4 {
-        width: 84px;
-        height: 84px;
-        right: 25px;
-        top: -64px;
-    }
 
-    .drop-3 {
-        right: 14px;
-        bottom: -18px;
-        width: 50px;
-        height: 50px;
-    }
 
-    .drop-5 {
-        bottom: 87px;
-    }
+	.drop-4 {
+		width: 84px;
+		height: 84px;
+		right: 25px;
+		top: -64px;
+	}
 
-    .drop-1 {
-        width: 40px;
-        height: 40px;
-    }
+	.drop-3 {
+		right: 14px;
+		bottom: -18px;
+		width: 50px;
+		height: 50px;
+	}
 
-    .drop-5 {
-        bottom: 54px;
-        left: -7px;
-        opacity: .4;
-    }.SignUp form ,
-	.login form{
+	.drop-5 {
+		bottom: 87px;
+	}
+
+	.drop-1 {
+		width: 40px;
+		height: 40px;
+	}
+
+	.drop-5 {
+		bottom: 54px;
+		left: -7px;
+		opacity: .4;
+	}
+
+	.SignUp form,
+	.login form {
 		width: 95% !important;
 		max-width: unset !important;
-	}.SignUp form main,
+	}
+
+	.SignUp form main,
 	.login form main {
 		padding: 0rem 1rem !important;
 	}
-  
+
 }
 
 @media (max-width:400px) {
-	 .group-checkBox{
+	.group-checkBox {
 		margin-top: 3rem;
 	}
 }

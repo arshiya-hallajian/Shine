@@ -1,7 +1,7 @@
 import React from 'react';
 import Suggest from './Suggest';
 import "./Suggests.css"
-import { Swiper,SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
@@ -23,7 +23,7 @@ const Suggests = () => {
                             slidesPerView: 1,
                             spaceBetween: 10,
                         },
-                        450:{
+                        450: {
                             slidesPerView: 2,
                             spaceBetween: 8,
                         },
@@ -31,7 +31,7 @@ const Suggests = () => {
                             slidesPerView: 3,
                             spaceBetween: 7,
                         },
-                        
+
                         1364: {
                             slidesPerView: 5,
                             spaceBetween: 9,

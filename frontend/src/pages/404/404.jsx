@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 
 const PageNotFound = () => {
 
-    window.onmousemove = function(ev){
-    let Container = document.getElementById("container");
+    window.onmousemove = function (ev) {
+        let Container = document.getElementById("container");
         let x = ev.clientX / 5;
         let y = ev.clientY / 5;
         Container.style.backgroundPositionX = x + "px";

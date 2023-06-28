@@ -1,43 +1,53 @@
+@font-face {
+  font-family: vazirlight;
+  src: url(./fonts/vazir/Vazir-Light.woff) format('woff');
+
+}
 
 @font-face {
-    font-family: vazirlight;
-    src: url(./fonts/vazir/Vazir-Light.woff) format('woff');
-    
-  }
-  @font-face {
-    font-family: vazir;
-    src: url(./fonts/vazir/Vazir-Bold.woff) format('woff');
-  }
-  @font-face {
-    font-family: vazirmd;
-    src: url(./fonts/vazir/Vazir.woff) format('woff');
-  }
-.vazir{
-    font-family: vazir;
-  }
-  .vazirlight{
-    font-family: vazirlight;
-    
-  }
-  .vazirmd{
-    font-family: vazirmd;
-    
-  }
-  .fs-12{
-    font-size:1.2rem;
-  }  
-.fs-9{
-    font-size:.9rem;
-  }
-  .fs-8{
-    font-size:.8rem;
-  }
-  .fs-7{
-    font-size:.7rem;
-  }
-  .fs-6{
-    font-size:.6rem;
-  }
-  .fs-13{
-    font-size:1.3rem;
-  }
+  font-family: vazir;
+  src: url(./fonts/vazir/Vazir-Bold.woff) format('woff');
+}
+
+@font-face {
+  font-family: vazirmd;
+  src: url(./fonts/vazir/Vazir.woff) format('woff');
+}
+
+.vazir {
+  font-family: vazir;
+}
+
+.vazirlight {
+  font-family: vazirlight;
+
+}
+
+.vazirmd {
+  font-family: vazirmd;
+
+}
+
+.fs-12 {
+  font-size: 1.2rem;
+}
+
+.fs-9 {
+  font-size: .9rem;
+}
+
+.fs-8 {
+  font-size: .8rem;
+}
+
+.fs-7 {
+  font-size: .7rem;
+}
+
+.fs-6 {
+  font-size: .6rem;
+}
+
+.fs-13 {
+  font-size: 1.3rem;
+}

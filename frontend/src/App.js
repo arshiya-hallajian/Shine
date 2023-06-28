@@ -12,7 +12,7 @@ function App() {
   let router = useRoutes(routes)
 
   return (
-    
+
     <>
       {router}
       <Footer />

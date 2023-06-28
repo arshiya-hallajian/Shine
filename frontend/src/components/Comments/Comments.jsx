@@ -22,11 +22,11 @@ const Comments = () => {
                 </div>
                 <div className="radio-btn">
                     <div>
-                          <input id='check' type="checkbox" value="اطلاعات من ذخیره شود ." />
-                    <label htmlFor="check">اطلاعات من ذخیره شود .</label>
+                        <input id='check' type="checkbox" value="اطلاعات من ذخیره شود ." />
+                        <label htmlFor="check">اطلاعات من ذخیره شود .</label>
                     </div>
-                  
-                <input className='comments-submit-btn' type="submit" value="ارسال" />
+
+                    <input className='comments-submit-btn' type="submit" value="ارسال" />
                 </div>
 
                 <br /><br />

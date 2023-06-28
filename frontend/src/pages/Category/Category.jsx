@@ -66,16 +66,16 @@ export default function Category() {
                     <section className="store-status">
                         <p className="store-status-title">وضعیت موجودی انبار:</p>
                         <div class="form-check mt-3 mb-2">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                    حراج
-                                </label>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                حراج
+                            </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked/>
-                                <label class="form-check-label" for="flexRadioDefault2">
-                                    موجود
-                                </label>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                موجود
+                            </label>
                         </div>
                     </section>
 
@@ -105,7 +105,7 @@ export default function Category() {
 
                     <section className="filter-section mt-4">
                         <p className="filter-section-title">فیلتر بر اساس سایز:</p>
-                        <div className='mt-4'> 
+                        <div className='mt-4'>
                             <p>L</p>
                             <span className='filter-section-span'>1</span>
                         </div>
@@ -130,7 +130,7 @@ export default function Category() {
 
                     <section className="filter-section mt-4">
                         <p className="filter-section-title">فیلتر بر اساس برند:</p>
-                        <div  className='mt-4'>
+                        <div className='mt-4'>
                             <p>Rolex</p>
                             <span className='filter-section-span'>2</span>
                         </div>

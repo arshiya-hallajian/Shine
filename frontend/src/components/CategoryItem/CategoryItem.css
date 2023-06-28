@@ -1,0 +1,102 @@
+
+  .CategoryItem-btn span{
+    color: #BFA772;
+  }
+  .CategoryItem-btn{
+    display: flex;
+    width:70%;
+    padding: .7rem 1rem ; 
+    font-size: 1rem;
+    color:rgb(58,55,48);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border: none;
+    gap: 10px;
+    border-radius: 0.4rem;
+    margin: 2rem auto;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  .CategoryItem{
+    display: grid;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+  }
+  .CategoryItem-btn span {
+    margin-left: 1rem;
+    transition: 0.2s;
+  }
+  .CategoryItem-btn:hover, .CategoryItem-btn:active {
+    background-color: #bababa33;
+    color: white;
+  }
+  .CategoryItem-btn:hover span, .CategoryItem-btn:active span {
+    margin-left: 1.5rem;
+  }
+  .CategoryItem-img{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+    border: 1px solid black;
+  }
+  .CategoryItem-img  {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .CategoryItem-content{
+  background:#6E6960;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  }
+  .CategoryItem-content span{
+    font-family: vazirlight;
+  }
+  .CategoryItem-content div{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+     
+  }
+  .CategoryItem-content div span:nth-child(1){
+    text-decoration: line-through;
+color: #ffffff80;
+  }
+  .CategoryItem-content div span:nth-child(2){
+    color: #BFA772;
+  }
+  .CategoryItem-content p{
+    text-align: center;
+   color:rgb(58,55,48);
+     padding-top:1rem;
+    font-family: vazir !important;
+  }
+  .CategoryItem-icons{
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px !important;
+    color: white;
+    position: absolute;
+    left: 10px;
+    top:5px;
+    z-index: 2;
+  padding: .5rem;
+  background: #17171769;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0);
+    transition: all .3s ease;
+    border-radius: 15px;
+font-size: 1rem;
+transform: translateX(-20px) translateZ(0);
+
+}
+.CategoryItem-icons .On-Sale-Cart-icon{
+font-size: 1rem !important;
+}
+.CategoryItem:hover .CategoryItem-icons{
+    opacity: 1;
+    transform: translateX(0px) translateZ(0);
+}

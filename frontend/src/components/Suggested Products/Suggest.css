@@ -1,0 +1,20 @@
+.product-body img {
+    width: 180px;
+    height: 230px;
+    border-radius: 3px;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+.pro-title {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+p.price {
+    color: #BEA672;
+    font-size: .8rem;
+    text-align: center;
+
+}

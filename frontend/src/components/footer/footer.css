@@ -1,0 +1,226 @@
+.main_footer {
+    width: 100%;
+    height: auto;
+    background-color: #0d0c0cf2;
+    padding: 3rem 5rem 0rem ;
+    border-top: 1px solid white;
+}
+
+.footer_kenar {
+    width: 30%;
+    height: auto;
+    float: right;
+    padding: 15px;
+}
+
+.footer-about-text{
+    font-size: .85rem;
+}
+.footer_vasat {
+    width: 20%;
+    height: auto;
+    float: right;
+    padding: 15px;
+}
+
+.footer_card h4 {
+    color: beige;
+    font-weight: 400;
+    font-size: 19;
+    margin-bottom: 20px;
+}.footer-span-badge{
+    position: absolute;
+    width: 32px;
+    padding: .1rem .3rem;
+    font-size: .7rem !important;
+    background-color: #FBBC34;
+   border-radius: 10px;
+    top: -17px;
+    right: 40px;
+}
+.footer-span-badge:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    inset-inline-start: 10px;
+    border: 4px solid #FBBC34;
+    border-bottom-color: transparent!important;
+    border-inline-end-color: transparent!important;
+    border-inline-end-width: 7px;
+    border-inline-start-width: 0;
+}
+.footer_card p {
+    color: beige;
+    font-weight: 200;
+    font-size: 16;
+}
+
+.footer_card ul li {
+    margin-bottom: 12px;
+    list-style: none !important;
+   position: relative;
+}
+
+.footer_card ul li span {
+    margin-bottom: 7px;
+
+    color: beige;
+}
+
+.footer_card ul li a {
+    color: #f6f6df;
+    position: relative;
+    font-weight: 200;
+    font-size: 16;
+    text-decoration: none;
+    transition: 0.3s;
+    font-family: vazirlight !important;
+    font-size: .9rem;
+    color: gray;
+}
+
+.footer_card ul li a:hover {
+    color: #c8c3c3;
+
+}
+.footer_card ul {
+    padding-right: 0px;
+}
+.footer_namad{
+    display: flex;
+    gap: 15px;
+
+}
+.footer_namad img {
+    width: 115px;
+    height: 122px;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 5px;
+   
+    opacity: 0.9;
+    border-radius: 18px;
+}
+.footer_namad img:nth-child(2){
+    object-fit: cover;
+}
+
+/* under Footer */
+
+.border-hr {
+    border-color: #686868;
+}
+
+.under_footer {
+    text-align: right;
+}
+
+
+.under_footer p {
+    color: #fff;
+    font-size: 16px;
+    padding: 14px 3px;
+    font-weight: 200;
+    display: inline-block;
+}
+
+.footer-social-icons {
+    float: left;
+}
+
+.footer-social-icons a svg {
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+    padding-top: 8px;
+    color: #dfdada;
+}
+
+.licens-2{
+    display: none ;
+  }
+footer  section{
+    display: flex ;
+ 
+  }
+@media screen and (max-width: 1200px){
+  footer section{
+    display: grid !important;
+    grid-template-columns: auto auto auto; 
+  }.footer_kenar,.footer_vasat {
+    width: 100%;
+  }.licens-1{
+    display: none !important;
+  }.licens-2{
+    display: block !important;
+  } .licens-2 .footer_namad {
+    display: flex;
+    justify-content: center;
+    gap: 34px;
+}.main_footer {
+    padding: 3rem 2rem 0rem ;
+}.border-hr-2{
+    display: block !important;
+}
+} 
+@media (max-width:800px) {
+    footer section{
+        display: grid !important;
+        grid-template-columns: auto auto ; 
+      }
+}
+@media (max-width:600px) {
+    footer section{
+        display: grid !important;
+        grid-template-columns: auto; 
+      }.main_footer {
+        padding: 3rem 1rem 0rem ;
+    }.footer_card{
+        margin: 0rem !important;
+    }
+}
+
+@media (max-width:500px) {
+    .footer_namad img{
+        width: 85px;
+        height: 92px;
+    }.under_footer{
+        text-align: center;
+        margin-top: .5rem;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    
+    }.under_footer p{
+        margin-bottom: 0px;
+    }
+}
+@media (max-width:375px) {
+    .footer_namad{
+        gap: 10px !important;
+    }
+}
+@media screen and (max-width: 550px){
+    #spn3{
+        display: none;
+    
+    }
+    .footer-social-icons a svg{
+        width: 30px;
+        height: 30px;
+    }
+    .under_footer p{
+        font-size: 14px;
+    }
+    .footer_card h4 {
+        padding:0 20px;
+    }
+  
+}
+
+.footer li{
+    list-style: none;
+}
+.border-hr-2{
+    display: none;
+}

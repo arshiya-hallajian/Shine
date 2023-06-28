@@ -1,0 +1,141 @@
+.Login_SignUp form input{
+	border: none;
+	padding: 15px 20px;
+	border-radius: 25px;
+	background: rgba(124, 121, 121, 0.5);
+	width: 100%;
+	outline: 0;
+	color: white;
+}
+.Login_SignUp form input::placeholder{
+    color: rgba(255, 255, 255, 0.321);
+}
+.Login_SignUp {
+ 
+	color: #e1d7d7;
+	
+	background: linear-gradient(180deg, #070707 10%, #edd754 59%, #000000 100%);
+ padding-bottom: 6rem;
+	  
+}
+.SignUp .hr{
+	margin-bottom: 3rem;
+	margin-top: 20px;
+
+}
+.SignUp-btn{
+	background-color: #1161ee;
+	border-radius: 20px;
+	border: 0;
+	z-index: 200;
+	position: relative;
+	padding: .7rem;
+	width: 100%;
+	color: white;
+}
+.group-checkBox{
+	flex-direction: row !important;
+	justify-content: right;
+	align-items: baseline;
+	gap: 0px !important;
+}
+.group-checkBox form input{
+	width: 20px !important;
+}
+.SignUp-title{
+	text-align: center;
+	font-size:1.7rem;
+	font-family: vazirlight !important;
+	color: white;
+	margin-bottom: 31x;
+}
+.SignUp form main{
+ padding: 0rem 2rem;
+}
+.SignUp form .group{
+display: flex;
+gap: 10px;
+margin-top: .5rem;
+position: relative;
+flex-direction: column;
+}
+.SignUp form{
+	width: 100%;
+	margin: auto;
+	max-width: 525px; 
+	padding-top: 2rem;
+	position: relative;
+	background: #0d0c0cf2;
+	box-shadow: 0 12px 15px 0 #0000003d, 0 17px 50px 0 #00000030;
+	border-radius: 15px;
+	border-top-left-radius: 3px;
+	position: relative;
+	border-top-right-radius: 3px;
+}
+.Login_SignUp form{
+	margin-top: 7rem;
+ padding-bottom: 4rem;
+
+}
+.Login_SignUp form a{
+	text-decoration: none !important;
+}
+ 
+ 
+ 
+
+.login-form .group label .icon {
+	width: 15px;
+	height: 15px;
+	border-radius: 2px;
+	position: relative;
+	display: inline-block;
+	background: rgba(255, 255, 255, .1);
+}
+
+ 
+
+.Login_SignUp form  {
+	color: #fff;
+}
+ 
+.hr {
+	height: 2px;
+	 
+	background: #f5f5f533;
+}
+
+
+
+#forgot {
+	text-decoration: none;
+	transition: 0.3s;
+	color: #fff; 
+	text-align: center; 
+	margin-left: auto;
+	display: block;
+	margin-right: auto;
+}
+
+#forgot:hover {
+		color: #d6cccc;
+}
+ 
+ .span-checkBox{
+	display: inline-block !important;
+	position: relative;
+	top: 2px;
+ }
+ .sign-up-htm .hr{
+	display: none !important;
+ }
+
+ 
+
+ 
+
+@media (max-width:400px) {
+	 .group-checkBox{
+		margin-top: 3rem;
+	}
+}

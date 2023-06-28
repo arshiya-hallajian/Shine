@@ -3,7 +3,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
-    padding: 30px 44px 50px 44px;
+    padding: 30px 44px 50px;
     text-align: center;
     color: white;
     font-family: vazirlight !important;
@@ -24,12 +24,12 @@
 }
 @media (max-width:1024px) {
     .HomeIntroProducts{
-        padding: 30px 77px 50px 77px;
+        padding: 30px 77px 50px;
     }
 }
 @media (max-width:400px) {
    .HomeIntroProducts{
-    padding: 30px 30px 50px 30px;
+    padding: 30px 30px 50px;
    } 
 }
 

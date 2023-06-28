@@ -1,0 +1,127 @@
+.container h4 {
+    color: #fff;
+    font-weight: bold;
+margin: 30px 0;
+}
+.product-page-comments{
+    padding: 0rem 6rem;
+}
+.container p {
+    color: #eee;
+    font-weight: 100;
+}
+
+.red-star{
+    color: #a80202;
+    font-size: 1rem;
+}
+.container label {
+    font-size: 1.3rem;
+    color: #eee;
+    font-weight: bold;
+}
+
+.user-comment {
+    margin: 10px auto;
+    background-color: transparent;
+    border: 2px solid #767171;
+    border-radius: 25px;
+    resize: none;
+    outline: none;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px;
+    width: 96%;
+    height: 240px;
+}
+
+.comments-inputs label {
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin: 12px;
+
+}
+
+.comments-inputs {
+    display: flex;
+}
+
+
+.comments-inputs input {
+    background-color: transparent;
+    width: 43%;
+    height: 43px;
+    border: 1px solid #767171;
+    border-radius: 25px;
+    outline: none;
+    color: #fff;
+    padding: 4px 20px;
+    margin: 8px 0 0 0;
+}
+
+.radio-btn {
+    margin: 10px 8px 0 0;
+}
+
+.radio-btn label {
+    font-size: 1rem;
+    margin: 8px;
+}
+.comments-submit-btn{
+    padding: 6px 30px;
+    margin: 0  ;
+    border-radius: 5px;
+    border: none;
+    transition: .5s;
+    color: #312e2e;
+    background-color: #F0CC80;
+}
+
+.comments-submit-btn:hover{
+    background-color:#e4de70 ;
+    color:#eee ;
+}
+
+
+@media screen and (max-width: 700px) {
+    .comments-inputs label {
+        font-size: 1.1rem;
+        font-weight: 100;
+        margin: 12px;
+        margin-top: 2px;
+    }
+
+    .radio-btn label {
+        font-size: .9rem;
+        
+    }
+
+}
+.product-page-comments-title{
+    font-family: vazirlight !important;
+}
+.product-page-comments{
+    padding: 0rem 6rem;
+    color: white;
+}
+@media (max-width:800px) {
+    .product-page-comments{
+        padding: 0rem 2rem;
+    }  
+}
+@media (max-width:500px) {
+    .product-page-comments{
+        padding: 0rem 1rem !important;
+        margin-top: 4rem;
+    }.product-page-comments-title{
+        margin: 20px 0px;
+    }.comments-inputs{
+        flex-direction: column;
+        gap: 10px;
+    }.comments-inputs input{
+        width: 100%;
+    }.comments-submit-btn{
+        width: 100%;
+        margin: 1rem 0px !important;
+    }
+}

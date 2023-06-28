@@ -1,5 +1,5 @@
 .whyThisShopComponent{
-    padding: 1.5rem 3rem 2rem 3rem;
+    padding: 1.5rem 3rem 2rem;
     position: relative;
     text-align: right;
     background-color: #47443E;
@@ -16,7 +16,7 @@ margin-right: 1rem;
 font-size: .9rem;
 }
 .whyThisShopComponent a{
-    color: rgba(255, 255, 255, 0.9);;
+    color: rgba(255, 255, 255, 0.9);
     text-align: left;
     font-size: .9rem;
     width: 100%;

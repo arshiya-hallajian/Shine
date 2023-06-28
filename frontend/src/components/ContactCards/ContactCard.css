@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 }
 
- 
+
 .contact_card_body h3 {
 	margin: 17px 0;
 }
@@ -21,20 +21,20 @@
 	line-height: 21px;
 }
 
-.contact_card_body  .card-container {
+.contact_card_body .card-container {
 	background-color: #5a5a5a;
 	border-radius: 5px;
-	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+	box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
 	color: #B3B8CD;
 	padding-top: 30px;
 	position: relative;
 	width: 300px;
 	max-width: 100%;
 	text-align: center;
-   margin: 28px;
+	margin: 28px;
 }
 
-.contact_card_body  .card-container .pro {
+.contact_card_body .card-container .pro {
 	color: #333;
 	border-radius: 3px;
 	font-size: 14px;
@@ -46,13 +46,14 @@
 }
 
 .contact_card_body .card-container .round {
-    width: 115px;
-    height: 115px;
+	width: 115px;
+	height: 115px;
 	border: 1px solid #fff;
 	border-radius: 50%;
 	padding: 4px;
 	object-fit: cover;
 }
+
 /* new */
 
 .contact_card_body .button {
@@ -68,16 +69,16 @@
 	color: #f4f4f4;
 	transition: all 0.3s ease-in-out;
 	margin: 5px;
-  }
-  
-  .contact_card_body a button span.btn-txt {
+}
+
+.contact_card_body a button span.btn-txt {
 	z-index: 1;
 	font-weight: 800;
 	letter-spacing: 2px;
 	text-decoration: none;
-  }
-  
-  .contact_card_body .type1::after {
+}
+
+.contact_card_body .type1::after {
 	content: "";
 	position: absolute;
 	left: 0;
@@ -90,20 +91,20 @@
 	height: 10px;
 	width: 10px;
 	z-index: -1;
-  }
-  
-  .contact_card_body .button:hover {
+}
+
+.contact_card_body .button:hover {
 	-webkit-box-shadow: 1px 1px 200px #000000;
 	box-shadow: 1px 1px 200px #000000;
 	color: #d3d3d3;
-  }
-  
-  .contact_card_body .type1:hover::after {
+}
+
+.contact_card_body .type1:hover::after {
 	visibility: visible;
 	-webkit-transform: scale(100) translateX(2px);
-      -ms-transform: scale(100) translateX(2px);
-          transform: scale(100) translateX(2px);
-  }
+	-ms-transform: scale(100) translateX(2px);
+	transform: scale(100) translateX(2px);
+}
 
 /* new */
 
@@ -115,7 +116,7 @@
 	font-family: Montserrat, sans-serif;
 	font-weight: 500;
 	padding: 10px 25px;
-    margin: 5px;
+	margin: 5px;
 }
 
 .contact_card_body button.primary.ghost {
@@ -144,4 +145,3 @@
 	margin: 0 7px 7px 0;
 	padding: 7px;
 }
-

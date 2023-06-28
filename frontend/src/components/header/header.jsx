@@ -15,12 +15,12 @@ const Header = () => {
         </div>
 
         <section className='navbar'>
-          
 
 
-        <button className='hambur-menu'>
-        <img src="images/hambur-menu.png" alt="" />
-        </button>
+
+          <button className='hambur-menu'>
+            <img src="images/hambur-menu.png" alt="" />
+          </button>
 
           <ul className='list-right'>
             <li><a href="#">صفحه اصلی</a></li>

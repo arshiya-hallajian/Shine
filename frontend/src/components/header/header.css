@@ -52,10 +52,10 @@
 
 }
 
-.hambur-menu{
+.hambur-menu {
     border: none;
     background-color: transparent;
-    
+
     display: none;
 }
 
@@ -132,7 +132,7 @@ ul.list-left {
     color: #fff;
     font-size: 16px;
     margin-top: 9px;
-	}
+}
 
 
 @media screen and (max-width: 1310px) {
@@ -179,7 +179,7 @@ ul.list-left {
         margin-bottom: 5px;
     }
 
-    .hambur-menu img{
+    .hambur-menu img {
         width: 35px;
         height: auto;
         color: red;
@@ -194,48 +194,48 @@ ul.list-left {
 }
 
 
-@media screen and (max-width: 905px){
+@media screen and (max-width: 905px) {
     .list-left li {
-       margin-left: -5px;
+        margin-left: -5px;
         padding: 5px 6.5px;
     }
 
-    .list-left li a{
+    .list-left li a {
         font-size: 22px;
     }
 
-    ul.list-left{
+    ul.list-left {
         margin-left: 20px;
     }
 
-    .hambur-menu img{
+    .hambur-menu img {
         width: 32px;
         height: auto;
     }
 
-  }
+}
 
 
-  @media screen and (max-width: 785px){
+@media screen and (max-width: 785px) {
     .list-left li {
         margin-left: -6.3px;
-         padding: 5px 6.5px;
-     }
+        padding: 5px 6.5px;
+    }
 
-     .list-left li a{
-         font-size: 20px;
-     }
+    .list-left li a {
+        font-size: 20px;
+    }
 
-     ul.list-left{
-         margin-left: 20px;
-     }
+    ul.list-left {
+        margin-left: 20px;
+    }
 
-     .hambur-menu img{
-         width: 30px;
-         height: auto;
-     }
+    .hambur-menu img {
+        width: 30px;
+        height: auto;
+    }
 
-     .logo {
+    .logo {
         width: 60px;
         margin-right: 25%;
     }
@@ -248,53 +248,57 @@ ul.list-left {
     }
 
 
-  }
+}
 
 
 
-  @media screen and (max-width: 740px){
+@media screen and (max-width: 740px) {
     .list-left li {
         margin-left: -6.5px;
-         padding: 5px 6.3px;
-     }
+        padding: 5px 6.3px;
+    }
 
-     .list-left li a{
-         font-size: 19px;
-     }
+    .list-left li a {
+        font-size: 19px;
+    }
 
-     ul.list-left{
-         margin-left: 20px;
-     }
+    ul.list-left {
+        margin-left: 20px;
+    }
 
-     .hambur-menu img{
-         width: 29px;
-         height: auto;
-     }
+    .hambur-menu img {
+        width: 29px;
+        height: auto;
+    }
 
-     .logo {
+    .logo {
         width: 59px;
         margin-right: 25%;
     }
-  }
+}
 
 
-  @media screen and (max-width: 720px){
-    .navbar{
+@media screen and (max-width: 720px) {
+    .navbar {
         height: 100px;
     }
 
-    .hambur-menu img{
+    .hambur-menu img {
         width: 28px;
         height: auto;
     }
 
-    .hambur-menu{margin-right: 43px;}
+    .hambur-menu {
+        margin-right: 43px;
+    }
+
     .logo {
         width: 57px;
         margin-right: 25%;
     }
+
     .list-left li {
         font-size: 18px;
     }
 
-  }
+}

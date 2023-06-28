@@ -675,7 +675,9 @@ hr.hr-line {
 @media (max-width:500px) {
     .order {
         margin: 1rem !important;
-    }.mySwiperBlogs{
+    }
+
+    .mySwiperBlogs {
         margin: 0rem !important;
         right: 0px !important;
     }
@@ -700,7 +702,7 @@ hr.hr-line {
 }
 
 @media (min-width:501px) {
-    .mySwiperBlogs{
+    .mySwiperBlogs {
         margin: 0rem 4rem !important;
         right: 0px !important;
     }
@@ -709,9 +711,14 @@ hr.hr-line {
 @media (max-width:350px) {
     .home-section-top video {
         height: 340px !important;
-    }.ring img{
-        bottom: -3px; position: relative;
-    }.scrollButton {
-        bottom:53px;
+    }
+
+    .ring img {
+        bottom: -3px;
+        position: relative;
+    }
+
+    .scrollButton {
+        bottom: 53px;
     }
 }

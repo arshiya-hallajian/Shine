@@ -62,16 +62,16 @@ const footer = () => {
 
           <hr className="border-hr" />
           <div className="footer_kenar licens-2 mb-4">
-              <div id='namad' className="footer_card">
-                <p>نماد های اعتماد به وودمارت گیفت</p>
-                <div className="footer_namad">
-                  <img src="images/enamad.png" alt="E-nemad" />
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXo2tOGrj_yyBevtlFzSTONyVYjjxH5cVmZg&usqp=CAU" alt="E-namad" />
-                  <img src="images/neshan_meli.jpg" alt="neshan-melli" />
-                </div>
+            <div id='namad' className="footer_card">
+              <p>نماد های اعتماد به وودمارت گیفت</p>
+              <div className="footer_namad">
+                <img src="images/enamad.png" alt="E-nemad" />
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXo2tOGrj_yyBevtlFzSTONyVYjjxH5cVmZg&usqp=CAU" alt="E-namad" />
+                <img src="images/neshan_meli.jpg" alt="neshan-melli" />
               </div>
             </div>
-            <hr className="border-hr border-hr-2 w-100 " />
+          </div>
+          <hr className="border-hr border-hr-2 w-100 " />
           <div className="under_footer">
             <p>تمامی حقوق سایت محفوظ میباشد.</p>
 

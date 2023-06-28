@@ -84,49 +84,56 @@ export default function Home() {
 
         </main>
 
-{onSale &&(
-   
-        <div className="on-sale">
+        {onSale && (
 
+<<<<<<< HEAD
           <section>
             <p className="on-sale-title mb-2 mt-3">طلا را در حراج بخرید !!!</p>
             <span className='vazirlight'>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحانگرافیک است. چاپگرها و متون بلکه روزنامه و مجله درستون و سطرآنچنان که لازماست و برای.شرایط فعلی تکنولوژی مورد نیاز بزارهای کاربردی می باشد</span>
           </section>
+=======
+          <div className="on-sale">
+>>>>>>> main
 
-          <Swiper
-            slidesPerView={1}
-            spaceBetween={10}
-            pagination={{
-              clickable: true,
-            }}
-            breakpoints={{
-              320: {
-                slidesPerView: 1,
-                spaceBetween: 10,
-              },
-              768: {
-                slidesPerView: 2,
-                spaceBetween: 0,
-              },
+            <section>
+              <p className="on-sale-title mb-2 mt-3">طلا را در حراج بخرید !!!</p>
+              <span className='vazirlight'>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحانگرافیک است. چاپگرها و متون بلکه روزنامه و مجلهدرستون و سطرآنچنان که لازماست و برای.شرایط فعلی تکنولوژی مورد نیاز بزارهای کاربردی می باشد</span>
+            </section>
 
-
-              1364: {
-                slidesPerView: 3,
-                spaceBetween: 20,
-              },
-            }}
-            modules={[Pagination]} className="mySwiper Home-swiper">
-            { onSale.slice(0,6).map(data => (
-              <SwiperSlide>
-                <OnSaleCart {...data}/>
-              </SwiperSlide>
-            ))}
+            <Swiper
+              slidesPerView={1}
+              spaceBetween={10}
+              pagination={{
+                clickable: true,
+              }}
+              breakpoints={{
+                320: {
+                  slidesPerView: 1,
+                  spaceBetween: 10,
+                },
+                768: {
+                  slidesPerView: 2,
+                  spaceBetween: 0,
+                },
 
 
-          </Swiper>
-        </div>
-)
-            }
+                1364: {
+                  slidesPerView: 3,
+                  spaceBetween: 20,
+                },
+              }}
+              modules={[Pagination]} className="mySwiper Home-swiper">
+              {onSale.slice(0, 6).map(data => (
+                <SwiperSlide>
+                  <OnSaleCart {...data} />
+                </SwiperSlide>
+              ))}
+
+
+            </Swiper>
+          </div>
+        )
+        }
 
         <div className="order">
           <div className="order-bg"> </div>

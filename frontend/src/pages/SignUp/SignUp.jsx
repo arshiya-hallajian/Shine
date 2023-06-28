@@ -14,7 +14,6 @@ export default function SignUp() {
     const repeatPassIconHandler = () => {
         setShowRepeatPassword(prev => !prev)
     }
-
     return (
 
         <div className="Login_SignUp SignUp">

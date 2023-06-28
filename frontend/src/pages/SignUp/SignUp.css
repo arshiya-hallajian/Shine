@@ -1,4 +1,4 @@
-.Login_SignUp form input{
+.Login_SignUp form input {
 	border: none;
 	padding: 15px 20px;
 	border-radius: 25px;
@@ -7,23 +7,27 @@
 	outline: 0;
 	color: white;
 }
-.Login_SignUp form input::placeholder{
-    color: rgba(255, 255, 255, 0.321);
+
+.Login_SignUp form input::placeholder {
+	color: rgba(255, 255, 255, 0.321);
 }
+
 .Login_SignUp {
- 
+
 	color: #e1d7d7;
-	
+
 	background: linear-gradient(180deg, #070707 10%, #edd754 59%, #000000 100%);
- padding-bottom: 6rem;
-	  
+	padding-bottom: 6rem;
+
 }
-.SignUp .hr{
+
+.SignUp .hr {
 	margin-bottom: 3rem;
 	margin-top: 20px;
 
 }
-.SignUp-btn{
+
+.SignUp-btn {
 	background-color: #1161ee;
 	border-radius: 20px;
 	border: 0;
@@ -33,36 +37,42 @@
 	width: 100%;
 	color: white;
 }
-.group-checkBox{
+
+.group-checkBox {
 	flex-direction: row !important;
 	justify-content: right;
 	align-items: baseline;
 	gap: 0px !important;
 }
-.group-checkBox form input{
+
+.group-checkBox form input {
 	width: 20px !important;
 }
-.SignUp-title{
+
+.SignUp-title {
 	text-align: center;
-	font-size:1.7rem;
+	font-size: 1.7rem;
 	font-family: vazirlight !important;
 	color: white;
 	margin-bottom: 31x;
 }
-.SignUp form main{
- padding: 0rem 2rem;
+
+.SignUp form main {
+	padding: 0rem 2rem;
 }
-.SignUp form .group{
-display: flex;
-gap: 10px;
-margin-top: .5rem;
-position: relative;
-flex-direction: column;
+
+.SignUp form .group {
+	display: flex;
+	gap: 10px;
+	margin-top: .5rem;
+	position: relative;
+	flex-direction: column;
 }
-.SignUp form{
+
+.SignUp form {
 	width: 100%;
 	margin: auto;
-	max-width: 525px; 
+	max-width: 525px;
 	padding-top: 2rem;
 	position: relative;
 	background: #0d0c0cf2;
@@ -72,17 +82,19 @@ flex-direction: column;
 	position: relative;
 	border-top-right-radius: 3px;
 }
-.Login_SignUp form{
+
+.Login_SignUp form {
 	margin-top: 7rem;
- padding-bottom: 4rem;
+	padding-bottom: 4rem;
 
 }
-.Login_SignUp form a{
+
+.Login_SignUp form a {
 	text-decoration: none !important;
 }
- 
- 
- 
+
+
+
 
 .login-form .group label .icon {
 	width: 15px;
@@ -93,15 +105,15 @@ flex-direction: column;
 	background: rgba(255, 255, 255, .1);
 }
 
- 
 
-.Login_SignUp form  {
+
+.Login_SignUp form {
 	color: #fff;
 }
- 
+
 .hr {
 	height: 2px;
-	 
+
 	background: #f5f5f533;
 }
 
@@ -110,32 +122,33 @@ flex-direction: column;
 #forgot {
 	text-decoration: none;
 	transition: 0.3s;
-	color: #fff; 
-	text-align: center; 
+	color: #fff;
+	text-align: center;
 	margin-left: auto;
 	display: block;
 	margin-right: auto;
 }
 
 #forgot:hover {
-		color: #d6cccc;
+	color: #d6cccc;
 }
- 
- .span-checkBox{
+
+.span-checkBox {
 	display: inline-block !important;
 	position: relative;
 	top: 2px;
- }
- .sign-up-htm .hr{
+}
+
+.sign-up-htm .hr {
 	display: none !important;
- }
+}
 
- 
 
- 
+
+
 
 @media (max-width:400px) {
-	 .group-checkBox{
+	.group-checkBox {
 		margin-top: 3rem;
 	}
 }

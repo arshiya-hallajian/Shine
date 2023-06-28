@@ -1,9 +1,9 @@
 import React from 'react';
 import './CategoryItem.css';
-import {AiOutlineHeart} from'react-icons/ai';
-import {TfiShoppingCart} from'react-icons/tfi';
-import {GoSearch}from 'react-icons/go';
-import {MdCompareArrows}from 'react-icons/md';
+import { AiOutlineHeart } from 'react-icons/ai';
+import { TfiShoppingCart } from 'react-icons/tfi';
+import { GoSearch } from 'react-icons/go';
+import { MdCompareArrows } from 'react-icons/md';
 export default function CategoryItem() {
     return (
         <div class="CategoryItem">
@@ -27,7 +27,7 @@ export default function CategoryItem() {
                         <GoSearch />
                     </div>
 
-                     
+
                     <div class="On-Sale-Cart-icon" target="_blank" draggable="false" data-tooltip="افزودن به علاقه مندی ها">
                         <AiOutlineHeart />
                     </div>

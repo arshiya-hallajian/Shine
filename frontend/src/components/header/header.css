@@ -1,0 +1,304 @@
+@font-face {
+    font-family: vazir;
+    src: url("../../fonts/vazir/Vazir-Bold.ttf");
+}
+
+
+* {
+    direction: rtl;
+    font-family: vazir;
+}
+
+
+
+.header {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+
+
+}
+
+.header_backgruond {
+    width: 100%;
+    height: 60px;
+    background-color: #47443E;
+    position: relative;
+    z-index: 100;
+}
+
+.navbar {
+    width: 66%;
+    height: 110px;
+    background-color: #393630;
+    margin: auto;
+    top: 70px;
+    -webkit-border-radius: 32px 32px 70px 70px;
+    border-radius: 32px 32px 70px 70px;
+    margin-top: -50px;
+    border: ridge 3.6px #BFA772;
+
+    position: absolute !important;
+    z-index: 100;
+    transform: translateX(-25%);
+}
+
+.logo {
+    display: inline-block;
+    width: 80px;
+    margin-right: 45%;
+    margin-left: auto;
+    margin-top: -16px;
+
+}
+
+.hambur-menu {
+    border: none;
+    background-color: transparent;
+
+    display: none;
+}
+
+.hambur-btn img {
+    width: 35px;
+    height: auto;
+}
+
+.list-right {
+    display: flex;
+    position: absolute;
+
+}
+
+.list-right li {
+    padding: 5px 10px;
+    list-style: none;
+    right: 40px;
+
+}
+
+.list-right li a {
+    text-decoration: none;
+    transition: 500ms;
+    color: #fff;
+    font-size: 16px;
+
+}
+
+.list-right li a:hover {
+    color: #d2cec6;
+}
+
+ul.list-left {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 30px;
+
+}
+
+.list-left li {
+    padding: 5px 10px;
+    list-style: none;
+    right: 40px;
+    left: 40px;
+}
+
+
+.list-left li a {
+    text-decoration: none;
+    transition: 500ms;
+    color: #fff;
+    font-size: 22px;
+    opacity: 0.7;
+
+}
+
+.list-left li a:hover {
+    color: #c4c1bc;
+
+
+}
+
+
+.list-left span {
+    font-size: 17px;
+    color: #fff;
+    margin-top: 10px;
+    opacity: 0.3;
+}
+
+
+.list-left span {
+    color: #fff;
+    font-size: 16px;
+    margin-top: 9px;
+}
+
+
+@media screen and (max-width: 1310px) {
+    .list-right {
+        margin-top: 6px;
+    }
+
+    .list-right li {
+        padding: 10px 6.5px;
+        right: 35px;
+
+    }
+
+
+    .list-right li a {
+        font-weight: bold;
+        font-size: 15.7px;
+    }
+
+
+    .list-right {
+        margin-right: -10px;
+    }
+
+}
+
+
+@media screen and (max-width: 1150px) {
+    .list-right li a {
+        font-weight: bold;
+        font-size: 14.7px;
+    }
+}
+
+
+@media screen and (max-width: 1100px) {
+    .list-right {
+        display: none;
+    }
+
+    .hambur-menu {
+        display: inline-block;
+        margin-right: 50px;
+        margin-bottom: 5px;
+    }
+
+    .hambur-menu img {
+        width: 35px;
+        height: auto;
+        color: red;
+    }
+
+    .logo {
+        width: 64px;
+        margin-right: 25%;
+    }
+
+
+}
+
+
+@media screen and (max-width: 905px) {
+    .list-left li {
+        margin-left: -5px;
+        padding: 5px 6.5px;
+    }
+
+    .list-left li a {
+        font-size: 22px;
+    }
+
+    ul.list-left {
+        margin-left: 20px;
+    }
+
+    .hambur-menu img {
+        width: 32px;
+        height: auto;
+    }
+
+}
+
+
+@media screen and (max-width: 785px) {
+    .list-left li {
+        margin-left: -6.3px;
+        padding: 5px 6.5px;
+    }
+
+    .list-left li a {
+        font-size: 20px;
+    }
+
+    ul.list-left {
+        margin-left: 20px;
+    }
+
+    .hambur-menu img {
+        width: 30px;
+        height: auto;
+    }
+
+    .logo {
+        width: 60px;
+        margin-right: 25%;
+    }
+
+    .list-left span {
+        color: #fff;
+        font-size: 13px;
+        margin-top: 11px;
+        opacity: 0.3;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 740px) {
+    .list-left li {
+        margin-left: -6.5px;
+        padding: 5px 6.3px;
+    }
+
+    .list-left li a {
+        font-size: 19px;
+    }
+
+    ul.list-left {
+        margin-left: 20px;
+    }
+
+    .hambur-menu img {
+        width: 29px;
+        height: auto;
+    }
+
+    .logo {
+        width: 59px;
+        margin-right: 25%;
+    }
+}
+
+
+@media screen and (max-width: 720px) {
+    .navbar {
+        height: 100px;
+    }
+
+    .hambur-menu img {
+        width: 28px;
+        height: auto;
+    }
+
+    .hambur-menu {
+        margin-right: 43px;
+    }
+
+    .logo {
+        width: 57px;
+        margin-right: 25%;
+    }
+
+    .list-left li {
+        font-size: 18px;
+    }
+
+}

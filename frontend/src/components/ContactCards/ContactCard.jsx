@@ -1,7 +1,7 @@
 import React from 'react';
 import "./ContactCard.css"
 
-const ContactCard = ({ U_img, name, city, title, title2 , Skills,Github }) => {
+const ContactCard = ({ U_img, name, city, title, title2, Skills, Github }) => {
     return (
         <div className='contact_card_body'>
             <div class="card-container">
@@ -14,7 +14,7 @@ const ContactCard = ({ U_img, name, city, title, title2 , Skills,Github }) => {
                         <span class="btn-txt">Message</span>
                     </button>
                     <a href={Github}><button class="button type1">
-                       <span class="btn-txt">Github</span>
+                        <span class="btn-txt">Github</span>
                     </button></a>
                 </div>
                 <div class="skills">

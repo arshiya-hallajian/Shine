@@ -63,7 +63,7 @@ export default function ProductPage_general() {
                 <li><span><BiStore /></span><Link to="/Category"> فروشگاه</Link></li>
                 <li> <span><AiOutlineTeam /></span><Link to="/ContactUs">درباره ما</Link> </li>
                 <li><span><BiGitCompare /></span><Link to="/">مورد علاقه ها</Link> </li>
-                <li className='border-0'><span><BiLogIn /></span><Link to="/Login">ورود | ثبت نام</Link> </li>
+                <li className='border-0'><span><BiLogIn /></span><Link to="/Login">ورود</Link> </li>
 
 
               </ul>
@@ -81,7 +81,8 @@ export default function ProductPage_general() {
           <Link to='/'><li>خانه</li></Link>
           <Link to='/Category'> <li>فروشگاه</li></Link>
           <Link to='/ContactUs'><li>درباره ما</li></Link>
-          <Link to='/Login'><li>ورود / ثبت نام</li> </Link>
+          <Link to='/signup'><li> ثبت نام </li> </Link>
+          <Link to='/login'><li> ورود </li> </Link>
         </ul>
       </nav>
 

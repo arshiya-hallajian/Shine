@@ -18,13 +18,13 @@ const routes = [
     path: '/Product/:id', element: <ProductPage />
   },
   {
-    path: '/Category', element: <Category />
+    path: '/category', element: <Category />
   },
   {
-    path: '/Login', element: <Login />
+    path: '/login', element: <Login />
   },
   {
-    path: '/SignUp', element: <SignUp />
+    path: '/signup', element: <SignUp />
   },
   {
     path: '/ContactUs', element: <ContactUs />

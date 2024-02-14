@@ -22,7 +22,7 @@ const Login = () => {
 				validate={(values) => {
 					const errors = {};
 
-					if (values.name == "") {
+					if (values.name === "") {
 						errors.name = "وارد کردن نام اجباری می‌باشد";
 						setError(true)
 					} else if (values.name.length < 4) {

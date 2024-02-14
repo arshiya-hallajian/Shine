@@ -86,14 +86,7 @@ export default function Home() {
 
         {onSale && (
 
-<<<<<<< HEAD
-          <section>
-            <p className="on-sale-title mb-2 mt-3">طلا را در حراج بخرید !!!</p>
-            <span className='vazirlight'>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحانگرافیک است. چاپگرها و متون بلکه روزنامه و مجله درستون و سطرآنچنان که لازماست و برای.شرایط فعلی تکنولوژی مورد نیاز بزارهای کاربردی می باشد</span>
-          </section>
-=======
           <div className="on-sale">
->>>>>>> main
 
             <section>
               <p className="on-sale-title mb-2 mt-3">طلا را در حراج بخرید !!!</p>

@@ -63,12 +63,12 @@ export default function SignUp() {
             <main>
               <div className="group">
                 <label className="label">نام کاربری</label>
-                <Field placeholder="عرشیا" name="name" type="text" />
+                <Field placeholder="name" name="name" type="text" />
               </div>
               <div className="group">
                 <label className="label">رمز عبور</label>
                 <Field
-                  placeholder="arshiya@gmail.com"
+                  placeholder="example@gmail.com"
                   name="pass"
                   type={!showPassword ? "password" : "text"}
                 />
@@ -87,7 +87,7 @@ export default function SignUp() {
               <div className="group">
                 <label className="label">تکرار رمز عبور</label>
                 <Field
-                  placeholder="arshiya@gmail.com"
+                  placeholder="example@gmail.com"
                   name="repeatPass"
                   type={!showRepeatPassword ? "password" : "text"}
                 />
@@ -107,7 +107,7 @@ export default function SignUp() {
               <div className="group">
                 <label className="label">ایمیل</label>
                 <Field
-                  placeholder="arshiya@gmail.com"
+                  placeholder="example@gmail.com"
                   name="email"
                   type="email"
                 />

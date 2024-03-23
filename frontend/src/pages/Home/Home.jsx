@@ -8,6 +8,10 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
 import "swiper/css/navigation";
+ 
+//import images 
+import Necklaces1 from '../../assets/images/Necklaces-one.jpg'
+import Necklaces2 from "../../assets/images/Necklaces-tow.jpg"
 
 import Blogs from "../../components/blogs/Blogs"
 import Header from '../../components/IndexHeader/Header'
@@ -79,7 +83,7 @@ export default function Home() {
 
           <HomeIntroProducts PersianName={'گوشواره'} EnglishName={'Earrings'} Img={'https://dev-wp.ir/goldpluss/wp-content/uploads/2022/03/Group-158.png'} Intro={'برای تغییر این متن بر روی دکمه ویرایش کلیک کنید. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.'} />
           <HomeIntroProducts PersianName={'ساعت'} EnglishName={'Watch'} Img={'https://dev-wp.ir/goldpluss/wp-content/uploads/2022/03/Group-157.png'} Intro={'برای تغییر این متن بر روی دکمه ویرایش کلیک کنید. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.'} />
-          <HomeIntroProducts PersianName={'گردنبند'} EnglishName={'Necklaces'} Img={'https://dev-wp.ir/goldpluss/wp-content/uploads/2022/03/1.png'} Intro={'برای تغییر این متن بر روی دکمه ویرایش کلیک کنید. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.'} />
+          <HomeIntroProducts PersianName={'گردنبند'} EnglishName={'Necklaces'} Img={Necklaces1} Intro={'برای تغییر این متن بر روی دکمه ویرایش کلیک کنید. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.'} />
           <HomeIntroProducts PersianName={'گوشواره'} EnglishName={'Ring'} Img={'https://dev-wp.ir/goldpluss/wp-content/uploads/2022/03/Group-159.png'} Intro={'برای تغییر این متن بر روی دکمه ویرایش کلیک کنید. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.'} />
 
         </main>
@@ -111,9 +115,13 @@ export default function Home() {
 
 
                 1364: {
-                  slidesPerView: 3,
-                  spaceBetween: 20,
+                  slidesPerView: 2,
+                  spaceBetween: 10,
                 },
+                1800: {
+                  slidesPerView: 2,
+                  spaceBetween: 2,
+                }
               }}
               modules={[Pagination]} className="mySwiper Home-swiper">
               {onSale.slice(0, 6).map(data => (
@@ -192,28 +200,27 @@ export default function Home() {
               className="mySwiperBlogs"
             >
               <SwiperSlide>
-                <Blogs date='10 ' image="https://dev-wp.ir/goldpluss/wp-content/uploads/2021/12/cover04-min.jpg" title="قصد هدیه گرفتن دارید ؟" parag="
+                <Blogs date='10 ' image={Necklaces1} title="قصد هدیه گرفتن دارید ؟" parag="
 					
 به وردپرس خوش آمدید. این اولین نوشتهٔ شماست. این را ویرایش یا حذف کنید، سپس نو..." />
               </SwiperSlide>
               <SwiperSlide>
-                <Blogs date='10 ' image="https://dev-wp.ir/goldpluss/wp-content/uploads/2021/12/2-8-min.jpg" title="خرید هدیه ارزان و کاربردی" parag="
+                <Blogs date='10 ' image={Necklaces2} title="خرید هدیه ارزان و کاربردی" parag="
 					
           به وردپرس خوش آمدید. این اولین نوشتهٔ شماست. این را ویرایش یا حذف کنید، سپس نو..." />
               </SwiperSlide>
               <SwiperSlide>
-                <Blogs date='10 ' image="https://dev-wp.ir/goldpluss/wp-content/uploads/2021/12/1-5-min.jpg" title="به سلایق و علایق توجه کنید!" parag="
+                <Blogs date='10 ' image={Necklaces1} title="به سلایق و علایق توجه کنید!" parag="
 					
 به وردپرس خوش آمدید. این اولین نوشتهٔ شماست. این را ویرایش یا حذف کنید، سپس نو..." />
               </SwiperSlide>
               <SwiperSlide>
-                <Blogs date='10 ' image="https://dev-wp.ir/goldpluss/wp-content/uploads/2021/12/cover04-min.jpg" title="قصد هدیه گرفتن دارید ؟" parag="
+                <Blogs date='10 ' image={Necklaces2} title="قصد هدیه گرفتن دارید ؟" parag="
 					
           به وردپرس خوش آمدید. این اولین نوشتهٔ شماست. این را ویرایش یا حذف کنید، سپس نو..." />
               </SwiperSlide>
 
             </Swiper>
-
 
 
 

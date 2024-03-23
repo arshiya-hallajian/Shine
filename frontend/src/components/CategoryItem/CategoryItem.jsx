@@ -4,11 +4,12 @@ import { AiOutlineHeart } from 'react-icons/ai';
 import { TfiShoppingCart } from 'react-icons/tfi';
 import { GoSearch } from 'react-icons/go';
 import { MdCompareArrows } from 'react-icons/md';
+import necklaces1 from "../../assets/images/New-star-necklace.jpg"
 export default function CategoryItem() {
     return (
         <div class="CategoryItem">
-            <div class="CategoryItem-img">
-                <img src="https://dev-wp.ir/goldpluss/wp-content/uploads/2022/03/5-min-150x150.jpg" alt="Snowy Mountains" />
+            <div class="CategoryItem-img ">
+                <img src={necklaces1} alt="Snowy Mountains" />
             </div>
 
             <div class="CategoryItem-content">

@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 export default function OnSaleCart(props) {
   return (
     <Link to={`/Product/${props.sellerId}`} className='On-Sale-Cart'>
-      <img src="https://dev-wp.ir/goldpluss/wp-content/uploads/2022/03/5-min.jpg" alt="" />
+      <img src="../../assets/images/Arshiya.jpg" alt="" />
       <p className='mb-2 On-Sale-Cart-title'>{props.name}</p>
       <div dir='ltr'>
         <span style={{ textDecoration: 'line-through', color: 'gray' }}>{props.price * 2} تومان</span>

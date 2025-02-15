@@ -70,7 +70,7 @@ export default function Home() {
 
         <div className='why-this-shop'>
           <p className='why-this-shop-title'>چرا جواهری وودمارت</p>
-          <img src="https://dev-wp.ir/goldpluss/wp-content/uploads/2022/12/Group-158.png" alt="why-image" />
+          <img src="https://demoes.aramis-co.ir/goldplus3/wp-content/uploads/2022/07/Group-158.png" alt="why-image" />
           <section>
             <WhyThisShop />
             <WhyThisShop />
@@ -81,10 +81,10 @@ export default function Home() {
         <main>
 
 
-          <HomeIntroProducts PersianName={'گوشواره'} EnglishName={'Earrings'} Img={'https://dev-wp.ir/goldpluss/wp-content/uploads/2022/03/Group-158.png'} Intro={'برای تغییر این متن بر روی دکمه ویرایش کلیک کنید. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.'} />
-          <HomeIntroProducts PersianName={'ساعت'} EnglishName={'Watch'} Img={'https://dev-wp.ir/goldpluss/wp-content/uploads/2022/03/Group-157.png'} Intro={'برای تغییر این متن بر روی دکمه ویرایش کلیک کنید. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.'} />
-          <HomeIntroProducts PersianName={'گردنبند'} EnglishName={'Necklaces'} Img={Necklaces1} Intro={'برای تغییر این متن بر روی دکمه ویرایش کلیک کنید. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.'} />
-          <HomeIntroProducts PersianName={'گوشواره'} EnglishName={'Ring'} Img={'https://dev-wp.ir/goldpluss/wp-content/uploads/2022/03/Group-159.png'} Intro={'برای تغییر این متن بر روی دکمه ویرایش کلیک کنید. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.'} />
+          <HomeIntroProducts PersianName={'گوشواره'} EnglishName={'Earrings'} Img={'https://demoes.aramis-co.ir/goldplus3/wp-content/uploads/2022/03/Group-158.png'} Intro={'برای تغییر این متن بر روی دکمه ویرایش کلیک کنید. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.'} />
+          <HomeIntroProducts PersianName={'ساعت'} EnglishName={'Watch'} Img={'https://demoes.aramis-co.ir/goldplus3/wp-content/uploads/2022/03/Group-157.png'} Intro={'برای تغییر این متن بر روی دکمه ویرایش کلیک کنید. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.'} />
+          <HomeIntroProducts PersianName={'گردنبند'} EnglishName={'Necklaces'} Img={"https://demoes.aramis-co.ir/goldplus3/wp-content/uploads/2022/03/Group-158.png"} Intro={'برای تغییر این متن بر روی دکمه ویرایش کلیک کنید. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.'} />
+          <HomeIntroProducts PersianName={'گوشواره'} EnglishName={'Ring'} Img={'https://demoes.aramis-co.ir/goldplus3/wp-content/uploads/2022/03/Group-159.png'} Intro={'برای تغییر این متن بر روی دکمه ویرایش کلیک کنید. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.'} />
 
         </main>
 
